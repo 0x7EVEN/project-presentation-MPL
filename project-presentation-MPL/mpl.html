@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+		<style>
+			* {
+				box-sizing: border-box;
+				font-family: 'Fjalla One', sans-serif;
+				font-family: roboto, sans-serif;
+				margin: 0px;
+			}
+
+			#navigation-header {
+				position: fixed;
+				/* border: 1px solid black; */
+			}
+
+			#navigation-div {
+				position: fixed;
+				/* border: 1px solid black; */
+				align-items: center;
+				justify-content: space-between;
+				font-size: 14px;
+				width: 100%;
+				/* height: 100%; */
+				display: fixed;
+				background: #fff;
+				font-family: roboto, sans-serif;
+				z-index: 1001;
+				position: fixed;
+				top: 0;
+				left: 0;
+				max-height: 90px;
+				overflow: hidden;
+				outline: none !important;
+			}
+
+			#navigation-div>div {
+				display: fixed;
+				margin: 16px 0;
+				outline: none !important;
+				/* height: 48px; */
+			}
+
+			#main-logo {
+				margin-left: 117px;
+				width: 101px;
+				height: 32px;
+				outline: none !important;
+			}
+
+			#outer-main {
+				display: flex;
+				align-items: center;
+				width: 100%;
+				justify-content: space-between;
+				outline: none !important;
+			}
+
+			#anchor-divs {
+				position: relative;
+				box-sizing: content-box;
+				margin-right: 117px;
+				width: 906px;
+				display: flex;
+				justify-content: space-between;
+				font-weight: 450;
+				font-size: 20px;
+				line-height: 24px;
+				color: #230046;
+				outline: none !important;
+			}
+
+			.anchor-sub {
+				text-align: center;
+				align-items: center;
+				display: flex;
+				font-family: roboto, sans-serif;
+				font-weight: 500;
+			}
+
+			.sub-sub-anchor {
+				padding: 10px
+			}
+
+			#div-esports {
+				background: #33FF66;
+				border-radius: 4px;
+				outline: none !important;
+			}
+
+			#sub-help {
+				font-family: Trim;
+				border: 1px solid rgba(25, 10, 40, 0.15);
+				padding: 12px 32px;
+				color: #E91051;
+
+
+			}
+
+			#sub-help>img {
+				position: relative;
+				width: 20px;
+				height: 20px;
+				margin-right: 12px;
+			}
+
+			.menu-tab {
+				display: inline-block;
+				width: 8px;
+				height: 8px;
+				border-top: 2px solid #230046;
+				border-left: 2px solid #230046;
+				transition: all 550ms ease-in-out;
+				margin-left: 12px !important;
+				margin-right: 0px !important;
+				transform: rotate(45deg);
+				margin-top: -4px;
+				outline: none !important;
+			}
+
+			#nextdiv {
+				width: 100%;
+				background: rgb(255, 255, 255);
+				outline: none !important;
+			}
+
+			#after-header {
+				background-repeat: no-repeat;
+				position: relative;
+				margin-top: 5%;
+				/* margin-left: -20px; */
+				left: 0;
+				right: 0;
+				width: 100%;
+			}
+
+			#form-2-outer {
+				position: absolute;
+				color: #828282;
+				font-size: 38px;
+				top: 30%;
+				left: 15%;
+				padding: 3% 6%;
+			}
+
+			#form-1-outer {
+				font-family: sans-serif;
+				font-size: 24px !important;
+				width: 100%;
+				font-size: 10px;
+				font-weight: 300 !important;
+			}
+
+			#form-1-outer label {
+				color: white !important;
+				font-size: 14px !important;
+				margin-top: 5px !important;
+				padding: 14px !important;
+				border: 1px solid white !important;
+				border-bottom-left-radius: 4px !important;
+				border-top-left-radius: 4px !important;
+				border-right: 1px solid rgb(139, 139, 139) !important
+			}
+
+
+			#input-div-inner {
+				margin: 4% 0;
+			}
+
+			#form-1-outer input {
+				border: 1px solid white;
+				background: transparent;
+				font-size: 14px !important;
+				margin-top: -2px;
+				padding: 14px !important;
+				border-top-right-radius: 4px;
+				border-bottom-right-radius: 4px;
+				border-left: 1px solid transparent;
+				color: white;
+			}
+
+			#submit-but {
+				background: #19be00 !important;
+				border: #19be00 !important;
+				font-size: 12px !important;
+				color: white !important;
+				border-radius: 4px;
+				padding: 14px !important;
+			}
+
+			.outer-second {
+				background-color: white;
+				padding-bottom: 5%;
+				border-radius: 15px;
+				width: 96%;
+				margin: 15px auto;
+				text-align: center;
+			}
+
+			.heading-div-new {
+				padding-top: 8%;
+				padding-bottom: 5%;
+				/* background: black */
+			}
+
+			svg {
+				fill: none;
+			}
+
+			#chiku-bhai {
+				height: 30%;
+				display: flex;
+				overflow-x: hidden;
+				overflow-y: hidden;
+				position: absolute;
+				right: 0;
+				left: 0;
+				width: 100%;
+				border-bottom: 3px solid white;
+				/* object-fit: cover; */
+			}
+
+			.news-main-div {
+				width: 760px;
+				height: 160px;
+				background-color: rgb(244, 243, 244);
+				margin: 24px auto;
+				border-radius: 12px;
+			}
+
+			.news-main-div img {
+				min-width: 244px;
+				max-width: 244px;
+				height: 160px;
+				float: left;
+				margin: 0 0px !important;
+			}
+
+			.div-after-img-name {
+				margin: 24px;
+				font-size: 17px
+			}
+
+			.div-after-img-description {
+				margin: 24px;
+				align-items: center;
+				justify-content: center;
+				color: rgba(25, 10, 40, 0.6);
+				letter-spacing: 0.1px;
+				font-size: 12px !important;
+			}
+
+			.outer-of-news-and-description {
+				float: left;
+				font-size: 16px;
+				margin: 24px 32px;
+			}
+
+			.inner-news-image-div {
+				width: 244px;
+				height: 160px;
+				float: left;
+			}
+
+			.dot-separetor {
+				width: 3px;
+				height: 3px;
+				border-radius: 50%;
+				background: rgba(25, 10, 40, 0.6);
+				display: inline-block;
+				margin-left: 4px;
+				margin-right: 4px;
+				margin-bottom: 3px;
+			}
+
+			.div-calengdar-heading {
+				padding-top: 8%;
+				padding-bottom: 3%;
+			}
+
+			.next-to-calender-div {
+				width: 760px;
+				margin: auto;
+				text-align: left;
+			}
+
+			.next-to-calender-div>h3 {
+				line-height: 44px;
+				font-weight: 300;
+				margin-bottom: 16px;
+			}
+
+			.event-image {
+				width: 100%;
+				height: 160px;
+				position: relative;
+			}
+
+			.event-image>img {
+				width: 760px;
+
+			}
+
+			.event-heading-8-bit {
+				position: absolute;
+				top: 30px;
+				left: 20px;
+				font-size: 20 px !important;
+				color: white;
+			}
+
+			.event-sub-heading {
+				color: rgba(255, 255, 255, 0.555);
+				position: absolute;
+				top: 50px;
+				left: 20px
+			}
+
+			.live-stream-outer {
+				width: 760px;
+				margin: auto;
+				margin-bottom: 16px;
+			}
+
+			.live-stream-outer>img {
+				height: auto;
+			}
+
+			.upcoming-events {
+				width: 760px;
+				height: 80px;
+				margin: auto;
+			}
+
+			.upcoming-event-img {
+				width: 80px;
+				height: 80px;
+				float: left;
+			}
+
+			.upcoming-event-img>img {
+				width: 80px;
+				height: 80px;
+				float: left;
+			}
+
+			.description-of-event {
+				margin: 2px 16px;
+				font-size: 25px;
+				float: left;
+			}
+
+			.event-upcoming {
+				margin: 1px 4px;
+				padding: 7px 15px;
+				background: #E91051;
+				float: left;
+				color: white;
+				border-radius: 4px;
+			}
+
+			.social-media-handles {
+				display: flex;
+				width: 760px;
+				height: 100px;
+				margin: 16px auto;
+				justify-content: space-around;
+				align-items: center;
+
+			}
+
+			.log-facebook {
+				width: 170px;
+				height: 50px;
+				padding: 10px;
+				border-radius: 50px;
+				align-items: center;
+				background-color: #F9E2F0;
+			}
+
+			.log-facebook>img {
+				margin-left: 5px;
+				width: 40px;
+				border-radius: 5px;
+				height: 30px;
+				padding: 2px;
+				z-index: 21;
+				float: left;
+			}
+
+			.log-facebook+.log-facebook {
+				padding: 4px;
+				margin-left: 15px;
+			}
+
+			.log-facebook+.log-facebook>img {
+				width: 40px;
+				height: 40px;
+				padding: 0px;
+			}
+
+			.logo-name {
+				padding: 3px;
+			}
+
+			.logo-name-second {
+				/* width: 70px; */
+				align-items: center;
+				padding: 10px;
+			}
+
+			.winner-celebration-outer {
+				width: 760px;
+				height: 330px;
+				margin: auto;
+				overflow-x: scroll;
+				display: flex;
+				flex-direction: row;
+				/* justify-content: space-between */
+			}
+
+
+			.winner-celebration-outer::-webkit-scrollbar {
+				display: none;
+			}
+
+			.uniq-winner-card {
+				min-width: 288px;
+				border: 1px solid #F9E2F0;
+				height: 100%;
+				margin: 0px 10px;
+				border-radius: 8px;
+				background: #F9E2F0;
+			}
+
+			.category-of-winner-game {
+				width: 90%;
+				margin: 10px auto;
+				/* float: left; */
+			}
+
+			.left-img-rank-top {
+				width: 65px;
+				height: 60px;
+				float: left;
+			}
+
+			.category-of-winner-game img {
+				width: 65px;
+				height: 60px;
+			}
+
+			.right-img-rank-top {
+				width: 65px;
+				height: 60px;
+				float: right;
+			}
+
+			.category-of-winner-game+img {
+				width: 155px;
+				height: 155px;
+				margin-top: -25px;
+			}
+
+			#youtube-iframe {
+				width: 760px;
+				height: 246px;
+				padding: 16px 0;
+				display: flex;
+				overflow-x: scroll;
+			}
+
+			.inner-youtube-frame {
+				width: 300px;
+				margin: 0 10px;
+				height: 160px;
+			}
+
+			.inner-youtube-frame::-webkit-scrollbar {
+				display: none;
+			}
+
+			.inner-youtube-frame iframe {
+				width: 300px;
+				height: 160px;
+				margin-bottom: 12px;
+				border-radius: 6px;
+			}
+
+			.youtube-iframe-subheading {
+				width: 100%;
+				margin: auto;
+				text-align: left;
+			}
+
+			.youtube-iframe-subheading img {
+				float: left;
+				width: 32px;
+				height: 32px;
+			}
+
+			.youtube-iframe-subheading div>h3 {
+				float: left;
+				width: 60%;
+				margin-left: 12px;
+				font-size: 12px;
+				margin: 0px 12px;
+				font-weight: 100 !important;
+			}
+
+			.youtube-iframe-subheading div>h4 {
+				float: left;
+				width: 60%;
+				color: gray;
+				margin-left: 12px;
+				font-size: 12px;
+				font-weight: 100 !important;
+				margin-top: 0;
+			}
+
+			.testimonals-outer {
+				width: 760px;
+				height: 520px;
+				padding-top: 6px;
+				display: flex;
+				flex-wrap: nowrap;
+				overflow-x: scroll;
+				margin: auto;
+			}
+
+			.testimonals-outer::-webkit-scrollbar {
+				display: none;
+			}
+
+			.testimonals-outer>div {
+				padding: 32px 16px;
+				width: 388px;
+				height: 100%;
+				background: #230046;
+				border-radius: 10px;
+				margin: 0 15px;
+			}
+
+			.box-svg-icon {
+				position: absolute;
+			}
+
+			.testimonal-image {
+				margin-left: 185px;
+				margin-top: -15px;
+				width: 133px;
+				height: 133px;
+			}
+
+			.testimonal-image>img {
+				width: 155px;
+				height: 155px;
+				border: 15px solid #230046;
+				border-radius: 50%
+			}
+
+			.testimonal-text-content {
+				padding: 16px;
+				height: 373px;
+				width: 95%;
+				margin: auto;
+				color: #fff;
+				background-color: #310153;
+				margin-top: -50px;
+				text-align: left;
+				font-size: 20px;
+				font-family: sans-serif;
+				font-weight: 200px !important;
+				border-radius: 10px;
+				line-height: 25px !important;
+			}
+
+			.testimonal-text-content h4 {
+				margin: 9px 0;
+				font-size: 20px;
+				color: #33FF66;
+				font-weight: 200 !important;
+			}
+
+			.testimonal-text-content>h5 {
+				color: white !important;
+				font-weight: 100 !important;
+				font-size: 20px;
+				font-family: sans-serif;
+				margin: 0px;
+				margin-bottom: 10px;
+			}
+
+
+
+			/* .arrow.up.jsx-1727884049 {
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+				margin-top: 4px;
+			}
+
+			.arrow.down.jsx-1727884049 {
+				-webkit-transform: rotate(-135deg);
+				-ms-transform: rotate(-135deg);
+				transform: rotate(-135deg);
+				margin-top: -2px;
+			}
+
+			.down {
+				transform: rotate(-135deg);
+				margin-top: -2px;
+			} */
+
+			.menu-tab:hover {
+				transform: rotate(225deg) !important;
+				margin-top: -6px !important;
+			}
+
+			#menu-onclick {
+				/* float: left; */
+				width: 100%;
+				height: 920px;
+				background: rgb(255, 255, 255);
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.menu-subdivs {
+				height: 200;
+			}
+
+			.submenu {
+				margin-top: 40px;
+				line-height: 18px;
+				color: #230046;
+				/* border: 1px solid red; */
+			}
+
+			.sub-menu-heading {
+				display: flex;
+				align-items: center;
+				line-height: 20px;
+			}
+
+			.sub-sub-div+.sub-sub-div {
+				margin-top: 50px;
+				line-height: 18px;
+			}
+
+			.sub-menu-heading>img {
+				width: 44px;
+				height: 44px;
+				margin-right: 15px;
+			}
+
+			.sub-menu-heading h4 {
+				font-weight: 300 !important;
+				font-size: 18px;
+			}
+
+			.sub-menu-heading~a>h4 {
+				font-size: 18px;
+				margin-left: 58px;
+				font-weight: 100 !important;
+				font-family: sans-serif !;
+				margin: 15px;
+				margin-left: 58px;
+			}
+
+			.collapsible {
+				background-color: #FDE7EE;
+				color: rgb(43, 43, 43);
+				cursor: pointer;
+				padding: 24px;
+				width: 100%;
+				border: none;
+				text-align: left;
+				outline: none;
+				font-size: 20px;
+				line-height: 28px;
+				margin: 12px 12px 0 0;
+				border-radius: 8px;
+			}
+
+			.content {
+				display: none;
+				overflow: hidden;
+
+				color: #828282;
+				text-align: left;
+				padding: 0px 16px 16px 16px;
+				margin-top: -8px;
+				background-color: #FDE7EE;
+
+			}
+
+			.content p {
+				margin: 0 8px 8px 8px;
+				font-size: 16px;
+				line-height: 22px;
+				font-weight: 300 !important;
+			}
+
+			.container {
+				max-width: 760px;
+				height: 100vh;
+				margin: 0 auto;
+				color: rgb(0, 0, 0);
+
+			}
+
+			.payment-div {
+				background-color: white !important;
+			}
+
+			.payment {
+				display: flex;
+				width: 60%;
+				height: 30%;
+				padding-bottom: 5%;
+				background-color: white;
+				justify-content: center;
+				margin: auto;
+				text-align: center;
+				color: #230046;
+				font-size: 16px;
+			}
+
+			.trust-image {
+				margin: 0 40px;
+				width: 100px;
+				height: 100px;
+			}
+
+			.trust-image+h4 {
+				color: #4A4A4A !important;
+				font-weight: 200 !important;
+				margin-top: 30px;
+				font-size: 20px !important;
+			}
+
+			.trust-image+h4+p {
+				color: #828282;
+			}
+
+			.sponsor {
+				padding-top: 5%;
+				width: 100%;
+				height: 70%;
+				background-color: #190A28;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			sp1 {
+				height: 30%;
+				width: 100%;
+			}
+
+			.sp2 {
+				height: 70%;
+				width: 30%;
+				margin: auto;
+				display: flex;
+				justify-content: center;
+				padding-bottom: 4%
+			}
+
+			.sp1>h2 {
+				display: flex;
+				color: white;
+				justify-content: center;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 40px;
+				font-weight: 600;
+				object-fit: cover;
+			}
+
+			.kkr {
+				margin: 20px;
+				width: 98px;
+				height: 98px;
+
+			}
+
+			.kkr>img {
+				width: 98px;
+				height: 98px;
+			}
+
+			.head1 {
+				background: white;
+				text-align: center;
+			}
+
+			.member-of {
+				margin: 0 40px;
+			}
+
+			/* .payment img {
+				margin: 20px 0;
+			} */
+
+			/* .sub-sub-div {} */
+
+		</style>
+		<script>
+
+		</script>
+	</head>
+
+	<body style="background:#230046">
+		<div class="main" style="margin:0">
+			<div id="navigation-div" style="margin-top:-4px">
+				<div id="outer-main">
+					<div id="main-logo">
+						<a href='/'><img style='width: 101px;height: 32px;'
+								src='https://www.mpl.live/static/hamburger/mpl-logo.png'></a>
+					</div>
+					<div id="anchor-divs">
+						<div class="anchor-sub" id="anchor-1">
+							<div class="sub-sub-anchor"> <a>MPL Games</a>
+								<div onclick="showmenu()" class='menu-tab' style='margin-top:-4px;'>
+								</div>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-2">
+							<div class="sub-sub-anchor" id='div-esports'> <a>MPL Esports</a>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-3">
+							<div class="sub-sub-anchor"> <a>About</a>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-4">
+							<div class="sub-sub-anchor"> <a>Blog</a>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-5">
+							<div class="sub-sub-anchor"> <a>FAQs</a>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-5">
+							<div class="sub-sub-anchor" id='sub-help'><img style="margin-top: 4px;"
+									src='https://www.mpl.live/static/hamburger/help_icon.png'> <a>Help</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="menu-onclick">
+
+					<div class="menu-subdivs" style="margin-left :117px;">
+						<div class="submenu" id="div-no-1">
+							<div class="sub-sub-div">
+								<div class="sub-menu-heading">
+									<img src="https://www.mpl.live/static/hamburger/fantasy_games_icon.png">
+									<h4>Fantasy Games</h4>
+
+								</div><a>
+									<h4>Fantasy cricket</h4>
+								</a>
+								<a>
+									<h4>Fantasy football</h4>
+								</a>
+								<a>
+									<h4>Fantasy basketball</h4>
+								</a>
+							</div>
+							<!-- CARD GAMES -->
+							<div class="sub-sub-div">
+								<div class="sub-menu-heading">
+									<img src="https://www.mpl.live/static/hamburger/card_games_desktop.png">
+									<h4>Card Games</h4>
+
+								</div><a>
+									<h4>Rummy</h4>
+								</a>
+								<a>
+									<h4>Poker</h4>
+								</a>
+								<a>
+									<h4>Call Break</h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="menu-subdivs">
+						<div class="submenu" id="div-no-1">
+							<div class="sub-sub-div">
+								<div class="sub-menu-heading">
+									<img src="https://www.mpl.live/static/hamburger/sports_games_icon.png">
+									<h4>Sports Games</h4>
+
+								</div><a>
+									<h4>Wcc2</h4>
+								</a>
+
+							</div>
+							<div class="sub-sub-div">
+								<div class="sub-menu-heading">
+									<img src="https://www.mpl.live/static/hamburger/casual_games_desktop.png">
+									<h4>Casual Games</h4>
+
+								</div><a>
+									<h4>Carrom</h4>
+								</a>
+								<a>
+									<h4>Pool</h4>
+								</a>
+								<a>
+									<h4>Ludo</h4>
+								</a><a>
+									<h4>Runner No. 1</h4>
+								</a><a>
+									<h4>Monster Truck</h4>
+								</a><a>
+									<h4>Go Ride</h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="menu-subdivs">
+						<div class="submenu" id="div-no-1">
+							<div class="sub-sub-div">
+								<div class="sub-menu-heading">
+									<img src="https://www.mpl.live/static/hamburger/arcade_games_desktop.png">
+									<h4>Arcade Games</h4>
+
+								</div><a>
+									<h4>Fruite Chop</h4>
+								</a>
+								<a>
+									<h4>Fruit Dart</h4>
+								</a>
+								<a>
+									<h4>Fruit Slice</h4>
+								</a>
+							</div>
+							<div class="sub-sub-div">
+								<div class="sub-menu-heading">
+									<img src="https://www.mpl.live/static/hamburger/brain_games_desktop.png">
+									<h4>Brain Games</h4>
+
+								</div><a>
+									<h4>Quiz</h4>
+								</a>
+								<a>
+									<h4>Speed Chess</h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="menu-subdivs" style="margin-right :117px;">
+						<div class="submenu" id="div-no-2">
+							<div class="sub-sub-div">
+								<div class="sub-menu-heading">
+									<img src="https://www.mpl.live/static/hamburger/puzzle_games_desktop.png">
+									<h4>Puzzle Games</h4>
+
+								</div><a>
+									<h4>Bubble Shooter</h4>
+								</a>
+								<a>
+									<h4>Build Up</h4>
+								</a>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		</div>
+		<div id="nextdiv">
+			<div id="after-header">
+				<img id="chiku-bhai" style="width:100%;position:relative;"
+					src="https://www.mpl.live/cledge.mpl.live/pb/website/static/104fb3ce68384045b02cc365ee9827bd.webp"
+					alt="">
+				<div id="form-2-outer" style="display:flex">
+					<div id="form-1-outer">
+						Play Esports Tournaments On MPL App & Win <br>Huge Cash Prizes!<br>
+
+						<div style="display:inline-block;margin-top:24px"><label for="mobile"
+								style="display:inline-block">+91</label><input type="text" id="mobile"
+								name="mobile" minlength="10" maxlength="20" placeholder="Enter mobile number"
+								value="">
+						</div>
+						<div style="display: inline-block"><input type="submit" id="submit-but"
+								value="Get SMS with Download link">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="outer-second">
+			<div class="heading-div-new">
+				<h3 style="font-size:50px;font-weight:550">News Feed</h3>
+
+			</div>
+			<p style="color:rgba(25,10,40,0.6);font-size: 17px;line-height: 24px;">
+				Latest updates about all the MPL Esports events!</p>
+			<div class="news-main-div">
+
+				<div class="inner-news-image-div">
+					<img
+						src='https://www.mpl.live/cledge.mpl.live/pb/website/static/7bcce2e7be9d45f0a8efb962c8f7a22a.png'>
+				</div>
+				<div class="outer-of-news-and-description">
+					<div class="div-after-img-name" style='text-align: left'>Weekly Esports Tournaments are
+						LIVE! Stay Tuned</div>
+					<div class="div-after-img-description" style='text-align:left'>
+						<date>MAY 11, 2021</date>
+						<div class="dot-separetor"></div>
+						2 MONTHS AGO
+					</div>
+				</div>
+			</div>
+			<div class="news-main-div">
+				<div class="inner-news-image-div">
+					<img
+						src='https://www.mpl.live/cledge.mpl.live/pb/website/static/ec58708363a143e1852fb788f47a9e5f.png'>
+				</div>
+				<div class="outer-of-news-and-description">
+					<div class="div-after-img-name" style='text-align:left'>Gamers For India stream will be
+						live on 15th May 7<br> PM onwards</div>
+					<div class="div-after-img-description" style='text-align:left'>
+						<date>MAY 11, 2021</date>
+						<div class="dot-separetor"></div>
+						2 MONTHS AGO
+					</div>
+				</div>
+
+			</div>
+			<div class="div-calengdar-heading">
+				<h3 style="font-size:50px;font-weight:550">Event Calendar</h3>
+			</div>
+			<div class="next-to-calender-div">
+				<h3>Live Events</h3>
+				<div class="event-image"><a herf='https://bit.ly/3tDMcgy' style='z-index:10'>
+						<img
+							src='https://www.mpl.live/cledge.mpl.live/pb/website/static/d7b66ede172c493e89d9332e28968897.png'>
+
+						<div class="event-heading-8-bit">Gamers For India</div>
+						<div class="event-sub-heading">15TH MAY | 7 PM ONWARDS
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="div-calengdar-heading">
+				<h3 style="font-size:50px;font-weight:550">Live Stream</h3>
+			</div>
+			<p
+				style="font-size:16px;color: rgba(25,10,40,0.6);line-height: 20px;margin-bottom: 16px;font-weight: 300 !important;">
+				Semi-Finals & Finals Of Tournaments In Each Game Will Be Live-Streamed On Youtube & Facebook.
+			</p>
+			<div class="live-stream-outer"><img
+					src='https://www.mpl.live/cledge.mpl.live/pb/website/static/a018592f7f5a45c3b702451f9f752239.png'>
+			</div>
+			<div class="upcoming-events">
+				<div class="upcoming-event-img">
+					<img
+						src="https://www.mpl.live/cledge.mpl.live/pb/website/static/b9fc2abe1b044ed7b7ca834450158b69.png">
+				</div>
+				<div class="description-of-event">Gamers For India Livestream</div>
+				<div class="event-upcoming">Upcoming</div>
+			</div>
+			<div class="social-media-handles">
+				<div class="log-facebook">
+					<img src="https://www.mpl.live/static/esports/yt_icon.png" alt="yt stream"
+						class="log-facebook">
+					<div class="logo-name">YouTube</div>
+				</div>
+				<div class="log-facebook">
+					<img src="https://www.mpl.live/static/esports/fb_icon.png" alt="yt stream"
+						class="log-facebook">
+					<div class="logo-name-second">Facebook</div>
+				</div>
+			</div>
+			<div class="div-calengdar-heading">
+				<h3 style="font-size:50px;font-weight:550">Recent Winners</h3>
+			</div>
+
+			<!-- HERE IS LIST OF RECENT WINNERS IN X-SCROLLABLE FORM-->
+
+
+			<div class="winner-celebration-outer">
+				<div class=" uniq-winner-card" style="margin-left: 0px;">
+					<div class="category-of-winner-game">
+						<div class="left-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/esport_arena_winner.png'>
+						</div>
+						<div class="right-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/game_chess_winner.png'>
+						</div>
+					</div><img src="https://www.mpl.live/static/esports/rishi_winner.png">
+					<h3 class="rank-position"
+						style="margin:10px 0;font-size: 12px;text-decoration: none;font-weight: 500;">
+						WINNER</h3>
+					<h3 class="winner-name"
+						style="margin:10px 0;font-size: 10px;text-decoration: none;font-weight: 100;line-height: 20px;">
+						RISHI</h3>
+					<h3 class="Winning-price"
+						style="margin:10px 0	;font-size: 28px;text-decoration: none;font-weight: 600;line-height:24px;color:#FF164D">
+						Won ₹1.5 Lakhs</h3>
+				</div>
+				<div class=" uniq-winner-card" style="margin-left: 0px;">
+					<div class="category-of-winner-game">
+						<div class="left-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/esport_arena_winner.png'>
+						</div>
+						<div class="right-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/game_chess_winner.png'>
+						</div>
+					</div><img src="https://www.mpl.live/static/esports/navneet_winner.png">
+					<h3 class="rank-position"
+						style="margin:8px 0; font-size: 12px;text-decoration: none;font-weight: 500;">
+						RUNNER-UP</h3>
+					<h3 class="winner-name"
+						style="margin:10px 0;font-size: 10px;text-decoration: none;font-weight: 100;line-height: 20px;">
+						NEVNEET</h3>
+					<h3 class="Winning-price"
+						style="margin:8px 0	;font-size: 28px;text-decoration: none;font-weight: 600;line-height:24px;color:#FF164D">
+						Won ₹90,000</h3>
+				</div>
+				<div class=" uniq-winner-card" style="margin-left: 0px;">
+					<div class="category-of-winner-game">
+						<div class="left-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/esport_arena_winner.png'>
+						</div>
+						<div class="right-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/game_chess_winner.png'>
+						</div>
+					</div><img src="https://www.mpl.live/static/esports/vijaya_winner.png">
+					<h3 class="rank-position"
+						style="margin:8px 0;font-size: 12px;text-decoration: none;font-weight: 500;">
+						SEMI-FINALIST</h3>
+					<h3 class="winner-name"
+						style="margin:10px 0;font-size: 10px;text-decoration: none;font-weight: 100;line-height: 20px;">
+						VIJAYA</h3>
+					<h3 class="Winning-price"
+						style="margin:8px 0	;font-size: 28px;text-decoration: none;font-weight: 600;line-height:24px;color:#FF164D">
+						Won ₹50,000</h3>
+				</div>
+				<div class=" uniq-winner-card" style="margin-left: 0px;">
+					<div class="category-of-winner-game">
+						<div class="left-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/esport_arena_winner.png'>
+						</div>
+						<div class="right-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/game_chess_winner.png'>
+						</div>
+					</div><img src="https://www.mpl.live/static/esports/rahul_winner.png">
+					<h3 class="rank-position"
+						style="margin:8px 0;font-size: 12px;text-decoration: none;font-weight: 500;">
+						SEMI-FINALIST</h3>
+					<h3 class="winner-name"
+						style="margin:10px 0;font-size: 10px;text-decoration: none;font-weight: 100;line-height: 20px;">
+						RAHUL</h3>
+					<h3 class="Winning-price"
+						style="margin:8px 0	;font-size: 28px;text-decoration: none;font-weight: 600;line-height:24px;color:#FF164D">
+						Won ₹50,000 </h3>
+				</div>
+				<div class=" uniq-winner-card" style="margin-left: 0px;">
+					<div class="category-of-winner-game">
+						<div class="left-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/esport_arena_winner.png'>
+						</div>
+						<div class="right-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/game_pool_winner.png'>
+						</div>
+					</div><img src="https://www.mpl.live/static/esports/winner_pool_aman.png">
+					<h3 class="rank-position"
+						style="margin:8px 0;font-size: 12px;text-decoration: none;font-weight: 500;">
+						WINNER</h3>
+					<h3 class="winner-name"
+						style="margin:10px 0;font-size: 10px;text-decoration: none;font-weight: 100;line-height: 20px;">
+						AMAN</h3>
+					<h3 class="Winning-price"
+						style="margin:8px 0	;font-size: 28px;text-decoration: none;font-weight: 600;line-height:24px;color:#FF164D">
+						Won ₹5 Lakhs </h3>
+				</div>
+				<div class=" uniq-winner-card" style="margin-left: 0px;">
+					<div class="category-of-winner-game">
+						<div class="left-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/esport_arena_winner.png'>
+						</div>
+						<div class="right-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/game_pool_winner.png'>
+						</div>
+					</div><img src="https://www.mpl.live/static/esports/winner_pool_aadarsh.png">
+					<h3 class="rank-position"
+						style="margin:8px 0;font-size: 12px;text-decoration: none;font-weight: 500;">
+						SEMI-FINALIST</h3>
+					<h3 class="winner-name"
+						style="margin:10px 0;font-size: 10px;text-decoration: none;font-weight: 100;line-height: 20px;">
+						AADARSH</h3>
+					<h3 class="Winning-price"
+						style="margin:8px 0	;font-size: 28px;text-decoration: none;font-weight: 600;line-height:24px;color:#FF164D">
+						Won ₹50,000 </h3>
+				</div>
+				<div class=" uniq-winner-card" style="margin-left: 0px;">
+					<div class="category-of-winner-game">
+						<div class="left-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/esport_arena_winner.png'>
+						</div>
+						<div class="right-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/game_pool_winner.png'>
+						</div>
+					</div><img src="https://www.mpl.live/static/esports/winner_pool_rahul.png">
+					<h3 class="rank-position"
+						style="margin:8px 0;font-size: 12px;text-decoration: none;font-weight: 500;">
+						SEMI-FINALIST</h3>
+					<h3 class="winner-name"
+						style="margin:10px 0;font-size: 10px;text-decoration: none;font-weight: 100;line-height: 20px;">
+						RAHUL</h3>
+					<h3 class="Winning-price"
+						style="margin:8px 0	;font-size: 28px;text-decoration: none;font-weight: 600;line-height:24px;color:#FF164D">
+						Won ₹50,000 </h3>
+				</div>
+				<div class=" uniq-winner-card" style="margin-left: 0px;">
+					<div class="category-of-winner-game">
+						<div class="left-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/esport_arena_winner.png'>
+						</div>
+						<div class="right-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/game_pool_winner.png'>
+						</div>
+					</div><img src="https://www.mpl.live/static/esports/winner_pool_amit.png">
+					<h3 class="rank-position"
+						style="margin:8px 0; font-size: 12px;text-decoration: none;font-weight: 500;">
+						RUNNER-UP</h3>
+					<h3 class="winner-name"
+						style="margin:10px 0;font-size: 10px;text-decoration: none;font-weight: 100;line-height: 20px;">
+						AMIT</h3>
+					<h3 class="Winning-price"
+						style="margin:8px 0	;font-size: 28px;text-decoration: none;font-weight: 600;line-height:24px;color:#FF164D">
+						Won ₹90,000 </h3>
+				</div>
+			</div>
+			<div class="div-calengdar-heading">
+				<h3 style="font-size:50px;font-weight:550">Match Videos</h3>
+			</div>
+			<div class="winner-celebration-outer" id='youtube-iframe'>
+				<a style='margin-left: 0px !important;'>
+					<div class='inner-youtube-frame' style='margin-left: 0px !important;'>
+						<iframe
+							src="https://www.youtube.com/embed/jj3EiZRD2Jk?enablejsapi=1&origin=https%3A%2F%2Fwww.mpl.live"
+							frameborder=" 0"></iframe>
+						<div class="youtube-iframe-subheading"><img
+								src='https://www.mpl.live/static/esports/wcc_stream.png'>
+							<div>
+								<h3>WCC Masters™ Grand Finale</h3>
+								<h4>WCC MASTERS</h4>
+							</div>
+						</div>
+					</div>
+				</a><a>
+					<div class='inner-youtube-frame'>
+						<iframe
+							src="https://www.youtube.com/embed/FIj935OjBQQ?enablejsapi=1&origin=https%3A%2F%2Fwww.mpl.live"
+							frameborder=" 0"></iframe>
+						<div class="youtube-iframe-subheading"><img
+								src='https://www.mpl.live/static/esports/wcc_stream.png'>
+							<div>
+								<h3>WCC Masters™ Grand Finale</h3>
+								<h4>WCC MASTERS</h4>
+							</div>
+						</div>
+					</div>
+				</a><a>
+					<div class='inner-youtube-frame'>
+						<iframe
+							src="https://www.youtube.com/embed/jj3EiZRD2Jk?enablejsapi=1&origin=https%3A%2F%2Fwww.mpl.live"
+							frameborder=" 0"></iframe>
+						<div class="youtube-iframe-subheading"><img
+								src='https://www.mpl.live/static/esports/wcc_stream.png'>
+							<div>
+								<h3>WCC Masters™ Grand Finale</h3>
+								<h4>WCC MASTERS</h4>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="div-calengdar-heading">
+				<h3 style="font-size:50px;font-weight:550">Testimonials</h3>
+			</div>
+			<div class="testimonals-outer">
+				<div style="margin-left: 0px;">
+					<div style="margin:6px;width:388;height:466px;">
+						<div class="box-svg-icon" style="margin-top: 64px;margin-left:70px;"><svg fill="none"
+								height="21" viewBox="0 0 38 21" width="38" xmlns="http://www.w3.org/2000/svg">
+								<path clip-rule="evenodd"
+									d="m1.45482 18.8027 34.35018-18.677896c.7929-.431134 1.7061.32576 1.4296 1.184886l-6.0113 18.67791c-.133.4134-.5177.6936-.9519.6936h-28.33888c-1.036711 0-1.388476-1.3833-.4777-1.8785z"
+									fill="#680485" fill-rule="evenodd" opacity=".2" class="jsx-220105925">
+								</path>
+							</svg>
+						</div>
+						<div class='testimonal-image'>
+							<img src='https://www.mpl.live/static/esports/testimonial_alen.png'>
+						</div>
+						<div class="testimonal-text-content">
+							<h4>ALEN</h4>
+							<h5>NIT, Calicut</h5>
+							"I came to know about MPL from my college friends. I play Rogue Heist, WCC,
+							Speed Chess and Pool. I have earned about
+							5.63L so far. The application is friendly to use, the customer support system is
+							also quick to respond and is very
+							helpful.”
+						</div>
+					</div>
+				</div>
+				<div>
+					<div style="margin:6px;width:388;height:466px;">
+						<div class="box-svg-icon" style="margin-top: 64px;margin-left:70px;overflow: hidden;"><svg
+								fill="none" height="21" viewBox="0 0 38 21" width="38"
+								xmlns="http://www.w3.org/2000/svg">
+								<path clip-rule="evenodd"
+									d="m1.45482 18.8027 34.35018-18.677896c.7929-.431134 1.7061.32576 1.4296 1.184886l-6.0113 18.67791c-.133.4134-.5177.6936-.9519.6936h-28.33888c-1.036711 0-1.388476-1.3833-.4777-1.8785z"
+									fill="#680485" fill-rule="evenodd" opacity=".2">
+								</path>
+							</svg>
+						</div>
+						<div class='testimonal-image'>
+							<img src='https://www.mpl.live/static/esports/testimonials_anushk.png'>
+						</div>
+						<div class="testimonal-text-content">
+							<h4>Anshuk</h4>
+							<h5>IIT, Indore</h5>
+							"I was introduced to the MPL app by my friend. I play Rogue Heist and Chess
+							mostly on MPL and I have earned 70,000/-.
+							The app is amazing, we can compete against each other and show who is better.”
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="div-calengdar-heading">
+				<h3 style="font-size:50px;font-weight:550">FAQs</h3>
+			</div>
+			<div class="faq-uniq-div" style="margin-top: 40px;">
+				<div class="container">
+					<button type="button" class="collapsible">What Is MPL - Weekly Esports Arena?</button>
+					<div class="content">
+						<p>Weekly sports Arena is a platform for the players to make a name for themselves in the
+							Esports Community. The idea of
+							hosting a weekly tournament is to cultivate an esports culture and build the existing
+							gaming community for all our MPL
+							games.</p>
+					</div>
+					<button type="button" class="collapsible">What are the benefits of Esports?</button>
+					<div class="content">
+						<p>MPL Esports gives the players a platform to make a name for themselves in the gaming
+							community. Players can participate
+							in the Esports tournaments and can earn money by winning games.</p>
+					</div>
+					<button type="button" class="collapsible">What is the league age range?</button>
+					<div class="content">
+						<p>All Esports tournaments are open for participation to individuals above the age of 18
+							years.</p>
+					</div>
+					<button type="button" class="collapsible">Are there additional fees?</button>
+					<div class="content">
+						<p>All Esports tournaments are free as of now. Participants do not have to pay any amount
+							for the registrations. Also there
+							are no hidden/additional fees.</p>
+					</div><button type="button" class="collapsible">Do I have to attend every game?</button>
+					<div class="content">
+						<p>In an Esports tournament, you will have to play a game as per the schedule. The
+							schedule of your game will be
+							communicated to you by SMSs or notifications.</p>
+					</div><button type="button" class="collapsible">Where can I watch the Esports game
+						live?</button>
+					<div class="content">
+						<p>Yes, major rounds of all Esports tournaments are live-streamed on Youtube & Facebook.
+							You can check the live stream
+							schedule of an Esports tournament in the 'Live Streams' section of the website.</p>
+					</div>
+				</div>
+				</section>
+			</div>
+		</div>
+		<div class="payment-div" style="text-align:center">
+			<div class="div-calengdar-heading">
+				<h3 style="font-size:50px;font-weight:900;margin-top: -40px;color:#222222">Get a Great Experience on
+					MPL</h3>
+			</div>
+			<section class="payment">
+				<div>
+					<img class='trust-image' src="https://www.mpl.live/static/trust-icons/trust-1.png" />
+					<h4>6 Coror+ </h4>
+					<p>Users</p>
+
+				</div>
+				<div>
+					<img class='trust-image' src="https://www.mpl.live/static/trust-icons/trust-2.png" />
+					<h4>100% Secure</h4>
+					<p>& Legal</p>
+				</div>
+				<div>
+					<img class='trust-image' src="https://www.mpl.live/static/trust-icons/trust-3.png" />
+					<h4>24x7</h4>
+					<p>Customer Support</p>
+				</div>
+				<div>
+					<img class='trust-image' src="https://www.mpl.live/static/trust-icons/trust-4.png" />
+					<h4>Cashback</h4>
+					<p>Offers</p>
+				</div>
+			</section>
+		</div>
+		<section class="sponsor">
+			<div class="sp1">
+				<h2>Proud Sponsor Of</h2>
+			</div>
+			<div class="sp2">
+				<div class="kkr">
+					<img src="https://www.mpl.live/static/sponsors/rcb_logo.png" />
+				</div>
+				<div class="kkr">
+					<img src="https://www.mpl.live/static/sponsors/kkr_logo.png" />
+				</div>
+				<div class="kkr">
+					<img src="https://www.mpl.live/static/2x/bboss.png" />
+				</div>
+
+			</div>
+		</section>
+		</section>
+
+		<div class="head1">
+			<h2 style="font-size: 45px;padding:70px;color:#222222">MPL Is A Member Of</h2>
+			<section class="payment">
+				<div>
+					<img class='member-of' src="https://www.mpl.live/static/trust-icons/aigf.png" />
+				</div>
+				<div>
+					<img class='member-of' src="https://www.mpl.live/static/trust-icons/ficci.png" />
+				</div>
+				<div>
+					<img class='member-of' src="https://www.mpl.live/static/trust-icons/trf.png" />
+				</div>
+				<div>
+					<img class='member-of' src="https://www.mpl.live/static/trust-icons/IAMAI.png" />
+				</div>
+			</section>
+		</div>
+
+		</div>
+	</body>
+
+</html>
+<script>
+	var flag = false;
+	function showmenu() {
+		let menu = document.getElementById('menu-onclick');
+		let navdiv = document.getElementById('navigation-div');
+		menu.style.transitionDuration = '2000ms'
+		if (!flag) {
+			menu.style.display = 'flex'; flag = true;
+			navdiv.style.maxHeight = '100%'
+		}
+		else {
+			menu.style.display = 'none'; flag = false
+			navdiv.style.maxHeight = '100px'
+		}
+	} var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.display === "block") {
+				content.style.display = "none";
+			} else {
+				content.style.display = "block";
+			}
+		});
+	}
+</script>

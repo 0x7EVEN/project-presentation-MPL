@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet"
+			href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet"
+			href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+		<style>
+			* {
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+
+			#navigation-header {
+				position: fixed;
+				/* border: 1px solid black; */
+			}
+
+			#navigation-div {
+				position: fixed;
+				/* border: 1px solid black; */
+				align-items: center;
+				justify-content: space-between;
+				font-size: 14px;
+				width: 100%;
+				/* height: 100%; */
+				display: fixed;
+				background: #fff;
+				font-family: roboto, sans-serif;
+				z-index: 1001;
+				position: fixed;
+				top: 0;
+				left: 0;
+				max-height: 90px;
+				overflow: hidden;
+				outline: none !important;
+			}
+
+			#navigation-div>div {
+				display: fixed;
+				margin: 16px 0;
+				outline: none !important;
+				/* height: 48px; */
+			}
+
+			#main-logo {
+				margin-left: 117px;
+				width: 101px;
+				height: 32px;
+				outline: none !important;
+			}
+
+			#outer-main {
+				display: flex;
+				align-items: center;
+				width: 100%;
+				justify-content: space-between;
+				outline: none !important;
+			}
+
+			#anchor-divs {
+				position: relative;
+				box-sizing: content-box;
+				margin-right: 117px;
+				width: 906px;
+				display: flex;
+				justify-content: space-evenly;
+				font-weight: 450;
+				font-size: 20px;
+				line-height: 24px;
+				color: #230046;
+				outline: none !important;
+			}
+
+			.anchor-sub {
+				text-align: center;
+				align-items: center;
+				display: flex;
+				font-family: roboto, sans-serif;
+				font-weight: 500;
+			}
+
+			.sub-sub-anchor {
+				padding: 10px
+			}
+
+			#div-esports {
+				background: #33FF66;
+				border-radius: 4px;
+				outline: none !important;
+			}
+
+			#sub-help {
+				font-family: Trim;
+				padding: 12px 32px;
+				color: #E91051;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			#sub-help i {
+				position: relative;
+				width: 40px;
+				height: 40px;
+				margin: 5px;
+			}
+
+			.menu-tab {
+				display: inline-block;
+				width: 8px;
+				height: 8px;
+				border-top: 2px solid #230046;
+				border-left: 2px solid #230046;
+				transition: all 550ms ease-in-out;
+				margin-left: 12px !important;
+				margin-right: 0px !important;
+				transform: rotate(45deg);
+				margin-top: -4px;
+				outline: none !important;
+			}
+
+			.menu-tab:hover {
+				transform: rotate(225deg) !important;
+				margin-top: -6px !important;
+			}
+
+			.menu-subdivs {
+				height: 200;
+			}
+
+			.submenu {
+				margin-top: 40px;
+				line-height: 18px;
+				color: #230046;
+				/* border: 1px solid red; */
+			}
+
+			.sub-menu-heading {
+				display: flex;
+				align-items: center;
+				line-height: 20px;
+			}
+
+			.sub-sub-div+.sub-sub-div {
+				margin-top: 50px;
+				line-height: 18px;
+			}
+
+			.sub-menu-heading>img {
+				width: 44px;
+				height: 44px;
+				margin-right: 15px;
+			}
+
+			.sub-menu-heading h4 {
+				font-weight: 300 !important;
+				font-size: 18px;
+			}
+
+			.sub-menu-heading~a>h4 {
+				font-size: 18px;
+				margin-left: 58px;
+				font-weight: 100 !important;
+				font-family: sans-serif !;
+				margin: 15px;
+				margin-left: 58px;
+			}
+
+			.flexible-div {
+				display: flex;
+				margin: auto;
+				justify-content: space-between;
+				/* border: 1px solid #000; */
+			}
+
+			/*
+			.inner-product {
+				border: 1px solid #000;
+			} */
+
+			#inner-no-1 {
+				flex-basis: 100px;
+			}
+
+			#inner-no-1>img {
+				opacity: 0.4;
+				transition-duration: 600ms;
+			}
+
+			#inner-no-1>img {
+				width: 100px;
+				height: 100px;
+				margin-right: 20px;
+			}
+
+			#inner-no-1>img:hover {
+				opacity: 0.7;
+			}
+
+			.container-outer {
+				width: 80%;
+				margin: 6px auto;
+			}
+
+			#inner-no-2>img {
+				width: 600px;
+				height: 600px;
+			}
+
+			p .banner {
+				font-weight: 500;
+			}
+
+			.size-of-tshirt {
+				display: inline-block;
+				min-width: 30px;
+				margin-right: 10px;
+				font-weight: 500;
+				text-align: center;
+				flex-basis: 30px;
+				padding: 6px;
+				border: 1px solid #000;
+			}
+
+			.size-of-tshirt:hover {
+				background-color: #000;
+				color: white;
+				transition-duration: 400ms;
+			}
+
+			#inner-no-3 {
+				width: 600px;
+				padding: 0px 20px;
+			}
+
+			#add-to-cart {
+				width: 60%;
+				border: 1px solid #000;
+				text-align: center;
+			}
+
+			#count-of-item {
+				display: flex;
+				width: 25%;
+				border: 1px solid #000;
+				margin-right: 10px;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 20px;
+				font-weight: 600;
+
+			}
+
+			#social-media>div {
+				display: inline-block;
+				margin-right: 20px;
+			}
+
+			#social-media img {
+				width: 20px;
+				height: 20px;
+			}
+
+			#social-media img:hover {
+				transition: transformY(5rem)
+			}
+
+			#count-of-item a {
+				font-size: 24px;
+				text-align: center;
+				text-decoration: none;
+			}
+
+			#collapsible-outer {
+				border-bottom: 1px solid #9c9c9c;
+				color: rgb(43, 43, 43);
+				cursor: pointer;
+				width: 100%;
+				font-weight: 500;
+				padding: 20px 0;
+				font-size: 20px;
+				line-height: 28px;
+				justify-content: space-between;
+			}
+
+			#collapsible-outer a {
+				text-decoration: none;
+			}
+
+			.collapsible {
+				font-weight: 500;
+				padding: 10px 0;
+				font-size: 20px;
+				line-height: 28px;
+				background: white;
+				border: 0;
+			}
+
+			.content {
+				display: none;
+				overflow: hidden;
+				text-align: left;
+			}
+
+			.content p {
+				font-size: 16px;
+				font-weight: 400 !important;
+				transition-duration: 600ms;
+			}
+
+			.container {
+				height: 400px;
+				margin: 0 auto;
+				color: rgb(0, 0, 0);
+			}
+
+			.similar-products-div {
+				position: relative;
+			}
+
+			#similar-products {
+				text-align: center;
+			}
+
+			#similar-products>h2 {
+				margin-top: 0px;
+				font-size: 30px;
+			}
+
+			.product-div {
+				text-align: left;
+				position: relative;
+				left: 0;
+				margin-right: 20px;
+			}
+
+			.product-div img {
+				width: 250px;
+				height: 250px;
+				position: relative;
+				right: 0;
+				top: 0;
+			}
+
+			.product-div>p {
+				margin: 5px 0px 2.5px 0;
+			}
+
+			.product-price {
+				margin: 2.5px 0px 5px 0;
+			}
+
+			.product-div>button {
+				padding: 6px 20px;
+				background-color: #FFAB00;
+				border: 0px;
+				color: white;
+				font-size: 16px;
+				font-weight: 400;
+			}
+
+			.product-div:hover .fa-heart {
+				opacity: 1;
+				transition-duration: 600ms;
+			}
+
+
+			.fa-heart {
+				color: #9c9c9c;
+				position: absolute;
+				z-index: 100;
+				opacity: 0;
+			}
+
+			.fa-heart:hover {
+				color: #FF1E46;
+			}
+
+			.heart {
+				position: absolute;
+				top: 5%;
+				right: 15%;
+				z-index: 12;
+			}
+
+			#similar-products-div {
+				display: flex;
+				overflow-x: scroll;
+			}
+
+			#similar-products-div::-webkit-scrollbar {
+				display: none;
+			}
+
+			.footer__top_wrap {
+				background-color: #1a1a18;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: scroll;
+				background-position: center center;
+				color: #ffffff;
+				padding-bottom: 50px;
+			}
+
+			.container-footer {
+				width: 100%;
+			}
+
+			.row {
+				display: flex;
+				width: 80%;
+				margin: auto;
+				border-bottom: 1px solid #fff;
+				color: #B0B5B5
+			}
+
+			.corporate-enquiry {
+				width: 41%;
+				float: left;
+			}
+
+			.row h3 {
+				margin: 16px 0;
+				;
+			}
+
+			.footer__top_wrap a {
+				font-size: 12px;
+				text-decoration: none;
+				color: #B0B5B5
+			}
+
+			#buy-it-now {
+				margin: 10px 0;
+				width: 70%;
+				padding: 5px 20px;
+				text-align: center;
+				background: #FF1E46;
+				color: #fff;
+				font-weight: bold;
+				font-size: 20px;
+			}
+
+			#count {
+				border-left: 1px solid #9ea0a0;
+				border-right: 1px solid #9ea0a0;
+				padding: 6.5px 15px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id="navigation-div" style="margin-top:-4px">
+			<div id="outer-main">
+				<div id="main-logo">
+					<a href='/'><img style='width: 101px;height: 32px;'
+							src='https://www.mpl.live/static/hamburger/mpl-logo.png'></a>
+				</div>
+				<div id="anchor-divs">
+					<div class="anchor-sub" id="anchor-1">
+						<div class="sub-sub-anchor"> <a>Exclusive offers</a>
+						</div>
+					</div>
+					<div class="anchor-sub" id="anchor-2">
+						<a>All Collections</a>
+					</div>
+					<div class="anchor-sub" id="anchor-3">
+						<div class="sub-sub-anchor"> <a>Team India Jersey</a>
+						</div>
+					</div>
+					<div class="anchor-sub" id="anchor-4">
+						<div class="sub-sub-anchor"> <a>ActiveWear</a>
+						</div>
+					</div>
+					<div class="anchor-sub" id="anchor-5">
+						<div class="sub-sub-anchor"> <a>T-shirt</a>
+						</div>
+					</div>
+					<div class="anchor-sub" id="anchor-5">
+						<div class="sub-sub-anchor flexible-div" id='sub-help'>
+
+							<a>
+								<div><i style="font-size:32px" class="las la-search"></i>
+
+								</div>
+							</a>
+							<a>
+								<div> <i style="font-size:32px" class="las la-user"></i></i></div>
+							</a>
+							<a href="cartpage.html" style="text-decoration:none;color:inherit">
+								<div style='position:relative;font-size:26px;;'><i class="fa fa-shopping-cart"
+										style="font-size:32px;z-index: 5;"></i>
+								</div>
+								<div
+									style="opacity:1;position:absolute;top:5px;z-index: 3;right:34px;background-color: #1a1a18; font-size: 15px;;color:#ffffff;width:20px;height:20px;border-radius: 15px;align-items: center;">
+									<span id='cart-count'>0</span>
+								</div>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="outer-nav">
+			<div class="inner-nav" style="width: 80%;margin: auto;margin-top: 100px;font-size:12px;color:black">
+				<b>Home</b>
+				> <b>Team
+					India's Official
+					Jersey</b> > Team India
+				Retro
+				Jersey - Fan Edition
+			</div>
+		</div>
+		<div class="container-outer">
+			<div class="flexible-div">
+				<div class="inner-product" id="inner-no-1">
+					<img onclick="changeImg(this)"
+						src='https://cdn.shopify.com/s/files/1/0553/4793/7465/products/Front_images_77e0befc-c29a-4351-b9d5-4c9602ad630b_360x.jpg?v=1624010090'>
+					<img onclick="changeImg(this)"
+						src='https://cdn.shopify.com/s/files/1/0553/4793/7465/products/Retro-Jersey-VIRAT-Back_360x.jpg?v=1624010084'>
+					<img onclick="changeImg(this)"
+						src='https://cdn.shopify.com/s/files/1/0553/4793/7465/products/retrolimitedoverjerseyfullsleeves-00042_180x.jpg?v=1623767331'>
+				</div>
+				<div class="inner-product" id="inner-no-2"><img class="main-img"
+						src="https://cdn.shopify.com/s/files/1/0553/4793/7465/products/Front_7dee8e52-3e84-4892-8c9b-65e3fcda2d4b.jpg?v=1623350369">
+				</div>
+				<div class="inner-product" id="inner-no-3">
+					<h2 style="margin-top:0px">Team India Retro Jersey - Fan Edition</h2>
+					<div>The Team India Retro Fan Edition Jersey is a stitch-by-stitch match to the official
+						jersey
+						and is a wardrobe essential...</div>
+					<!--  -->
+					<h2>Rs.1599.00</h2>
+					<!--  -->
+					<p style="font-size:8px;font-weight: 400;margin-top: -20px;margin-bottom: 5px;">Price is
+						inclusive of GST.</p><br>
+					<hr style="background-color:rgb(185, 185, 185);" />
+					<!--  -->
+					<p style='margin-top:10px'><span class='banner'>Size : </span><span id='size-tshirt'>S</p>
+					<!--  -->
+					<div id="size-buttons">
+						<div class="size-inner-buttons">
+							<div onclick="replaceSize('1')" class="size-of-tshirt" id="st-1"
+								style='text-decoration:line-through'>XS</div>
+							<div onclick="replaceSize('2')" class="size-of-tshirt" id="st-2">S</div>
+							<div onclick="replaceSize('3')" class="size-of-tshirt" id="st-3">M</div>
+							<div onclick="replaceSize('4')" class="size-of-tshirt" id="st-4">L</div>
+							<div onclick="replaceSize('5')" class="size-of-tshirt" id="st-5">XL</div>
+							<div onclick="replaceSize('6')" class="size-of-tshirt" id="st-6">XXL</div>
+							<div onclick="replaceSize('7')" class="size-of-tshirt" id="st-7"
+								style='text-decoration:line-through'>XXXL</div>
+						</div>
+					</div>
+					<!--  -->
+					<p><span class='banner'>Color : </span><span id='color-tshirt'>Navy</p>
+					<!--  -->
+					<div id="addtocartbutton-outer" class="flexible-div" style="width:80%;margin-left: 0;">
+						<div id="count-of-item" style="text-align:center;">
+							<div onclick="minus(1)" id="minus" style="text-align: left;">-</div>
+							<div id="count">1</div>
+							<div onclick='plus(1)' id="plus" style="text-align:right;">+</div>
+						</div>
+						<div onclick="addToCart(1)" id="add-to-cart" style="padding:6px 10px;"><b>ADD TO CART</b>
+						</div>
+					</div>
+					<!--  -->
+					<div class="buy-now-outer">
+						<div id="buy-it-now">
+							BUY IT NOW
+						</div>
+					</div>
+					<!--  -->
+					<div class="delivery-visitors">
+						<p style="font-weight: 600;font-size:16px"><i class="las la-truck"
+								style="color:#FF1E46"></i> Estimated
+							delivery time is within 7
+							business days.</p>
+
+						<p style="font-weight: 700;font-size:14px;color:#FF1E46"><span id='visiters'>111</span>
+							VISITORS ARE
+							LOOKING THIS PRODUCT !</p>
+					</div>
+					<p style="margin-bottom: 0;">Share with your friends</p>
+					<div id="social-media" style='margin:5px 20px 0 0'>
+
+						<div class="social-media-icons" id="icon-1"><img
+								src="https://img.icons8.com/ios-glyphs/30/000000/facebook-f.png" /></div>
+						<div class="social-media-icons" id="icon-2"><img
+								src="https://img.icons8.com/material-outlined/50/000000/instagram-new.png" />
+						</div>
+						<div class="social-media-icons" id="icon-3"><img
+								src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v2.png" /></div>
+					</div>
+					<div id="more-outer">
+						<div class="container">
+							<div id="collapsible-outer">
+								<button type="button" class="collapsible">More Details</button>
+								<div class="content">
+									<p>The Team India Retro Fan Edition Jersey is a stitch-by-stitch match to
+										the
+										official jersey and is a wardrobe essential
+										for all the cricket fans out there. This navy blue jersey is based on
+										the
+										current official retro kit that Team India
+										wears in all the limited-over matches. Made of 100% polyester, it is
+										designed to offer the ultimate comfort and perfect
+										fit to cricket fans on and off the field.</p>
+									<ul style='font-size:12px;'>
+										<li>Color: Navy
+										<li>Material Care Description: 100% Polyester</li>
+										<li>Fabric: Anti pilling, Moisture absorbing, Breathable fabric</li>
+										<li>Fit: Regular</li>
+										<li>Wash Care: Machine wash, Non iron</li>
+									</ul>
+								</div>
+								<a style="margin-left: 65%;">+</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="similar-products" style="margin-bottom: 40px;margin-top: 60px">
+			<h2>You may also like</h2>
+			<div id="similar-products-div" style="margin:auto;width:80%">
+			</div>
+		</div>
+		<div class="footer__top_wrap">
+			<div class="container-footer">
+				<div class="row">
+					<div style='padding:20px'>
+						<h3 class=""><span class="txt_title">ONLINE SHOPPING</span></h3>
+						<div>
+							<a href="/collections/all-collection">All
+								Collections</a><br>
+							<a href="/collections/exclusive-ind-vs-sl-offer">Exclusive
+								Ind vs SL offer</a><br>
+							<a href="/collections/team-indias-official-jersey">Team India
+								Jerseys</a><br>
+							<a href="/collections/activewear">Activewear</a><br>
+							<a href="/collections/t-shirts">T-shirts</a>
+						</div>
+					</div>
+					<div style='padding:20px'>
+						<h3><span class="txt_title">COMPANY</span></span>
+						</h3>
+						<div>
+							<a href="/pages/about">About Us</a><br>
+							<a href="/pages/contact">Contact us</a><br>
+							<a href="/pages/faq">FAQs</a><br>
+							<a href="https://mplsports.in/blogs/post">Blog</a><br>
+						</div>
+					</div>
+					<div style="padding: 20px;">
+						<h3><span class="txt_title">POLICIES</span>
+						</h3>
+						<div>
+							<a href="/pages/terms-condition">Terms &amp;
+								Conditions</a><br>
+
+							<a href="/pages/privacy-policys">Privacy Policy</a><br>
+
+							<a href="/pages/cancellation-return-and-refund-policy">Cancellation,
+								Return
+								and <br>Refund Policy</a><br>
+							<a href="https://mplsports.shiprocket.co/">Track
+								Order</a><br>
+						</div>
+					</div>
+					<div style="padding:30px">
+						<p>Receive our newsletter on the latest deals and happenings.</p><br>
+						<form method="post" action="/contact#contact_form" id="contact_form"
+							accept-charset="UTF-8" class="js_mail_agree mc4wp-form pr z_100"><input type="hidden"
+								name="form_type"><input type="hidden" name="contact[tags]" value="newsletter">
+							<div style="display:flex;justify-content:center">
+								<div style="padding: 5px 20px;color: #B0B5B5;display: inline-block;">
+									<div style="display: inline-block;"><input type="email"
+											name="contact[email]" placeholder="Your email address" value=""
+											required="required">
+									</div>
+									<div style="display: inline-block"><button
+											style="padding: 5px 10px;color: #B0B5B5;background-color: #000;border:0;display: inline-block;"
+											type="submit"><span>Subscribe</span></button>
+									</div>
+								</div>
+							</div>
+							<div style="padding:20px;"></div>
+						</form><span class="social-media">
+							<a href="https://www.facebook.com/mplsports/"><i class="lab la-facebook-f"
+									style="font-size:22px"></i></a>
+							<a href="https://www.instagram.com/mplsports/"><i style="font-size:22px"
+									class="lab la-instagram"></i></a>
+							<a href="https://twitter.com/mpl_sport"><i style="font-size:22px"
+									class="lab la-twitter"></i></a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div
+				style='text-align: center;display: inline-block;margin-left:180px;margin-top: 20px;padding:10px 60px;background: #FFAB00;font-weight:600;'>
+				<a style='color:#fff !important;' href="">+ CORPORATE ENQUIRY</a>
+			</div>
+			<div style='text-align: center;display: inline-block;margin-left:180px;margin-top: 20px;'>
+				<p style="font-size:8px;">CUSTOMER CARE (MON TO SUN 10:00AM TO 10:00PM)<a
+						href="mailto:mplsportscs@mplgaming.com">
+						mplsportscs@mplgaming.com</a></p>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script>
+	function changeImg(el) {
+		let main = document.getElementById('inner-no-2');
+		let imgMain = document.createElement('img');
+		imgMain.src = el.src;
+		main.innerHTML = null;
+		main.append(imgMain);
+		el.style.border = '1px solid black';
+	}
+
+	var cart = JSON.parse(localStorage.getItem('cart'));
+	if (cart == null) {cart = []}
+	else {cart = JSON.parse(localStorage.getItem('cart'));};
+	var totalCount = document.getElementById('cart-count');
+	totalCount.innerText = cart.length;
+
+
+	function addToCart(i) {
+		var totalCount = document.getElementById('cart-count');
+		var alredy = totalCount.innerText * 1;
+		let inputCount = document.getElementById('count').innerText * 1;
+		totalCount.innerText = cart.length;
+		cart.push(products[i]);
+		localStorage.setItem('cart', JSON.stringify(cart));
+	}
+
+	setInterval(function() {
+		let visiterscount = document.getElementById('visiters');
+		visiterscount.innerText = Math.floor(Math.random() * 50) + 100;
+	}, 2000);
+
+	function plus(n) {
+		let count = document.getElementById('count');
+		let currentcount = count.innerText * 1 + 1;
+		count.innerText = currentcount;
+	}
+	function minus(n) {
+		let count = document.getElementById('count');
+		let currentcount = count.innerText * 1;
+		if (currentcount <= 1) return
+		else {
+			currentcount--;
+			count.innerText = currentcount;
+		}
+	} var previous;
+	function replaceSize(number) {
+		var notavaliable = ['1', '7']; if (previous) {
+			previous.style.background = 'white';
+			previous.style.color = 'black';
+		}
+		if (notavaliable.includes(number)) {
+			let buyitnow = document.getElementById('buy-it-now')
+			buyitnow.style.opacity = '0'; return;
+		}
+
+		let toDisplay = document.getElementById('size-tshirt');
+		let size = document.getElementById(`st-${number}`).innerHTML;
+		document.getElementById(`st-${number}`).style.background = 'black';
+		document.getElementById(`st-${number}`).style.color = 'white';
+		previous = document.getElementById(`st-${number}`)
+		toDisplay.textContent = size;
+		let buyitnow = document.getElementById('buy-it-now')
+		buyitnow.style.opacity = '1';
+	}
+
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			var plus = content.nextElementSibling;
+			if (content.style.display === "block") {
+				content.style.display = "none";
+				plus.innerText = "+"
+			} else {
+				content.style.display = "block";
+				plus.innerText = ""
+			}
+		});
+	}
+
+	var products = [
+		{
+			img: ' https://cdn.shopify.com/s/files/1/0553/4793/7465/products/BCCI-Round-Neck-Tee-Grey-01_360x.jpg?v=1624366706',
+			name: 'Team india Jersey fan edition',
+			imgBack: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/BCCI-Round-Neck-Tee-Grey-Back-01_360x.jpg?v=1624366706'
+			, price: '1,000.00'
+		}, {
+			name: 'stadium jersey',
+			img: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/BCCI-Stadium-Jersey_360x.jpg?v=1623350446'
+			,
+			imgBack: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/Back_1803b31e-06d5-43e4-ac6e-bbe4c9649fc2_720x.jpg?v=1623350369'
+			, price: '1,599.00'
+		}, {
+			name: 'BCCI training jersey',
+			img: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/BCCI-Training-Jersey-Sleeveless-Old_360x.jpg?v=1624639454'
+			,
+			imgBack: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/IMG_3463_540x.jpg?v=1624639455'
+			, price: '999.00'
+		}, {
+			name: 'Cheers Team India-white',
+			img: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/Front_00fd79d7-5df9-45ac-b4de-8d8e59615ef4_360x.jpg?v=1623776642'
+			,
+			imgBack: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/Back_944d8972-ea41-4e6b-ab6a-00154bd0b4b3_540x.jpg?v=1623776642'
+			, price: '999.00'
+		}, {
+			name: 'white jersy One Day',
+			img: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/Front_6a7a4b31-f502-447d-8547-a369ed145449_360x.jpg?v=1623350531'
+			,
+			imgBack: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/Back_cd8ecbf1-177b-4f86-b995-287c27875aec_540x.jpg?v=1623350531'
+			, price: '1,599.00'
+		}
+	];
+
+	for (var i = 0; i < products.length; i++) {
+		appendProduct(products[i], i)
+
+	} function hover(id, toggle) {
+		let theimg = document.getElementById(`${id}`);
+		theimg.src = toggle.imgBack;
+	} function unhover(el, id) {console.log('unhover')}
+	function appendProduct(el, i) {
+		var outerDiv = document.getElementById('similar-products-div');
+		let productDiv = document.createElement('div');
+		productDiv.setAttribute('class', 'product-div');
+		productDiv.addEventListener('mouseenter', function() {
+			let thisimg = document.getElementById(`img-no-${i}`);
+			thisimg.src = el.imgBack;
+		})
+		productDiv.addEventListener('mouseleave', function() {
+			let thisimg2 = document.getElementById(`img-no-${i}`);
+			thisimg2.src = el.img;
+		})
+		productDiv.setAttribute('id', `product-no-${i}`)
+		let img = document.createElement('img');
+		img.setAttribute('id', `img-no-${i}`)
+		img.src = el.img; let iconDiv = document.createElement('div');
+		iconDiv.setAttribute('class', 'heart');
+		iconDiv.innerHTML = `<i onclick='addToCart(${i})' class="fa fa-heart fa-1x"></i>`;
+
+		let namePara = document.createElement('p');
+		namePara.innerHTML = el.name;
+
+		let price = document.createElement('h4');
+		price.setAttribute('class', 'product-price')
+		price.innerHTML = el.price;
+
+		let addCartButton = document.createElement('button');
+		addCartButton.setAttribute('class', 'shop-now')
+		addCartButton.textContent = 'SHOP NOW'
+		addCartButton.setAttribute('class', 'shop-now');
+
+		productDiv.append(img, iconDiv, namePara, price, addCartButton);
+
+		outerDiv.append(productDiv);
+	} var flag = false;
+	function showmenu() {
+		let menu = document.getElementById('menu-onclick');
+		let navdiv = document.getElementById('navigation-div');
+		menu.style.transitionDuration = '2000ms'
+		if (!flag) {
+			menu.style.display = 'flex'; flag = true;
+			navdiv.style.maxHeight = '100%'
+		}
+		else {
+			menu.style.display = 'none'; flag = false
+			navdiv.style.maxHeight = '100px'
+		}
+	} var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+</script>

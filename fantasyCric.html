@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FantasyCricket</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+
+      }
+
+      .header {
+        display: flex;
+        width: 100%;
+        height: 12%;
+      }
+
+      #lefthead {
+        min-width: 30%;
+      }
+
+      #righthead {
+        display: flex;
+        min-width: 70%;
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      #logo {
+        padding-left: 33%;
+        padding-top: 5%;
+
+      }
+
+      #righthead a {
+        color: black;
+      }
+
+      .vit {
+        width: 100%;
+        height: 100%;
+        background-image: url("https://www.mpl.live/cledge.mpl.live/pb/website/static/c2494f8fec734d9d985245a82192e5a0.webp");
+        background-position-x: center;
+        background-color: #230046;
+      }
+
+
+      #help {
+        display: flex;
+        width: 120px;
+        height: 50px;
+        color: rgba(228, 15, 44, 0.918);
+        font-size: large;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .active {
+        background: #33ff66;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .pic_login>h1 {
+        display: inline-block;
+        margin-top: 15%;
+        margin-left: 10%;
+        color: white;
+        font-weight: 600px;
+        font-size: 45px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .head1 {
+        width: 100%;
+        height: 10%;
+      }
+
+      .win {
+        color: white;
+        font-size: 30px;
+        margin-left: 10%;
+      }
+
+      #cash {
+        color: #33ff66;
+
+      }
+
+      .otp {
+        height: 50px;
+        width: 720px;
+        margin-top: 4%;
+        margin-left: 10%;
+        display: flex;
+
+      }
+
+      #getnum {
+        width: 50%;
+        height: 86%;
+        color: black;
+        border-radius: 6px;
+        font-size: 20px;
+
+      }
+
+      #subnum {
+        width: 50%;
+        height: 100%;
+        margin-left: 2%;
+        color: black;
+        border-radius: 5px;
+        background-color: #33ff66;
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .head1>h2 {
+        display: flex;
+        color: #230046;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: 800;
+        margin-top: 10%;
+      }
+
+      .appPara {
+        width: 100%;
+        height: 25%;
+        margin-top: 5%;
+      }
+
+      .appPara>span {
+        display: flex;
+        color: rgba(25, 10, 40, 0.6);
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-weight: 400px;
+        font-style: normal;
+        line-height: 25px;
+        text-align: center;
+      }
+
+      #rate {
+        margin-top: 5%;
+        font-size: 42px;
+      }
+
+      .rating {
+        width: 100%;
+        height: 48%;
+        background-color: white;
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+      }
+
+      #rateImg {
+        height: 100%;
+        width: 60%;
+      }
+
+      .payment {
+        display: flex;
+        width: 60%;
+        height: 40%;
+        background-color: white;
+        justify-content: space-around;
+        margin: auto;
+        text-align: center;
+        color: #230046;
+        font-size: 20px;
+        margin-top: 5%;
+      }
+
+      .usercomm {
+        display: flex;
+        width: 80%;
+        height: 90%;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 25px;
+      }
+
+      .user1 {
+        width: 30%;
+        border-radius: 15px;
+        background-color: #f5e6f9;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 2%;
+      }
+
+      .userphoto {
+        display: flex;
+        width: 100%;
+        height: 30%;
+        justify-content: center;
+      }
+
+      .names {
+        width: 100%;
+        text-align: center;
+        color: #9c00c3;
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 25px;
+      }
+
+      .address {
+        color: rgba(25, 10, 40, 0.6);
+        text-align: center;
+        font-size: 20px;
+      }
+
+      .winning {
+        color: #e91051;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 800;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .userinfo {
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+        color: rgba(25, 10, 40, 0.6);
+        font-family: Arial, Helvetica, sans-serif;
+
+      }
+
+      .appdetails {
+        display: flex;
+        width: 50%;
+        height: 80%;
+
+        margin: auto;
+        justify-content: space-around;
+        margin-top: 25px;
+      }
+
+      .appImage {
+        width: 40%;
+
+      }
+
+      .appImage>img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .appimgdetails {
+        width: 45%;
+        margin-top: 5%;
+      }
+
+      #allgames {
+        font-size: 30px;
+        text-align: center;
+        color: #230046;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 1%;
+        font-weight: 500;
+      }
+
+      .gameslist {
+        width: 100%;
+        height: 90%;
+        background-color: lightblue;
+
+      }
+
+      .exp {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .sponsor {
+        width: 100%;
+        height: 50%;
+        background-color: #230046;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+      }
+
+      .sp1 {
+        height: 30%;
+        width: 100%;
+
+
+      }
+
+      .sp2 {
+        height: 70%;
+        width: 30%;
+        margin: auto;
+        display: flex;
+
+      }
+
+      .sp1>h2 {
+        display: flex;
+        color: white;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 45px;
+        font-weight: 800;
+      }
+
+      .kkr {
+        width: 40%;
+        height: 100%;
+        margin: auto;
+      }
+
+      .kkr>img {
+
+        width: 100%;
+        height: 90%;
+
+      }
+
+      #navigation-header {
+        position: fixed;
+        /* border: 1px solid black; */
+      }
+
+      #navigation-div {
+        position: fixed;
+        /* border: 1px solid black; */
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        width: 100%;
+        /* height: 100%; */
+        display: fixed;
+        background: #fff;
+        font-family: roboto, sans-serif;
+        z-index: 1001;
+        position: fixed;
+        top: 0;
+        left: 0;
+        max-height: 90px;
+        overflow: hidden;
+        outline: none !important;
+      }
+
+      #navigation-div>div {
+        display: fixed;
+        margin: 16px 0;
+        outline: none !important;
+        /* height: 48px; */
+      }
+
+      #main-logo {
+        margin-left: 117px;
+        width: 101px;
+        height: 32px;
+        outline: none !important;
+      }
+
+      #outer-main {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        outline: none !important;
+      }
+
+      #anchor-divs {
+        position: relative;
+        box-sizing: content-box;
+        margin-right: 117px;
+        width: 906px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 450;
+        font-size: 20px;
+        line-height: 24px;
+        color: #230046;
+        outline: none !important;
+      }
+
+      .anchor-sub {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        font-family: roboto, sans-serif;
+        font-weight: 500;
+      }
+
+      .sub-sub-anchor {
+        padding: 10px
+      }
+
+      #div-esports {
+        background: #33FF66;
+        border-radius: 4px;
+        outline: none !important;
+      }
+
+      #sub-help {
+        font-family: Trim;
+        border: 1px solid rgba(25, 10, 40, 0.15);
+        padding: 12px 32px;
+        color: #E91051;
+
+
+      }
+
+      #sub-help>img {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+      }
+
+      .menu-tab {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid #230046;
+        border-left: 2px solid #230046;
+        transition: all 550ms ease-in-out;
+        margin-left: 12px !important;
+        margin-right: 0px !important;
+        transform: rotate(45deg);
+        margin-top: -4px;
+        outline: none !important;
+      }
+
+      .menu-tab:hover {
+        transform: rotate(225deg) !important;
+        margin-top: -6px !important;
+      }
+
+      .menu-subdivs {
+        height: 200;
+      }
+
+      .submenu {
+        margin-top: 40px;
+        line-height: 18px;
+        color: #230046;
+        /* border: 1px solid red; */
+      }
+
+      .sub-menu-heading {
+        display: flex;
+        align-items: center;
+        line-height: 20px;
+      }
+
+      .sub-sub-div {
+        margin: 0 50px;
+      }
+
+      .sub-sub-div+.sub-sub-div {
+        margin-top: 50px;
+        line-height: 18px;
+      }
+
+      .sub-menu-heading>img {
+        width: 44px;
+        height: 44px;
+        margin-right: 15px;
+      }
+
+      .sub-menu-heading h4 {
+        font-weight: 300 !important;
+        font-size: 18px;
+      }
+
+      .mpl-img {
+        max-width: 150px;
+        margin: auto;
+      }
+
+      #long-para {
+        display: none;
+      }
+
+      .about-mpl-game-app {
+        text-align: center;
+      }
+
+      .about-mpl-game-app>p {
+        font-size: 24px;
+        color: rgba(25, 10, 40, 0.6);
+        margin-bottom: 24px;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .about-mpl-game-app span {
+
+
+        color: red;
+        font-size: 24px;
+      }
+
+      .sub-menu-heading~a>h4 {
+        font-size: 18px;
+        margin-left: 58px;
+        font-weight: 100 !important;
+        font-family: sans-serif !;
+        margin: 15px;
+        margin-left: 58px;
+      }
+
+      .collapsible {
+        background-color: #FDE7EE;
+        color: rgb(43, 43, 43);
+        cursor: pointer;
+        padding: 24px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+        line-height: 28px;
+        margin: 12px 12px 0 0;
+        border-radius: 8px;
+      }
+
+      .content {
+        display: none;
+        overflow: hidden;
+
+        color: #828282;
+        text-align: left;
+        padding: 0px 16px 16px 16px;
+        margin-top: -8px;
+        background-color: #FDE7EE;
+
+      }
+
+      .content p {
+        margin: 0 8px 8px 8px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 300 !important;
+      }
+
+      .container {
+        max-width: 760px;
+        height: 100vh;
+        margin: 0 auto;
+        color: rgb(0, 0, 0);
+
+      }
+
+      .footer__top_wrap {
+        background-color: #1a1a18;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center center;
+        color: #ffffff;
+        padding-bottom: 50px;
+      }
+
+      .container-footer {
+        width: 100%;
+      }
+
+      .row {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        border-bottom: 1px solid #fff;
+        color: #B0B5B5
+      }
+
+      .corporate-enquiry {
+        width: 41%;
+        float: left;
+      }
+
+      .row h3 {
+        margin: 16px 0;
+        ;
+      }
+
+      .footer__top_wrap a {
+        font-size: 12px;
+        text-decoration: none;
+        color: #B0B5B5
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="main" style="margin:0">
+      <div id="navigation-div" style="margin-top:-4px">
+        <div id="outer-main">
+          <div id="main-logo">
+            <a href='/'><img style='width: 101px;height: 32px;'
+                src='https://www.mpl.live/static/hamburger/mpl-logo.png'></a>
+          </div>
+          <div id="anchor-divs">
+            <div class="anchor-sub" id="anchor-1">
+              <div class="sub-sub-anchor"> <a>MPL Games</a>
+                <div onclick="showmenu()" class='menu-tab' style='margin-top:-4px;'>
+                </div>
+              </div>
+            </div>
+            <div class="anchor-sub" id="anchor-2">
+              <div class="sub-sub-anchor" id='div-esports'> <a style="text-decoration: none;color:inherit"
+                  href="mpl.html">MPL Esports</a>
+              </div>
+            </div>
+            <div class="anchor-sub" id="anchor-3">
+              <div class="sub-sub-anchor"> <a style='text-decoration:none;color:inherent;' href='tshirtStore.html'>Buy
+                  Products</a>
+              </div>
+            </div>
+            <div class="anchor-sub" id="anchor-4">
+              <div class="sub-sub-anchor"> <a>Blog</a>
+              </div>
+            </div>
+            <div class="anchor-sub" id="anchor-5">
+              <div class="sub-sub-anchor"> <a>FAQs</a>
+              </div>
+            </div>
+            <div class="anchor-sub" id="anchor-5">
+              <div class="sub-sub-anchor" id='sub-help'><img style="margin-top: 4px;"
+                  src='https://www.mpl.live/static/hamburger/help_icon.png'> <a>Help</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="menu-onclick" style='height:700px'>
+
+          <div class="menu-subdivs" style="display:flex;margin-left :117px;">
+            <div class="submenu" id="div-no-1">
+              <div class="sub-sub-div">
+                <div class="sub-menu-heading">
+                  <img src="https://www.mpl.live/static/hamburger/fantasy_games_icon.png">
+                  <h4>Fantasy Games</h4>
+
+                </div><a>
+                  <h4>Fantasy cricket</h4>
+                </a>
+                <a>
+                  <h4>Fantasy football</h4>
+                </a>
+                <a>
+                  <h4>Fantasy basketball</h4>
+                </a>
+              </div>
+              <!-- CARD GAMES -->
+              <div class="sub-sub-div">
+                <div class="sub-menu-heading">
+                  <img src="https://www.mpl.live/static/hamburger/card_games_desktop.png">
+                  <h4>Card Games</h4>
+
+                </div><a>
+                  <h4>Rummy</h4>
+                </a>
+                <a>
+                  <h4>Poker</h4>
+                </a>
+                <a>
+                  <h4>Call Break</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-subdivs">
+            <div class="submenu" id="div-no-1">
+              <div class="sub-sub-div">
+                <div class="sub-menu-heading">
+                  <img src="https://www.mpl.live/static/hamburger/sports_games_icon.png">
+                  <h4>Sports Games</h4>
+
+                </div><a>
+                  <h4>Wcc2</h4>
+                </a>
+
+              </div>
+              <div class="sub-sub-div">
+                <div class="sub-menu-heading">
+                  <img src="https://www.mpl.live/static/hamburger/casual_games_desktop.png">
+                  <h4>Casual Games</h4>
+
+                </div><a>
+                  <h4>Carrom</h4>
+                </a>
+                <a>
+                  <h4>Pool</h4>
+                </a>
+                <a>
+                  <h4>Ludo</h4>
+                </a><a>
+                  <h4>Runner No. 1</h4>
+                </a><a>
+                  <h4>Monster Truck</h4>
+                </a><a>
+                  <h4>Go Ride</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-subdivs">
+            <div class="submenu" id="div-no-1">
+              <div class="sub-sub-div">
+                <div class="sub-menu-heading">
+                  <img src="https://www.mpl.live/static/hamburger/arcade_games_desktop.png">
+                  <h4>Arcade Games</h4>
+
+                </div><a>
+                  <h4>Fruite Chop</h4>
+                </a>
+                <a>
+                  <h4>Fruit Dart</h4>
+                </a>
+                <a>
+                  <h4>Fruit Slice</h4>
+                </a>
+              </div>
+              <div class="sub-sub-div">
+                <div class="sub-menu-heading">
+                  <img src="https://www.mpl.live/static/hamburger/brain_games_desktop.png">
+                  <h4>Brain Games</h4>
+
+                </div><a>
+                  <h4>Quiz</h4>
+                </a>
+                <a>
+                  <h4>Speed Chess</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-subdivs" style="margin-right :117px;">
+            <div class="submenu" id="div-no-2">
+              <div class="sub-sub-div">
+                <div class="sub-menu-heading">
+                  <img src="https://www.mpl.live/static/hamburger/puzzle_games_desktop.png">
+                  <h4>Puzzle Games</h4>
+
+                </div><a>
+                  <h4>Bubble Shooter</h4>
+                </a>
+                <a>
+                  <h4>Build Up</h4>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vit">
+      <div class="pic_login">
+        <h1><span>DOWNLOAD FANTASY CRICKET APP</span></h1>
+      </div>
+      <div class="win">
+        <span>Win Daily</span>
+        <span id="cash">Cash Prizes</span>
+      </div>
+      <div class="otp">
+        <input type="text" placeholder="Enter mobile number" id="getnum">
+        <button id="subnum">Get SMS With Download Link</button>
+      </div>
+    </div>
+    <div class="head1">
+      <h2>DOWNLOAD FANTASY CRICKET APP & Win Big</h2>
+    </div>
+    <div class="appPara">
+      <span>Ever wondered what it would be like to not just watch live cricket but also become a selector, curate your
+        team and win real cash through
+        fantasy sports? Fantasy cricket in India is trending for all the right reasons. MPL is one of the best fantasy
+        cricket apps, that takes your
+        love for the sport to another level. Get started by downloading the MPL fantasy app, build your fantasy dream
+        team, play a game, and win
+        real cash daily.</span>
+    </div>
+    <div class="head1">
+      <h2 id="rate">Our Ratings</h2>
+    </div>
+    <div class="rating">
+      <img src="https://www.mpl.live/static/fantasy/fantasy_cricket_ratings.png" id="rateImg" />
+    </div>
+
+
+
+
+
+
+
+    <div class="head1">
+      <h2>Withdraw Winnings With</h2>
+    </div>
+    <section class="payment">
+      <div>
+        <img src="https://www.mpl.live/static/withdraw/new-icons/paytm.png" />
+        <p>Payment Wallet</p>
+      </div>
+      <div>
+        <img src="https://www.mpl.live/static/withdraw/new-icons/upi.png" />
+        <p>UPI</p>
+      </div>
+      <div>
+        <img src="https://www.mpl.live/static/withdraw/new-icons/amazon_pay.png" />
+        <p>Amazon Pay</p>
+      </div>
+      <div>
+        <img src="https://www.mpl.live/static/withdraw/new-icons/bank_transfer.png" />
+        <p>Bank Transfer</p>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <div class="head1">
+      <h2 style="color:black;margin-top:5%;">Trusted by 6 Crore+ Indians</h2>
+    </div>
+    <section class="usercomm">
+      <div class="user1">
+        <div class="userphoto">
+          <img src="https://www.mpl.live/static/banners/user_epicenter-satish.png" style="height:100%;" />
+        </div>
+        <div class="names">
+          SATISH KUMAR
+        </div>
+        <div class="address">
+          Faridabad, Haryana
+        </div>
+        <div class="winning">
+          WON ₹11 LAKH!
+        </div>
+
+        <div class="userinfo">
+
+          <p> MPL is like a lucky bank balance
+            for me. It gave a once in a lifetime
+            opportunity to meet Virat Kohli.
+            The platform lets me earn money
+            using my expertise and rich
+            knowledge in Cricket and other
+            sports.</p>
+
+        </div>
+      </div>
+
+
+      <div class="user1">
+        <div class="userphoto">
+          <img src="https://www.mpl.live/static/banners/user_epicenter.png" style="height:100%;" />
+        </div>
+        <div class="names">
+          KULDEEP TOMAR
+        </div>
+        <div class="address">
+          Baghpat, UP
+        </div>
+        <div class="winning">
+          WON ₹63 LAKH
+
+        </div>
+
+
+        <div class="userinfo">
+
+          <p>My friend told me about MPL. It has lots
+            of games. I started playing Fruit Chop
+            and rummy. Within a year I won Four lakh
+            while having fun playing games. MPL
+            helped me, solve my financial problems. I
+            paid for my kid's school fees. Recently I
+            also bought an iPhone to play on MPL. </p>
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="user1">
+        <div class="userphoto">
+          <img src="https://www.mpl.live/static/banners/user_epicenter-akash.png" style="height:100%;" />
+        </div>
+        <div class="names">
+          AKASH SAITAB
+        </div>
+        <div class="address">
+          Darbangha, Bihar
+        </div>
+        <div class="winning">
+          WON ₹35 LAKH
+
+        </div>
+
+        <div class="userinfo">
+
+          <p> MPL has a great collection of fun
+            games that gives you a chance
+            to earn money as well. I've won
+            around ₹8 Lakh playing Fruit Dart,
+            Runner and various other games.</p>
+
+        </div>
+      </div>
+    </section>
+    <div class="head1">
+      <h2>What Is Fantasy Cricket?</h2>
+    </div>
+    <div class="appPara">
+      <span>Fantasy cricket, as the name suggests, is an online fantasy game where you can create a virtual cricket team
+        of 11 players from an upcoming real-life match.</span>
+    </div>
+
+
+
+
+
+
+
+
+    <section class="appdetails">
+      <div class="appImage">
+        <img src="https://www.mpl.live/static/fantasy/how-to-play/image_1.png" />
+      </div>
+      <div class="appimgdetails userinfo">
+        <p>Once you have downloaded the MPL app on your phone, click on the fantasy cricket option.
+          You will be taken to a page that has the schedule of “Upcoming Matches.” On
+          MPL you can play a variety of cash contests including Tests, ODIs, T20Is, and T10 games too.
+          In addition, we have various domestic T20 fantasy cricket leagues on the roster as well.
+          Whether it is a T20 match you want to play or participate in a Test match,
+          just click on a contest and start creating your fantasy cricket team.</p>
+      </div>
+    </section>
+
+
+    <section class="appdetails">
+      <div class="appImage">
+        <img src="https://www.mpl.live/static/fantasy/how-to-play/image_2.png" />
+      </div>
+      <div class="appimgdetails userinfo">
+        <p>As mentioned before, the MPL fantasy cricket app offers you different fantasy cricket contests,
+          such as Grand Contest, Head-to-head, Contest of Champions, Winners Takes All, and practice contests.</p>
+      </div>
+    </section>
+
+
+
+    <section class="appdetails">
+      <div class="appImage">
+        <img src="https://www.mpl.live/static/fantasy/how-to-play/image_3.png" />
+      </div>
+      <div class="appimgdetails userinfo">
+        <p>If you are a new fantasy cricket player, you can play the free practice
+          contest to get a feel of the fantasy app. At an advanced level, you
+          can play the smaller cricket fantasy leagues where the investment is
+          not too high and competition is slightly lesser. If you are at a pro-level,
+          you can go for the "Grand" and "Winner Takes All" types of contests where the
+          risk is high, but the returns are also excellent. Depending on the contest,
+          you can also create multiple teams, which automatically increases your chances
+          of winning.</p>
+      </div>
+    </section>
+
+
+
+    <section class="appdetails">
+      <div class="appImage">
+        <img src="https://www.mpl.live/static/fantasy/how-to-play/image_4.png" />
+      </div>
+      <div class="appimgdetails userinfo">
+        <p>Once you have selected the contest, you can proceed to pick the teams.
+          This is where your skills come to the fore. Picking the right players
+          on the day is extremely important. Carefully research the ground
+          conditions, weather, opponents, and players before finalizing the team.
+          Pick a captain and vice-captain and save and register your team.</p>
+      </div>
+    </section>
+
+
+
+    <section class="appdetails">
+      <div class="appImage">
+        <img src="https://www.mpl.live/static/fantasy/how-to-play/image_5.png" />
+      </div>
+      <div class="appimgdetails userinfo">
+        <p>Follow the match and track how your players are performing through the score updates.
+          If you are in the winning zone on the leaderboard, whatever cash prize you have
+          won will be credited instantly to your account soon after the scoring is done
+          for a match. </p>
+      </div>
+    </section>
+    <div class="appPara">
+      <span>You can view all the contests that you have joined in the "Joined" tab. On the MPL fantasy cricket app,
+        you can make as many edits to your team until the first ball of the match is bowled. </span>
+
+    </div>
+
+    <div class="head1">
+      <h2>How To Create Your Fantasy Cricket Dream Team?</h2>
+    </div>
+    <div class="about-mpl-game-app" style='width: 80%;margin:auto'>
+
+      <p id="short-para">Mobile Premier League (MPL) is an online gaming platform that offers a plethora of games -
+        fantasy
+        sports, Rummy, Chess, Quiz, Fruit Chop, 8 ball 3D Pool, Carrom and more! Play and win real cash for playing your
+        favorite mobile games. Sounds fun, right?
+
+      </p>
+
+
+
+      <p id="long-para">Mobile Premier League (MPL) is an online gaming platform that offers a plethora of games -
+        fantasy
+        sports,Rummy, Chess, Quiz, Fruit Chop, 8 ball 3D Pool, Carrom and more! Play and win real cash for playing your
+        favorite mobile games. Sounds fun, right? With MPL, you can play 40+ games including fantasy sports on your
+        mobile
+        to win great prizes. MPL offers the ultimate gaming experience, which makes you want to play more & win more.
+        Take
+        your pick from adventure, action, sports & many other categories.
+
+        With games like Rummy, Chess, Ludo, Carrom, Cricket, and Bubble Shooter, we have them all. Play games on the MPL
+        app
+        and make it to the top of the leaderboards. Connect with your friends and see who the real winner is. You also
+        get a
+        referral bonus for every referral you make.
+
+        You can download the MPL PRO (apk) app from here for Android, while iOS users can get it from the Apple app
+        store.
+
+      </p>
+      <div sytle='display:inline-block;margin:auto;border:1px solid red;'><span id="paratext"
+          onclick="moreText()">&#x21cA More</span>
+      </div>
+    </div>
+
+    <div class="head1">
+      <h2>Fantasy Cricket Points System</h2>
+    </div>
+    <div class="about-mpl-game-app" style='width: 80%;margin:auto'>
+
+      <p id="short-para">Mobile Premier League (MPL) is an online gaming platform that offers a plethora of games -
+        fantasy
+        sports, Rummy, Chess, Quiz, Fruit Chop, 8 ball 3D Pool, Carrom and more! Play and win real cash for playing your
+        favorite mobile games. Sounds fun, right?
+
+      </p>
+
+
+
+      <p id="long-para">Mobile Premier League (MPL) is an online gaming platform that offers a plethora of games -
+        fantasy
+        sports,Rummy, Chess, Quiz, Fruit Chop, 8 ball 3D Pool, Carrom and more! Play and win real cash for playing your
+        favorite mobile games. Sounds fun, right? With MPL, you can play 40+ games including fantasy sports on your
+        mobile
+        to win great prizes. MPL offers the ultimate gaming experience, which makes you want to play more & win more.
+        Take
+        your pick from adventure, action, sports & many other categories.
+
+        With games like Rummy, Chess, Ludo, Carrom, Cricket, and Bubble Shooter, we have them all. Play games on the MPL
+        app
+        and make it to the top of the leaderboards. Connect with your friends and see who the real winner is. You also
+        get a
+        referral bonus for every referral you make.
+
+        You can download the MPL PRO (apk) app from here for Android, while iOS users can get it from the Apple app
+        store.
+
+      </p>
+      <div sytle='display:inline-block;margin:auto;border:1px solid red;'><span id="paratext"
+          onclick="moreText()">&#x21cA
+          More</span>
+      </div>
+    </div>
+
+
+    <div class="head1">
+      <h2>Types Of Fantasy Cricket Leagues</h2>
+    </div>
+    <div class="about-mpl-game-app" style='width: 80%;margin:auto'>
+
+      <p id="short-para">Mobile Premier League (MPL) is an online gaming platform that offers a plethora of games -
+        fantasy
+        sports, Rummy, Chess, Quiz, Fruit Chop, 8 ball 3D Pool, Carrom and more! Play and win real cash for playing your
+        favorite mobile games. Sounds fun, right?
+
+      </p>
+
+
+
+      <p id="long-para">Mobile Premier League (MPL) is an online gaming platform that offers a plethora of games -
+        fantasy
+        sports,Rummy, Chess, Quiz, Fruit Chop, 8 ball 3D Pool, Carrom and more! Play and win real cash for playing your
+        favorite mobile games. Sounds fun, right? With MPL, you can play 40+ games including fantasy sports on your
+        mobile
+        to win great prizes. MPL offers the ultimate gaming experience, which makes you want to play more & win more.
+        Take
+        your pick from adventure, action, sports & many other categories.
+
+        With games like Rummy, Chess, Ludo, Carrom, Cricket, and Bubble Shooter, we have them all. Play games on the MPL
+        app
+        and make it to the top of the leaderboards. Connect with your friends and see who the real winner is. You also
+        get a
+        referral bonus for every referral you make.
+
+        You can download the MPL PRO (apk) app from here for Android, while iOS users can get it from the Apple app
+        store.
+
+      </p>
+      <div sytle='display:inline-block;margin:auto;border:1px solid red;'><span id="paratext"
+          onclick="moreText()">&#x21cA
+          More</span>
+      </div>
+    </div>
+
+
+    <div class="head1">
+      <h2>Fantasy Cricket Tips And Tricks To Win Big Cash Prizes</h2>
+    </div>
+    <div class="about-mpl-game-app" style='width: 80%;margin:auto'>
+
+      <p id="short-para">Mobile Premier League (MPL) is an online gaming platform that offers a plethora of games -
+        fantasy
+        sports, Rummy, Chess, Quiz, Fruit Chop, 8 ball 3D Pool, Carrom and more! Play and win real cash for playing your
+        favorite mobile games. Sounds fun, right?
+
+      </p>
+
+
+
+      <p id="long-para">Mobile Premier League (MPL) is an online gaming platform that offers a plethora of games -
+        fantasy
+        sports,Rummy, Chess, Quiz, Fruit Chop, 8 ball 3D Pool, Carrom and more! Play and win real cash for playing your
+        favorite mobile games. Sounds fun, right? With MPL, you can play 40+ games including fantasy sports on your
+        mobile
+        to win great prizes. MPL offers the ultimate gaming experience, which makes you want to play more & win more.
+        Take
+        your pick from adventure, action, sports & many other categories.
+
+        With games like Rummy, Chess, Ludo, Carrom, Cricket, and Bubble Shooter, we have them all. Play games on the MPL
+        app
+        and make it to the top of the leaderboards. Connect with your friends and see who the real winner is. You also
+        get a
+        referral bonus for every referral you make.
+
+        You can download the MPL PRO (apk) app from here for Android, while iOS users can get it from the Apple app
+        store.
+
+      </p>
+      <span id="text" onclick="moreText()">&#x21cA More</span>
+
+
+    </div>
+
+    <div class="head1">
+      <h2>Benefits Of Playing Fantasy Cricket</h2>
+    </div>
+    <div class="appPara">
+      <span>Mobile Premier League is the best fantasy sports app, the latest gaming platform
+        that gives you the best-in-industry rewards and cash prizes.</span>
+    </div>
+
+    <div class="head1">
+      <h2>FAQs</h2>
+    </div>
+    <div class="faq-uniq-div" style="margin-top: 40px;margin-bottom:0">
+      <div class="container">
+        <button type="button" class="collapsible">What Is MPL - Weekly Esports Arena?</button>
+        <div class="content">
+          <p>Weekly sports Arena is a platform for the players to make a name for themselves in the
+            Esports Community. The idea of
+            hosting a weekly tournament is to cultivate an esports culture and build the existing
+            gaming community for all our MPL
+            games.</p>
+        </div>
+        <button type="button" class="collapsible">What are the benefits of Esports?</button>
+        <div class="content">
+          <p>MPL Esports gives the players a platform to make a name for themselves in the gaming
+            community. Players can participate
+            in the Esports tournaments and can earn money by winning games.</p>
+        </div>
+        <button type="button" class="collapsible">What is the league age range?</button>
+        <div class="content">
+          <p>All Esports tournaments are open for participation to individuals above the age of 18
+            years.</p>
+        </div>
+        <button type="button" class="collapsible">Are there additional fees?</button>
+        <div class="content">
+          <p>All Esports tournaments are free as of now. Participants do not have to pay any amount
+            for the registrations. Also there
+            are no hidden/additional fees.</p>
+        </div><button type="button" class="collapsible">Do I have to attend every game?</button>
+        <div class="content">
+          <p>In an Esports tournament, you will have to play a game as per the schedule. The
+            schedule of your game will be
+            communicated to you by SMSs or notifications.</p>
+        </div><button type="button" class="collapsible">Where can I watch the Esports game
+          live?</button>
+        <div class="content">
+          <p>Yes, major rounds of all Esports tournaments are live-streamed on Youtube & Facebook.
+            You can check the live stream
+            schedule of an Esports tournament in the 'Live Streams' section of the website.</p>
+        </div>
+      </div>
+      </section>
+    </div>
+
+    <div class="head1">
+      <h2>Withdraw Winnings With</h2>
+    </div>
+    <section class="payment">
+      <div>
+        <img src="https://www.mpl.live/static/trust-icons/user_icon.png" />
+        <p class="exp">6 Crore+</p>
+        <p>Users</p>
+      </div>
+      <div>
+        <img src="https://www.mpl.live/static/trust-icons/secure_icon.png" />
+        <p class="exp">100% Secure</p>
+        <p>& Legal</p>
+      </div>
+      <div>
+        <img src="https://www.mpl.live/static/trust-icons/support_icon.png" />
+        <p class="exp">24 x 7</p>
+        <p>Customer Support</p>
+      </div>
+      <div>
+        <img src="https://www.mpl.live/static/trust-icons/cashback_icon.png" />
+        <p class="exp">Cashback</p>
+        <p>Offers</p>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="sponsor">
+      <div class="sp1">
+        <h2>Proud Sponsor Of</h2>
+      </div>
+      <div class="sp2">
+        <div class="kkr">
+          <img src="https://www.mpl.live/static/sponsors/rcb_logo.png" />
+        </div>
+        <div class="kkr">
+          <img src="https://www.mpl.live/static/sponsors/kkr_logo.png" />
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <div class="head1">
+      <h2 style="font-size: 45px;">MPL Is A Member Of</h2>
+    </div>
+    <section class="payment">
+      <div>
+        <img src="https://www.mpl.live/static/trust-icons/aigf.png" />
+      </div>
+      <div>
+        <img src="https://www.mpl.live/static/trust-icons/ficci.png" />
+      </div>
+      <div>
+        <img src="https://www.mpl.live/static/trust-icons/trf.png" />
+      </div>
+      <div>
+        <img src="https://www.mpl.live/static/trust-icons/IAMAI.png" />
+      </div>
+    </section>
+
+    <div class="head1">
+      <h2 style="font-size: 45px; margin-top: 1%;">Know Us Better</h2>
+    </div>
+    <section class="payment">
+      <div>
+        <a href="https://www.facebook.com/PlayMPL/">
+          <img src="https://www.mpl.live/static/social_icons/fb.png" />
+        </a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/plaympl/">
+          <img src="https://www.mpl.live/static/social_icons/ig.png" />
+        </a>
+      </div>
+      <div>
+        <a href="https://twitter.com/PlayMPL">
+          <img src="https://www.mpl.live/static/social_icons/tw.png" />
+        </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/channel/UCIBT5MyVgwAvcZZa1e8O-sw">
+          <img src="https://www.mpl.live/static/social_icons/yt.png" />
+        </a>
+      </div>
+    </section>
+
+    <section class="botlay">
+      <div>
+
+
+      </div>
+
+    </section>
+
+    <div class="footer__top_wrap">
+      <div class="container-footer">
+        <div class="row">
+          <div style='padding:20px'>
+            <h3 class=""><span class="txt_title">ONLINE SHOPPING</span></h3>
+            <div>
+              <a href="/collections/all-collection">All
+                Collections</a><br>
+              <a href="/collections/exclusive-ind-vs-sl-offer">Exclusive
+                Ind vs SL offer</a><br>
+              <a href="/collections/team-indias-official-jersey">Team India
+                Jerseys</a><br>
+              <a href="/collections/activewear">Activewear</a><br>
+              <a href="/collections/t-shirts">T-shirts</a>
+            </div>
+          </div>
+          <div style='padding:20px'>
+            <h3><span class="txt_title">COMPANY</span></span>
+            </h3>
+            <div>
+              <a href="/pages/about">About Us</a><br>
+              <a href="/pages/contact">Contact us</a><br>
+              <a href="/pages/faq">FAQs</a><br>
+              <a href="https://mplsports.in/blogs/post">Blog</a><br>
+            </div>
+          </div>
+          <div style="padding: 20px;">
+            <h3><span class="txt_title">POLICIES</span>
+            </h3>
+            <div>
+              <a href="/pages/terms-condition">Terms &amp;
+                Conditions</a><br>
+
+              <a href="/pages/privacy-policys">Privacy Policy</a><br>
+
+              <a href="/pages/cancellation-return-and-refund-policy">Cancellation,
+                Return
+                and <br>Refund Policy</a><br>
+              <a href="https://mplsports.shiprocket.co/">Track
+                Order</a><br>
+            </div>
+          </div>
+          <div style="padding:30px">
+            <p>Receive our newsletter on the latest deals and happenings.</p><br>
+            <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8"
+              class="js_mail_agree mc4wp-form pr z_100"><input type="hidden" name="form_type"><input type="hidden"
+                name="contact[tags]" value="newsletter">
+              <div style="display:flex;justify-content:center">
+                <div style="padding: 5px 20px;color: #B0B5B5;display: inline-block;">
+                  <div style="display: inline-block;"><input type="email" name="contact[email]"
+                      placeholder="Your email address" value="" required="required">
+                  </div>
+                  <div style="display: inline-block"><button
+                      style="padding: 5px 10px;color: #B0B5B5;background-color: #000;border:0;display: inline-block;"
+                      type="submit"><span>Subscribe</span></button>
+                  </div>
+                </div>
+              </div>
+              <div style="padding:20px;"></div>
+            </form><span class="social-media">
+              <a href="https://www.facebook.com/mplsports/"><i class="lab la-facebook-f" style="font-size:22px"></i></a>
+              <a href="https://www.instagram.com/mplsports/"><i style="font-size:22px" class="lab la-instagram"></i></a>
+              <a href="https://twitter.com/mpl_sport"><i style="font-size:22px" class="lab la-twitter"></i></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        style='text-align: center;display: inline-block;margin-left:180px;margin-top: 20px;padding:10px 60px;background: #FFAB00;font-weight:600;'>
+        <a style='color:#fff !important;' href="">+ CORPORATE ENQUIRY</a>
+      </div>
+      <div style='text-align: center;display: inline-block;margin-left:180px;margin-top: 20px;'>
+        <p style="font-size:8px;">CUSTOMER CARE (MON TO SUN 10:00AM TO 10:00PM)<a
+            href="mailto:mplsportscs@mplgaming.com">
+            mplsportscs@mplgaming.com</a></p>
+      </div>
+    </div>
+
+  </body>
+
+</html>
+<script>var flag = false;
+  function showmenu() {
+    let menu = document.getElementById('menu-onclick');
+    let navdiv = document.getElementById('navigation-div');
+    menu.style.transitionDuration = '2000ms'
+    if (!flag) {
+      menu.style.display = 'flex'; flag = true;
+      navdiv.style.maxHeight = '100%'
+    }
+    else {
+      menu.style.display = 'none'; flag = false
+      navdiv.style.maxHeight = '100px'
+    }
+  } var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  let more = document.querySelector(".more");
+  more.addEventListener("click", test);
+
+  function test() {
+    let first_box = document.getElementById("first-box-2");
+    let second_box = document.getElementById("second-box-2");
+    console.log(second_box.innerHTML);
+    console.log("hello");
+    second_box.style.display = "block";
+    first_box.style.display = "none";
+
+  }
+  let less = document.querySelector(".less");
+  less.addEventListener("click", test2);
+  function test2() {
+    let first_box = document.getElementById("first-box-2");
+    let second_box = document.getElementById("second-box-2");
+    second_box.style.display = "none";
+    first_box.style.display = "block";
+
+
+  }
+  function moreText() {
+    let span = document.getElementById("paratext");
+    let short_para = document.getElementById("short-para");
+    let long_para = document.getElementById("long-para");
+    console.log(long_para);
+
+
+    if (long_para.style.display == "none") {
+      long_para.style.display = "block";
+      short_para.style.display = "none";
+      span.innerHTML = "&#x2193 Less";
+    }
+    else {
+      short_para.style.display = "block";
+      long_para.style.display = "none";
+      span.innerHTML = "&#x2191 More";
+
+    }
+  }
+</script>

@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet"
+			href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>tshirt store</title>
+
+		<style>
+			* {
+				margin: 0;
+				/* width: 100%; */
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+
+
+			.display-container {
+
+				width: 100%;
+				height: 90%;
+			}
+
+			.display-container img {
+				height: 600px;
+				width: 100%
+			}
+
+			.mySlides {
+				/* display:none; */
+				width: 100%;
+				height: 45vw;
+			}
+
+			.btn {
+				display: flex;
+				/* flex-direction: row-reverse; */
+				/* align-items: stretch; */
+				margin-top: -25%;
+				border-radius: 8px;
+			}
+
+			.btn-2 {
+				display: flex;
+				flex-direction: row-reverse;
+				margin-top: -3%;
+				/* background-color: green; */
+			}
+
+			.left-btn {
+				border-radius: 8px;
+				border: none;
+				background-color: transparent;
+			}
+
+			.right-btn {
+				border-radius: 8px;
+				border: none;
+				background-color: transparent;
+			}
+
+			#navigation-header {
+				position: fixed;
+				/* border: 1px solid black; */
+			}
+
+			#navigation-div {
+				position: fixed;
+				/* border: 1px solid black; */
+				align-items: center;
+				justify-content: space-between;
+				font-size: 14px;
+				width: 100%;
+				/* height: 100%; */
+				display: fixed;
+				background: transparent;
+				font-family: roboto, sans-serif;
+				z-index: 1001;
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 12%;
+				overflow: hidden;
+				outline: none !important;
+			}
+
+			#navigation-div>div {
+				display: fixed;
+				margin: 16px 0;
+				outline: none !important;
+				/* height: 48px; */
+			}
+
+			#main-logo {
+				margin-left: 117px;
+				width: 101px;
+				height: 32px;
+				outline: none !important;
+			}
+
+			#outer-main {
+				display: flex;
+				align-items: center;
+				width: 100%;
+				justify-content: space-between;
+				outline: none !important;
+			}
+
+			#anchor-divs {
+				position: relative;
+				box-sizing: content-box;
+				margin-right: 117px;
+				width: 906px;
+				display: flex;
+				justify-content: space-evenly;
+				font-weight: 450;
+				font-size: 20px;
+				line-height: 24px;
+				color: white;
+				outline: none !important;
+			}
+
+			.anchor-sub {
+				text-align: center;
+				align-items: center;
+				display: flex;
+				font-family: roboto, sans-serif;
+				font-weight: 500;
+			}
+
+			.sub-sub-anchor {
+				padding: 10px
+			}
+
+			#div-esports {
+				background: #33FF66;
+				border-radius: 4px;
+				outline: none !important;
+			}
+
+			#sub-help {
+				font-family: Trim;
+				padding: 12px 32px;
+				color: #E91051;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			#sub-help i {
+				position: relative;
+				width: 40px;
+				height: 40px;
+				margin: 5px;
+			}
+
+			.menu-tab {
+				display: inline-block;
+				width: 8px;
+				height: 8px;
+				border-top: 2px solid #230046;
+				border-left: 2px solid #230046;
+				transition: all 550ms ease-in-out;
+				margin-left: 12px !important;
+				margin-right: 0px !important;
+				transform: rotate(45deg);
+				margin-top: -4px;
+				outline: none !important;
+			}
+
+			.menu-tab:hover {
+				transform: rotate(225deg) !important;
+				margin-top: -6px !important;
+			}
+
+			.menu-subdivs {
+				height: 200;
+			}
+
+			.submenu {
+				margin-top: 40px;
+				line-height: 18px;
+				color: #230046;
+				/* border: 1px solid red; */
+			}
+
+			.sub-menu-heading {
+				display: flex;
+				align-items: center;
+				line-height: 20px;
+			}
+
+			.sub-sub-div+.sub-sub-div {
+				margin-top: 50px;
+				line-height: 18px;
+			}
+
+			.sub-menu-heading>img {
+				width: 44px;
+				height: 44px;
+				margin-right: 15px;
+			}
+
+			.sub-menu-heading h4 {
+				font-weight: 300 !important;
+				font-size: 18px;
+			}
+
+			.sub-menu-heading~a>h4 {
+				font-size: 18px;
+				margin-left: 58px;
+				font-weight: 100 !important;
+				font-family: sans-serif !;
+				margin: 15px;
+				margin-left: 58px;
+			}
+
+			.flexible-div {
+				display: flex;
+				margin: auto;
+				justify-content: space-between;
+				/* border: 1px solid #000; */
+			}
+
+			/*
+			.inner-product {
+				border: 1px solid #000;
+			} */
+
+			#inner-no-1 {
+				flex-basis: 100px;
+			}
+
+			#inner-no-1>img {
+				opacity: 0.4;
+				transition-duration: 600ms;
+			}
+
+			#inner-no-1>img {
+				width: 100px;
+				height: 100px;
+				margin-right: 20px;
+			}
+
+			#inner-no-1>img:hover {
+				opacity: 0.7;
+			}
+
+			.container-outer {
+				width: 80%;
+				margin: 6px auto;
+			}
+
+			#inner-no-2>img {
+				width: 600px;
+				height: 600px;
+			}
+
+			p .banner {
+				font-weight: 500;
+			}
+
+			.size-of-tshirt {
+				display: inline-block;
+				min-width: 30px;
+				margin-right: 10px;
+				font-weight: 500;
+				text-align: center;
+				flex-basis: 30px;
+				padding: 6px;
+				border: 1px solid #000;
+			}
+
+			.size-of-tshirt:hover {
+				background-color: #000;
+				color: white;
+				transition-duration: 400ms;
+			}
+
+			#inner-no-3 {
+				width: 600px;
+				padding: 0px 20px;
+			}
+
+			#add-to-cart {
+				width: 60%;
+				border: 1px solid #000;
+				text-align: center;
+			}
+
+			#count-of-item {
+				display: flex;
+				width: 25%;
+				border: 1px solid #000;
+				margin-right: 10px;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 20px;
+				font-weight: 600;
+
+			}
+
+			#social-media>div {
+				display: inline-block;
+				margin-right: 20px;
+			}
+
+			#social-media img {
+				width: 20px;
+				height: 20px;
+			}
+
+			#social-media img:hover {
+				transition: transformY(5rem)
+			}
+
+			#count-of-item a {
+				font-size: 24px;
+				text-align: center;
+				text-decoration: none;
+			}
+
+			#collapsible-outer {
+				border-bottom: 1px solid #9c9c9c;
+				color: rgb(43, 43, 43);
+				cursor: pointer;
+				width: 100%;
+				font-weight: 500;
+				padding: 20px 0;
+				font-size: 20px;
+				line-height: 28px;
+				justify-content: space-between;
+			}
+
+			#collapsible-outer a {
+				text-decoration: none;
+			}
+
+			.collapsible {
+				font-weight: 500;
+				padding: 10px 0;
+				font-size: 20px;
+				line-height: 28px;
+				background: white;
+				border: 0;
+			}
+
+			.content {
+				display: none;
+				overflow: hidden;
+				text-align: left;
+			}
+
+			.content p {
+				font-size: 16px;
+				font-weight: 400 !important;
+				transition-duration: 600ms;
+			}
+
+			.container {
+				height: 400px;
+				margin: 0 auto;
+				color: rgb(0, 0, 0);
+			}
+
+			.similar-products-div {
+				position: relative;
+			}
+
+			#similar-products {
+				text-align: center;
+			}
+
+			#similar-products>h2 {
+				margin-top: 0px;
+				font-size: 30px;
+			}
+
+			.product-div {
+				text-align: left;
+				position: relative;
+				left: 0;
+				margin-right: 20px;
+			}
+
+			.product-div img {
+				width: 250px;
+				height: 250px;
+				position: relative;
+				right: 0;
+				top: 0;
+			}
+
+			.product-div>p {
+				margin: 5px 0px 2.5px 0;
+			}
+
+			.product-price {
+				margin: 2.5px 0px 5px 0;
+			}
+
+			.product-div>button {
+				padding: 6px 20px;
+				background-color: #FFAB00;
+				border: 0px;
+				color: white;
+				font-size: 16px;
+				font-weight: 400;
+			}
+
+			.product-div:hover .fa-heart {
+				opacity: 1;
+				transition-duration: 600ms;
+			}
+
+
+			.fa-heart {
+				color: #9c9c9c;
+				position: absolute;
+				z-index: 100;
+				opacity: 0;
+			}
+
+			.fa-heart:hover {
+				color: #FF1E46;
+			}
+
+			.heart {
+				position: absolute;
+				top: 5%;
+				right: 15%;
+				z-index: 12;
+			}
+
+			#similar-products-div {
+				display: flex;
+				overflow-x: scroll;
+			}
+
+			#similar-products-div::-webkit-scrollbar {
+				display: none;
+			}
+
+			.footer__top_wrap {
+				background-color: #1a1a18;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: scroll;
+				background-position: center center;
+				color: #ffffff;
+				padding-bottom: 50px;
+				margin-top: 50px;
+			}
+
+			.container-footer {
+				width: 100%;
+			}
+
+			.row {
+				display: flex;
+				width: 80%;
+				margin: auto;
+				border-bottom: 1px solid #fff;
+				color: #B0B5B5
+			}
+
+			.corporate-enquiry {
+				width: 41%;
+				float: left;
+			}
+
+			.row h3 {
+				margin: 16px 0;
+				;
+			}
+
+			.footer__top_wrap a {
+				font-size: 12px;
+				text-decoration: none;
+				color: #B0B5B5
+			}
+
+			#buy-it-now {
+				margin: 10px 0;
+				width: 70%;
+				padding: 5px 20px;
+				text-align: center;
+				background: #FF1E46;
+				color: #fff;
+				font-weight: bold;
+				font-size: 20px;
+			}
+
+			#count {
+				border-left: 1px solid #9ea0a0;
+				border-right: 1px solid #9ea0a0;
+				padding: 6.5px 15px;
+			}
+
+			.whole {
+				width: 100vw;
+				height: 100vh;
+				margin: 0%;
+
+			}
+
+			.image_logo {
+				width: 100vw;
+				height: 27%;
+				background-color: #9b00c3 !important;
+				display: flex;
+				justify-content: center;
+				margin-top: -8.5%;
+				padding: 7px 0px;
+				align-items: center;
+
+
+			}
+
+			.logo_txt {
+				width: 40%;
+				font-size: 18px;
+				color: white;
+				align-items: center;
+
+			}
+
+			.img1 {
+
+				width: 15%;
+				height: 60%;
+				margin-top: 12px;
+
+			}
+
+			#india_logo {
+				height: 100px;
+				width: 100px;
+				margin-left: 90px;
+			}
+
+			.vit {
+				width: 100vw;
+				height: 65vh;
+				background-image: url("https://cdn.shopify.com/s/files/1/0553/4793/7465/files/fan_e5f88d79-12ee-4b00-8ca4-8da73e0b1aa2_1080x.png?v=1624009082");
+				background-position-x: right;
+				background-color: #cd1084;
+				background-repeat: no-repeat;
+			}
+
+			#no2 {
+				background-image: url("https://cdn.shopify.com/s/files/1/0553/4793/7465/files/exclusive_720x.png?v=1624688760");
+				background-color: #fd1f48;
+
+			}
+
+			#no3 {
+				background-image: url("https://cdn.shopify.com/s/files/1/0553/4793/7465/files/active_720x_6cd75b6c-4933-4ceb-92bb-c30650d6966d_720x.png?v=1625235392");
+				background-color: #9c00c5;
+
+			}
+
+			#no4 {
+				background-image: url("https://cdn.shopify.com/s/files/1/0553/4793/7465/files/blue-tshirt_aa254ed7-e688-462b-935a-ce82a51216d3_540x.png?v=1623330577");
+				background-color: #0b1135;
+			}
+
+			.pic_login>h1 {
+				display: inline-block;
+				margin-top: 7%;
+				margin-left: 5%;
+				color: white;
+				font-weight: 600px;
+				font-size: 45px;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			.head1 {
+				width: 100%;
+				height: 10%;
+			}
+
+			.win {
+				color: white;
+				font-size: 20px;
+				margin-left: 5%;
+			}
+
+			.otp {
+				height: 50px;
+				width: 720px;
+				margin-top: 2%;
+				margin-left: 2%;
+				display: flex;
+
+			}
+
+			#subnum {
+				width: 25%;
+				height: 100%;
+				margin-left: 5%;
+				border-radius: 5px;
+				color: #33ff66;
+				font-size: 20px;
+
+				background: #1f0543
+			}
+
+			.payment {
+				display: flex;
+				width: 60%;
+				height: 40%;
+				background-color: white;
+				justify-content: space-around;
+				margin: auto;
+				text-align: center;
+				color: #9e9e9e;
+				font-weight: 600;
+				font-size: 18px;
+				margin-top: 5%;
+			}
+
+			.head1>h2 {
+				display: flex;
+				color: #000;
+				justify-content: center;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 40px;
+				font-weight: 800;
+				margin-top: 10%;
+			}
+
+		</style>
+
+
+	</head>
+
+	<body>
+
+		<div class="whole">
+			<div class="display-container" style="margin: 0mm;">
+				<img class="mySlides"
+					src="https://cdn.shopify.com/s/files/1/0553/4793/7465/collections/Banner3_1512x_42f384bf-f887-40c1-9479-5c868f44a956_1512x.jpg?v=1624336336">
+				<img class="mySlides"
+					src="https://cdn.shopify.com/s/files/1/0553/4793/7465/collections/Untitled-1_1512x.jpg?v=1626784625">
+				<img class="mySlides"
+					src="https://cdn.shopify.com/s/files/1/0553/4793/7465/collections/exclusive-launch_1512x.jpg?v=1624689671">
+				<img class="mySlides"
+					src="https://cdn.shopify.com/s/files/1/0553/4793/7465/collections/cat-banner_1512x_c1169bcf-7a29-4809-b9db-b43186ff80ec_1512x.jpg?v=1624336362">
+				<img class="mySlides"
+					src="https://cdn.shopify.com/s/files/1/0553/4793/7465/collections/all-collection_1512x.jpg?v=1624336389">
+
+
+			</div>
+
+			<div class="btn">
+				<button class="left-btn" onclick="plusDivs(-1)">
+					<font size="20px" ;>&#10094;</font>
+				</button>
+			</div>
+			<div class="btn-2">
+				<button class="right-btn" onclick="plusDivs(1)">
+					<font size="20px" ;>&#10095;</font>
+				</button>
+			</div>
+
+
+
+
+
+			<div id="navigation-div" style="margin-top:-4px">
+				<div id="outer-main">
+					<div id="main-logo">
+						<a href='/'><img style='width: 101px;height: 32px;'
+								src='https://www.mpl.live/static/hamburger/mpl-logo.png'></a>
+					</div>
+					<div id="anchor-divs">
+						<div class="anchor-sub" id="anchor-1">
+							<div class="sub-sub-anchor"> <a>Exclusive offers</a>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-2">
+							<a>All Collections</a>
+						</div>
+						<div class="anchor-sub" id="anchor-3">
+							<div class="sub-sub-anchor"> <a style="text-decoration: none;color:inherit"
+									href='teamIndiafinal.html'>Team India Jersey</a>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-4">
+							<div class="sub-sub-anchor"> <a>ActiveWear</a>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-5">
+							<div class="sub-sub-anchor"> <a>T-shirt</a>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-5">
+							<div class="sub-sub-anchor flexible-div" id='sub-help'>
+
+								<a>
+									<div><i style="font-size:32px" class="las la-search"></i>
+
+									</div>
+								</a>
+								<a>
+									<div> <i style="font-size:32px" class="las la-user"></i></i></div>
+								</a>
+
+
+								<a>
+									<div style='position:relative;font-size:26px;'><i
+											class="fa fa-shopping-cart"
+											style="font-size:32px;z-index: 5;"></i>
+									</div>
+									<div
+										style="opacity:1;position:absolute;top:5px;z-index: 3;right:34px;background-color: #1a1a18; font-size: 15px;color:#ffffff;width:20px;height:20px;border-radius: 15px;align-items: center;">
+										<span id='cart-count'>0</span>
+									</div>
+								</a>
+
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<div class="image_logo" style="display:flex;justify-content:center;align-items: center;padding:25px 0">
+			<div class="img1">
+				<img id="india_logo"
+					src="https://cdn.shopify.com/s/files/1/0553/4793/7465/files/BCCI_0c9ef3e2-34d1-42fe-aa12-999181a3757a_180x.png?v=1622715435">
+			</div>
+			<div class="logo_txt">
+				<p>The collection of Team India jersey kits are Official Licensed Products of MPL Sports</p>
+			</div>
+
+		</div>
+
+
+		<div class="vit">
+
+			<div class="pic_login">
+				<h1><span>Cheer On Hit Man& Chiku</span></h1>
+			</div>
+			<div class="win">
+				<span>Exclusively for fans</span>
+
+			</div>
+			<div class="otp">
+
+				<button id="subnum">SHOP NOW</button>
+			</div>
+
+		</div>
+		<div class="vit" id="no2">
+			<div class="pic_login">
+				<h1><span>Exclusive launch</span></h1>
+			</div>
+			<div class="win">
+				<span>Team India Pride Series</span>
+
+			</div>
+			<div class="otp">
+
+				<button id="subnum">SHOP NOW</button>
+			</div>
+
+		</div>
+		<div class="vit" id="no3">
+
+			<div class="pic_login">
+				<h1><span>Train Like
+						A Champion</span></h1>
+			</div>
+
+			<div class="otp">
+
+				<button id="subnum">SHOP NOW</button>
+			</div>
+
+		</div>
+		<div class="vit" id="no4">
+
+			<div class="pic_login">
+				<h1><span>Evoke Nostalgia,
+						Join the Legacy</span></h1>
+			</div>
+			<div class="win">
+				<p>Gear up in the signature stripes of the 1992 World Cup</p>
+				<p> kit and cheer the Indian Cricket Team on! </p>
+				<p>
+					Get your very own Team India new jersey today.</p>
+
+			</div>
+			<div class="otp">
+				<button id="subnum">SHOP NOW</button>
+			</div>
+
+		</div>
+
+		<div class="pic_login">
+			<h1 style="font-size: 35px;color: black;margin-top: 5%;"><span>Don't stop at just One</span></h1>
+		</div>
+		<div class="win" style="font-size: 18px;color:#999;font-weight: 600;">
+			<span>Explore MPL Sports’ collection of Indian team cricket jerseys to express your love of the game,
+				every day! Shop your favourites now</span>
+
+		</div>
+
+
+		<div id="similar-products" style="margin-bottom: 40px;margin-top: 60px">
+			<div id="similar-products-div"
+				style='width:80%;margin:auto;display:flex;justify-content: space-between;'>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+		<div class="head1">
+			<h2>You are the MVP</h2>
+		</div>
+		<section class="payment">
+			<div>
+				<img src="https://cdn.shopify.com/s/files/1/0553/4793/7465/files/right_100x.png?v=1622718495" />
+				<p>Official & Authentic merchandise</p>
+			</div>
+			<div>
+				<img
+					src="https://cdn.shopify.com/s/files/1/0553/4793/7465/files/vip_100x_2d5bee1a-1736-4048-87fe-814173faeac5_100x.png?v=1623351426" />
+				<p>Exclusive collection and launches</p>
+			</div>
+			<div>
+				<img src="https://cdn.shopify.com/s/files/1/0553/4793/7465/files/free_100x.png?v=1622718495" />
+				<p>Free shipping for all domestic orders</p>
+			</div>
+			<div>
+				<img src="https://cdn.shopify.com/s/files/1/0553/4793/7465/files/return_100x.png?v=1622718495" />
+				<p>7 days easy return and exchange policy</p>
+			</div>
+		</section>
+
+
+
+		<div class="pic_login">
+			<h3 style="color:black;margin-top:5%;margin-left:5%;"><span>MPL Sports - Your One-stop Shop for Sports
+					Merchandise</span></h3>
+		</div>
+		<div class="pic_login">
+			<p style="color:black;margin-top:5%;margin-left:5%;font-weight: bold;margin-top: -0.3%;">About MPL Sports
+			</p>
+		</div>
+		<div style="margin: 5%;font-size: 14px;">
+			<p>
+				Looking for high-quality sports apparel, which is comfortable and sweat-free yet trendy and
+				sophisticated
+				at the most affordable rates? You have arrived at the right place. MPL sports comes from the home of
+				Mobile
+				Premier League (MPL),India's largest esports and gaming platform.
+			</p>
+			<p>
+				MPL sports has truly redefined athleisure by offering a wide array of affordable sports apparel
+				across categories and professional-level sporting equipment.
+			</p>
+			<p>
+				MPL Sports is the official kit sponsor of the Indian cricket team.
+				Be it the glorious whites which the Indian team adorns in Test matches,
+				the retro jersey that they so proudly wear in limited-overs cricket,
+				or the training kits - you can find them all under one roof.
+			</p>
+			<p>
+				Additionally, fan edition jerseys, activewear, and t-shirts are all made of high-quality fabric and
+				design,
+				keeping your comfort and style in mind.
+			</p>
+			<p>
+				What are you waiting for? Head over to MPL Sports and get your hands on the best sports merchandise
+				in India.
+			</p>
+		</div>
+		<div class="pic_login">
+			<p style="color:black;margin-top:5%;margin-left:5%;font-weight: bold;margin-top: -0.05%;">Why Shop at MPL
+				Sports?</p>
+		</div>
+		<div style="margin: 5%;font-size: 14px;">
+			<p>
+				MPL Sports is truly your one-stop destination for all sportswear. Every product listed on
+				the website is made keeping in mind the users' comfort, style, and convenience. Who says sportswear
+				is only meant to be worn when you are out on the field or in training? Athleisure has changed the
+				clothes that
+				we buy and model, and MPL Sports is at the forefront of it.
+			</p>
+			<p>
+				If you are wondering why you should buy your sports merchandise from MPL Sports, let's list down a
+				few reasons:
+			</p>
+			<ul>
+				<li style="padding-bottom: 15px;">
+					Trusted by Team India, accessible to all: How many times has it happened that you have wanted
+					to get your hands on the Team India jersey but don't know an avenue to buy it? Here's the
+					solution to the problem. MPL Sports is the principal kit sponsor of the Indian cricket team,
+					and you will
+					find all jerseys that team India wears right here on the MPL Sports website.
+				</li>
+				<li style="padding-bottom: 15px;">
+					High-quality sports apparel without compromising on style: Gone are the days when sports
+					jerseys were meant
+					to be worn only in training. Without compromising on the quality,
+					MPL Sports has manufactured products in keeping with what's trending in the fashion world.
+				</li>
+				<li style="padding-bottom: 15px;">
+					Affordable prices compared to competitors: All products on the MPL Sports website are priced,
+					keeping users from all walks of life in mind. The products, irrespective of the price point,
+					are professional-level sporting equipment,
+					which will keep you sweat-free and comfortable at all times.
+				</li>
+				<li style="padding-bottom: 15px;">
+					Homegrown: MPL Sports is 100% homegrown, and all the products are processed and made in India.
+				</li>
+				<li style="padding-bottom: 15px;">
+					Hassle-free navigation and secure transactions: The MPL Sports website has a top-notch user
+					interface with no lag time, making navigation through the products a breeze. You select a
+					product,
+					decide on the sizes and reach the payment page in no time. All transactions on the MPL Sports
+					platform are 100% secure and safe.There is also an active customer support team to help with
+					all your queries and grievances.
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="pic_login">
+			<p style="color:black;margin-top:5%;margin-left:5%;font-weight: bold;margin-top: -0.05%;">Why Buy the
+				Indian cricket team jerseys on MPL Sports?</p>
+		</div>
+		<div style="margin: 5%;font-size: 14px;">
+			<p>
+				MPL Sports is the official kit sponsor of the Indian cricket team, by way of which you will
+				find all authentic Team India products right here. All jerseys on MPL Sports are made of 100%
+				Polyester
+				and moisture-absorbing fabric to keep you dry at all times.
+			</p>
+			<p>
+				There are different varieties of India cricket team jerseys on MPL sports with different price
+				points
+				for you to choose from. The official team India Retro jersey evokes nostalgia as it takes you back
+				to the 1992 World Cup
+				The Test whites are a thing of beauty, while the training jerseys are built for absolute comfort.
+			</p>
+			<p>
+				So, get hold of the official Indian jerseys and cheer for your favorite cricketers as they sweat it
+				out on the field for the nation. Train like champions in the official training jersey and stand
+				apart from the crowd.
+				Scream your lungs out for the Men in Blue wearing the exclusive Team India Pride Series t-shirts.
+			</p>
+			<p>
+				Here is your chance to be involved in Team India's journey as they go about conquering one nation
+				after another.
+				Visit the MPL Sports website and express your love of the game every day!
+			</p>
+
+		</div>
+
+		<div class="pic_login">
+			<p style="color:black;margin-top:5%;margin-left:5%;font-weight: bold;margin-top: -0.05%;">MPL Sports
+				Product Range</p>
+		</div>
+		<div style="margin: 5%;font-size: 14px;">
+			<p>
+				From Team India official kits to training jerseys and t-shirts, you will find every sports
+				merchandise on mplsports.in.
+				Here are some of the products on MPL Sports listing currently:
+			</p>
+			<ol>
+				<li>
+					Team India jerseys: MPL Sports has a variety of Team India jerseys on its website, both Player
+					and Fan edition.
+					<ul>
+						<li style="padding-bottom: 15px;padding-top: 10px;">
+							The Official Player Edition Team India Test and Limited-overs jerseys are the exact
+							ones that your
+							favorite Indian cricketers wear on the field in international cricket.
+						</li>
+						<li style="padding-bottom: 15px;">
+							The fan edition jerseys are a stitch-by-stitch match of the official Team India
+							jerseys and come at a lesser price.
+						</li>
+						<li style="padding-bottom: 15px;">
+							MPL Sports has also come up with a special Stadium edition jersey with the same
+							elements as the original limited-overs jersey but at a lower price.
+						</li>
+					</ul>
+				</li>
+				<li style="padding-bottom: 15px;">
+					Training jerseys: There are different training jerseys and vests that you can find on the MPL
+					Sports website. These are the very same jerseys that the Indian
+					team wears while practicing and training
+				</li>
+				<li style="padding-bottom: 15px;">
+					Team India Pride Series: These are casual everyday wear t-shirts that you can pair up with
+					jeans or track pants and cheer your favorite players.
+				</li style="padding-bottom: 15px;">
+			</ol>
+
+		</div>
+
+
+
+
+
+
+
+
+		<div class="footer__top_wrap">
+			<div class="container-footer">
+				<div class="row">
+					<div style='padding:20px'>
+						<h3 class=""><span class="txt_title">ONLINE SHOPPING</span></h3>
+						<div>
+							<a href="/collections/all-collection">All
+								Collections</a><br>
+							<a href="/collections/exclusive-ind-vs-sl-offer">Exclusive
+								Ind vs SL offer</a><br>
+							<a href="/collections/team-indias-official-jersey">Team India
+								Jerseys</a><br>
+							<a href="/collections/activewear">Activewear</a><br>
+							<a href="/collections/t-shirts">T-shirts</a>
+						</div>
+					</div>
+					<div style='padding:20px'>
+						<h3><span class="txt_title">COMPANY</span></span>
+						</h3>
+						<div>
+							<a href="/pages/about">About Us</a><br>
+							<a href="/pages/contact">Contact us</a><br>
+							<a href="/pages/faq">FAQs</a><br>
+							<a href="https://mplsports.in/blogs/post">Blog</a><br>
+						</div>
+					</div>
+					<div style="padding: 20px;">
+						<h3><span class="txt_title">POLICIES</span>
+						</h3>
+						<div>
+							<a href="/pages/terms-condition">Terms &amp;
+								Conditions</a><br>
+
+							<a href="/pages/privacy-policys">Privacy Policy</a><br>
+
+							<a href="/pages/cancellation-return-and-refund-policy">Cancellation,
+								Return
+								and <br>Refund Policy</a><br>
+							<a href="https://mplsports.shiprocket.co/">Track
+								Order</a><br>
+						</div>
+					</div>
+					<div style="padding:30px">
+						<p>Receive our newsletter on the latest deals and happenings.</p><br>
+						<form method="post" action="/contact#contact_form" id="contact_form"
+							accept-charset="UTF-8" class="js_mail_agree mc4wp-form pr z_100"><input type="hidden"
+								name="form_type"><input type="hidden" name="contact[tags]" value="newsletter">
+							<div style="display:flex;justify-content:center">
+								<div style="padding: 5px 20px;color: #B0B5B5;display: inline-block;">
+									<div style="display: inline-block;"><input type="email"
+											name="contact[email]" placeholder="Your email address" value=""
+											required="required">
+									</div>
+									<div style="display: inline-block"><button
+											style="padding: 5px 10px;color: #B0B5B5;background-color: #000;border:0;display: inline-block;"
+											type="submit"><span>Subscribe</span></button>
+									</div>
+								</div>
+							</div>
+							<div style="padding:20px;"></div>
+						</form><span class="social-media">
+							<a href="https://www.facebook.com/mplsports/"><i class="lab la-facebook-f"
+									style="font-size:22px"></i></a>
+							<a href="https://www.instagram.com/mplsports/"><i style="font-size:22px"
+									class="lab la-instagram"></i></a>
+							<a href="https://twitter.com/mpl_sport"><i style="font-size:22px"
+									class="lab la-twitter"></i></a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div
+				style='text-align: center;display: inline-block;margin-left:180px;margin-top: 20px;padding:10px 60px;background: #FFAB00;font-weight:600;'>
+				<a style='color:#fff !important;' href="">+ CORPORATE ENQUIRY</a>
+			</div>
+			<div style='text-align: center;display: inline-block;margin-left:180px;margin-top: 20px;'>
+				<p style="font-size:8px;">CUSTOMER CARE (MON TO SUN 10:00AM TO 10:00PM)<a
+						href="mailto:mplsportscs@mplgaming.com">
+						mplsportscs@mplgaming.com</a></p>
+			</div>
+		</div>
+
+
+
+
+
+
+	</body>
+
+</html>
+<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+		showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		if (n > x.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = x.length}
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		x[slideIndex - 1].style.display = "block";
+	}
+
+
+
+	var products = [
+		{
+			img: ' https://cdn.shopify.com/s/files/1/0553/4793/7465/products/BCCI-Round-Neck-Tee-Grey-01_360x.jpg?v=1624366706',
+			name: 'Team india test Jersey',
+			imgBack: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/BCCI-Round-Neck-Tee-Grey-Back-01_360x.jpg?v=1624366706'
+			, price: '1,000.00'
+		}, {
+			name: 'Virat kohli jersey',
+			img: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/BCCI-Stadium-Jersey_360x.jpg?v=1623350446'
+			,
+			imgBack: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/Back_1803b31e-06d5-43e4-ac6e-bbe4c9649fc2_720x.jpg?v=1623350369'
+			, price: '1,599.00'
+		}, {
+			name: 'Rohit Sharma jersey',
+			img: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/BCCI-Training-Jersey-Sleeveless-Old_360x.jpg?v=1624639454'
+			,
+			imgBack: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/IMG_3463_540x.jpg?v=1624639455'
+			, price: '999.00'
+		}, {
+			name: 'Cheers Team India-white',
+			img: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/Front_00fd79d7-5df9-45ac-b4de-8d8e59615ef4_360x.jpg?v=1623776642'
+			,
+			imgBack: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/Back_944d8972-ea41-4e6b-ab6a-00154bd0b4b3_540x.jpg?v=1623776642'
+			, price: '999.00'
+		}, {
+			name: 'Cheteswar Pujara jersey ',
+			img: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/Front_6a7a4b31-f502-447d-8547-a369ed145449_360x.jpg?v=1623350531'
+			,
+			imgBack: 'https://cdn.shopify.com/s/files/1/0553/4793/7465/products/Back_cd8ecbf1-177b-4f86-b995-287c27875aec_540x.jpg?v=1623350531'
+			, price: '1,599.00'
+		}
+	];
+
+	for (var i = 0; i < products.length; i++) {
+		appendProduct(products[i], i)
+
+	} function hover(id, toggle) {
+		let theimg = document.getElementById(`${id}`);
+		theimg.src = toggle.imgBack;
+	} function unhover(el, id) {console.log('unhover')}
+	function appendProduct(el, i) {
+		var outerDiv = document.getElementById('similar-products-div');
+		let productDiv = document.createElement('div');
+		productDiv.setAttribute('class', 'product-div');
+		productDiv.addEventListener('mouseenter', function() {
+			let thisimg = document.getElementById(`img-no-${i}`);
+			thisimg.src = el.imgBack;
+		})
+		productDiv.addEventListener('mouseleave', function() {
+			let thisimg2 = document.getElementById(`img-no-${i}`);
+			thisimg2.src = el.img;
+		})
+		productDiv.setAttribute('id', `product-no-${i}`)
+		let img = document.createElement('img');
+		img.setAttribute('id', `img-no-${i}`)
+		img.src = el.img; let iconDiv = document.createElement('div');
+		iconDiv.setAttribute('class', 'heart');
+		iconDiv.innerHTML = `<i onclick='addToCart(${i})' class="fa fa-heart fa-1x"></i>`;
+
+		let namePara = document.createElement('p');
+		namePara.innerHTML = el.name;
+
+		let price = document.createElement('h4');
+		price.setAttribute('class', 'product-price')
+		price.innerHTML = el.price;
+
+		let addCartButton = document.createElement('button');
+		addCartButton.setAttribute('class', 'shop-now')
+		addCartButton.textContent = 'SHOP NOW'
+		addCartButton.setAttribute('class', 'shop-now');
+
+		productDiv.append(img, iconDiv, namePara, price, addCartButton);
+
+		outerDiv.append(productDiv);
+	} var flag = false;
+	function showmenu() {
+		let menu = document.getElementById('menu-onclick');
+		let navdiv = document.getElementById('navigation-div');
+		menu.style.transitionDuration = '2000ms'
+		if (!flag) {
+			menu.style.display = 'flex'; flag = true;
+			navdiv.style.maxHeight = '100%'
+		}
+		else {
+			menu.style.display = 'none'; flag = false
+			navdiv.style.maxHeight = '100px'
+		}
+	} var coll = document.getElementsByClassName("collapsible");
+	var i;
+</script>

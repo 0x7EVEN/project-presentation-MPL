@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- <link rel="stylesheet" href="mainScreen.css"> -->
+        <style>
+            #first-box {
+                background-image: url("https://www.mpl.live/cledge.mpl.live/pb/website/static/dd403537ac524fa4a64317c99562f103.webp");
+                height: 90vh;
+
+                background-size: cover;
+                background-position: center;
+                padding: 10px;
+
+
+            }
+
+            #second-box {
+                background-image: url("https://www.mpl.live/static/2x/desktop_promotional_strip.png");
+                height: 20vh;
+
+                background-size: cover;
+                background-position: center;
+                display: flex;
+
+            }
+
+            #inner-box1 {
+                margin: 15% 10%;
+
+            }
+
+            #one {
+                font-size: 35px;
+                font-weight: 400;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin-bottom: 50px;
+
+            }
+
+            .grey-header {
+                line-height: 40px !important;
+                font-size: 40px !important;
+                font-weight: bolder !important;
+                text-align: left;
+            }
+
+            .light-grey-header {
+                font-size: 24px;
+                line-height: 40px;
+            }
+
+            #sms-container {
+                display: flex;
+                margin-top: 20px;
+            }
+
+            #sms-container>div input {
+                width: 300px;
+                height: 40px;
+
+                justify-content: center;
+                font-size: 15px;
+                border-radius: 4px;
+                font-family: 'trim';
+                padding-left: 10px;
+                background: #ffffff;
+                color: #b4b4b4;
+                line-height: 18px;
+
+                height: 50px;
+                width: 352px;
+                font-size: 18px;
+                border-left: solid 1px #828282;
+
+            }
+
+            #sms-container>div:nth-child(2) {
+                background-color: #33FF66;
+                width: 300px;
+                padding-top: 5px;
+                text-align: center;
+                margin-left: 10px;
+                cursor: pointer;
+                border-radius: 4px;
+
+            }
+
+            #sms-container>div:nth-child(2) h3 {
+                font-weight: bolder;
+            }
+
+            .p1 {
+                font-size: 36px;
+                color: white;
+                line-height: 34px;
+                font-weight: bold;
+                text-transform: capitalize;
+                margin: 0px;
+                position: relative;
+            }
+
+            .p2 {
+                font-size: 32px;
+                line-height: 40px;
+                margin: 0px;
+                color: white;
+            }
+
+            #left-box {
+                width: 40vw;
+                text-align: right;
+                margin-right: 10vw;
+                margin-top: 2vw;
+            }
+
+            #right-box {
+                width: 40vw;
+                margin-left: 10vw;
+                margin-top: 2vw;
+            }
+
+            #withdraw-win {
+                width: 40vw;
+                margin: 70px auto;
+                text-align: center;
+
+            }
+
+            #withdraw-win>h2 {
+                font-size: 48px;
+                line-height: 56px;
+                font-weight: 600;
+                color: #230046;
+            }
+
+            #four-images {
+                display: flex;
+                margin-left: 20%;
+            }
+
+            #four-images>div {
+                margin: 2.5vw;
+                text-align: center;
+                width: 10vw;
+            }
+
+
+            .four-img-p1 {
+                text-align: center;
+                margin-top: 12px;
+                color: #230046;
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            #navigation-header {
+                position: fixed;
+                /* border: 1px solid black; */
+            }
+
+            #navigation-div {
+                position: fixed;
+                /* border: 1px solid black; */
+                align-items: center;
+                justify-content: space-between;
+                font-size: 14px;
+                width: 100%;
+                /* height: 100%; */
+                display: fixed;
+                background: #fff;
+                font-family: roboto, sans-serif;
+                z-index: 1001;
+                position: fixed;
+                top: 0;
+                left: 0;
+                max-height: 90px;
+                overflow: hidden;
+                outline: none !important;
+            }
+
+            #navigation-div>div {
+                display: fixed;
+                margin: 16px 0;
+                outline: none !important;
+                /* height: 48px; */
+            }
+
+            #main-logo {
+                margin-left: 117px;
+                width: 101px;
+                height: 32px;
+                outline: none !important;
+            }
+
+            #outer-main {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+                outline: none !important;
+            }
+
+            #anchor-divs {
+                position: relative;
+                box-sizing: content-box;
+                margin-right: 117px;
+                width: 906px;
+                display: flex;
+                justify-content: space-between;
+                font-weight: 450;
+                font-size: 20px;
+                line-height: 24px;
+                color: #230046;
+                outline: none !important;
+            }
+
+            .anchor-sub {
+                text-align: center;
+                align-items: center;
+                display: flex;
+                font-family: roboto, sans-serif;
+                font-weight: 500;
+            }
+
+            .sub-sub-anchor {
+                padding: 10px
+            }
+
+            #div-esports {
+                background: #33FF66;
+                border-radius: 4px;
+                outline: none !important;
+            }
+
+            #sub-help {
+                font-family: Trim;
+                border: 1px solid rgba(25, 10, 40, 0.15);
+                padding: 12px 32px;
+                color: #E91051;
+
+
+            }
+
+            #sub-help>img {
+                position: relative;
+                width: 20px;
+                height: 20px;
+                margin-right: 12px;
+            }
+
+            .menu-tab {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-top: 2px solid #230046;
+                border-left: 2px solid #230046;
+                transition: all 550ms ease-in-out;
+                margin-left: 12px !important;
+                margin-right: 0px !important;
+                transform: rotate(45deg);
+                margin-top: -4px;
+                outline: none !important;
+            }
+
+            .menu-tab:hover {
+                transform: rotate(225deg) !important;
+                margin-top: -6px !important;
+            }
+
+            .menu-subdivs {
+                height: 200;
+            }
+
+            .submenu {
+                margin-top: 40px;
+                line-height: 18px;
+                color: #230046;
+                /* border: 1px solid red; */
+            }
+
+            .sub-menu-heading {
+                display: flex;
+                align-items: center;
+                line-height: 20px;
+            }
+
+            .sub-sub-div {
+                margin: 0 50px
+            }
+
+            .sub-sub-div+.sub-sub-div {
+                margin-top: 50px;
+                line-height: 18px;
+            }
+
+            .sub-menu-heading>img {
+                width: 44px;
+                height: 44px;
+                margin-right: 15px;
+            }
+
+            .sub-menu-heading h4 {
+                font-weight: 300 !important;
+                font-size: 18px;
+            }
+
+            .sub-menu-heading~a>h4 {
+                font-size: 18px;
+                margin-left: 58px;
+                font-weight: 100 !important;
+                font-family: sans-serif !;
+                margin: 15px;
+                margin-left: 58px;
+            }
+
+            #red-box {
+                width: 824px;
+                height: 350px;
+                margin: auto;
+                border-radius: 24px;
+                background-color: #FF1E46;
+                padding: 0px;
+                display: flex;
+            }
+
+            #virat-hardik-img img {
+                height: 350px;
+                width: 459px;
+                border-radius: 24px;
+            }
+
+            #virat-hardik-img {
+                margin: 0px;
+
+                height: 350px;
+            }
+
+            #second {
+                text-align: right;
+                width: 345px;
+                height: 310px;
+
+                margin: 20px auto;
+            }
+
+            #second img {
+                width: 132px;
+                height: 42px;
+                margin-bottom: 27px;
+            }
+
+            .html-content {
+                font-size: 40px;
+                font-weight: bold;
+                color: white;
+                margin: 0px;
+            }
+
+            #shop-box {
+                background-color: #33ff66;
+                border-radius: 2px;
+                height: 40px;
+                width: 150px;
+                text-decoration: none;
+                margin-left: 50%;
+                text-align: center;
+
+            }
+
+            #shop-box>p {
+                margin-top: 50px;
+                font-size: 16px;
+                color: #230046;
+                text-decoration: none;
+
+            }
+
+            #shop-box>a {
+                text-decoration: none;
+            }
+
+            .top-games {
+
+                text-align: center;
+                margin: 100px auto 20px auto;
+            }
+
+            .top-games h2 {
+                font-size: 48px;
+                line-height: 30px;
+                font-weight: 600;
+                color: #230046;
+
+            }
+
+            .top-games p {
+                color: #828282;
+                margin-top: 0px;
+                font-size: 24px;
+                line-height: 15px;
+                margin-bottom: 48px;
+            }
+
+            .games {
+                width: 80vw;
+                margin: auto;
+                grid-gap: 2vw;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+            }
+
+            .games>div {
+                text-align: center;
+
+            }
+
+            .games p {
+                margin-top: 12px;
+                text-align: center;
+                color: #230046;
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 400;
+                font-style: normal;
+
+            }
+
+            .games img {
+                border-radius: 5px;
+            }
+
+            .winners {
+                width: 80vw;
+                margin: auto;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-gap: 2.5vw;
+
+            }
+
+            .winners>div {
+                width: 320px;
+                background-color: #F5E6F9;
+                border-radius: 15px;
+            }
+
+            .winners>div>div {
+                margin: 2vw auto;
+                max-width: 200px;
+            }
+
+            .winners img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .winners>div>h2 {
+                font-size: 24px;
+                line-height: 28px;
+                font-style: normal;
+                font-weight: 600;
+                text-align: center;
+                text-transform: uppercase;
+                color: #9c00c3;
+                margin: 0px;
+
+            }
+
+            .winners>div>p {
+                font-size: 20px;
+                line-height: 24px;
+                font-style: normal;
+                font-weight: normal;
+                color: rgba(25, 10, 40, 0.6);
+                margin: 0 0 12px 0;
+                text-align: center;
+            }
+
+            .winners>div>h1 {
+                font-size: 32px;
+                line-height: 36px;
+                font-style: normal;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+                color: #e91051;
+                margin: 0px;
+            }
+
+            .proud-sponser {
+                padding-top: 30px;
+                height: 40vh;
+                background-color: #230046;
+                margin: 20px auto;
+            }
+
+            .proud-sponser>div:nth-child(1) {
+                color: white;
+                text-align: center;
+
+            }
+
+            .proud-sponser>div:nth-child(1)>h1 {
+                font-size: 56px;
+                line-height: 66px;
+                white-space: pre-line;
+                font-weight: 600;
+                font-style: normal;
+                margin: 0px;
+            }
+
+            .proud-sponser>div:nth-child(2) {
+                text-align: center;
+            }
+
+            .sponser-img>img {
+                height: 150px;
+            }
+
+            #four-images>div>h5 {
+                margin-top: 8px;
+                text-align: center;
+                color: rgba(25, 10, 40, 0.6);
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .top-games {
+                color: #230046;
+                font-size: 20px;
+                line-height: 40px;
+                margin-top: 24px;
+            }
+
+            .para1 {
+                color: rgba(25, 10, 40, 0.6);
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 400;
+                font-style: normal;
+                text-align: left;
+            }
+
+            .more {
+                color: red;
+                cursor: pointer;
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .inner-box {
+                display: flex;
+            }
+
+            #first-box-2 {
+                color: salmon;
+            }
+
+            #second-box-2 {
+                display: none;
+
+
+            }
+
+            .link {
+
+                cursor: pointer;
+                color: #ff0000;
+                margin-top: -8px;
+                background: #FFFFFF;
+                border: 1px solid rgba(25, 10, 40, 0.15);
+                border-radius: 4px;
+                padding: 4px 8px;
+                margin-bottom: 8px;
+                display: block;
+                width: fit-content;
+                font-size: 30px;
+                line-height: 24px;
+                text-decoration: none;
+
+
+            }
+
+            .top-mpl-games {
+                width: 80%;
+                margin-left: 220px;
+                display: grid;
+                grid-template-columns: 30% 30% 30%;
+            }
+
+            #first-box-2 h2 {
+                margin: 0px;
+            }
+
+            .top-mpl-games>div>div img {
+                width: 130px;
+                border-radius: 5px;
+            }
+
+            .inner-box>div:nth-child(1) {
+                margin-right: 20px;
+
+            }
+
+            .mpl-img {
+                max-width: 150px;
+                margin: auto;
+            }
+
+            #long-para {
+                display: none;
+            }
+
+            .about-mpl-game-app {
+                text-align: center;
+            }
+
+            .about-mpl-game-app>p {
+                font-size: 24px;
+                color: rgba(25, 10, 40, 0.6);
+                margin-bottom: 24px;
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .about-mpl-game-app span {
+
+
+                color: red;
+                font-size: 24px;
+            }
+
+            .content {
+                display: none;
+                overflow: hidden;
+
+                color: #828282;
+                text-align: left;
+                padding: 0px 16px 16px 16px;
+                margin-top: -8px;
+                background-color: #FDE7EE;
+
+            }
+
+            .content p {
+                margin: 0 8px 8px 8px;
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 300 !important;
+            }
+
+            .container {
+                max-width: 760px;
+                height: 100vh;
+                margin: 0 auto;
+                color: rgb(0, 0, 0);
+            }
+
+            .footer__top_wrap {
+                background-color: #1a1a18;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: scroll;
+                background-position: center center;
+                color: #ffffff;
+                padding-bottom: 50px;
+            }
+
+            .container-footer {
+                width: 100%;
+            }
+
+            .row {
+                display: flex;
+                width: 80%;
+                margin: auto;
+                border-bottom: 1px solid #fff;
+                color: #B0B5B5
+            }
+
+            .corporate-enquiry {
+                width: 41%;
+                float: left;
+            }
+
+            .row h3 {
+                margin: 16px 0;
+                ;
+            }
+
+            .footer__top_wrap a {
+                font-size: 12px;
+                text-decoration: none;
+                color: #B0B5B5
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+
+        <div class="main" style="margin:0">
+            <div id="navigation-div" style="margin-top:-4px">
+                <div id="outer-main">
+                    <div id="main-logo">
+                        <a href='/'><img style='width: 101px;height: 32px;'
+                                src='https://www.mpl.live/static/hamburger/mpl-logo.png'></a>
+                    </div>
+                    <div id="anchor-divs">
+                        <div class="anchor-sub" id="anchor-1">
+                            <div class="sub-sub-anchor"> <a>MPL Games</a>
+                                <div onclick="showmenu()" class='menu-tab' style='margin-top:-4px;'>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="anchor-sub" id="anchor-2">
+                            <a href='mpl.html' style='text-decoration:none;color:#230046'>
+                                <div class="sub-sub-anchor" id='div-esports'> MPL Esports
+                                </div>
+                            </a>
+                        </div>
+                        <div class="anchor-sub" id="anchor-3">
+                            <div class="sub-sub-anchor"> <a style='text-decoration:none;color:#230046;' href='#'>Buy
+                                    Products</a>
+                            </div>
+                        </div>
+                        <div class="anchor-sub" id="anchor-4">
+                            <div class="sub-sub-anchor"> <a>Blog</a>
+                            </div>
+                        </div>
+                        <div class="anchor-sub" id="anchor-5">
+                            <div class="sub-sub-anchor"> <a>FAQs</a>
+                            </div>
+                        </div>
+                        <div class="anchor-sub" id="anchor-5">
+                            <div class="sub-sub-anchor" id='sub-help'><img style="margin-top: 4px;"
+                                    src='https://www.mpl.live/static/hamburger/help_icon.png'> <a>Help</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu-onclick" style='height:700px'>
+
+                    <div class="menu-subdivs" style="display:flex;margin-left :117px;">
+                        <div class="submenu" id="div-no-1">
+                            <div class="sub-sub-div">
+                                <div class="sub-menu-heading">
+                                    <img src="https://www.mpl.live/static/hamburger/fantasy_games_icon.png">
+                                    <h4>Fantasy Games</h4>
+
+                                </div><a style="text-decoration: none;color:inherit"
+                                    href='C:\new user\PROJECT\Programming\Javascript\FTWEB10\HTML\UNIT-2\project-presentation-MPL\fantasyCric.html'>
+                                    <h4>Fantasy cricket</h4>
+                                </a>
+                                <a>
+                                    <h4>Fantasy football</h4>
+                                </a>
+                                <a>
+                                    <h4>Fantasy basketball</h4>
+                                </a>
+                            </div>
+                            <!-- CARD GAMES -->
+                            <div class="sub-sub-div">
+                                <div class="sub-menu-heading">
+                                    <img src="https://www.mpl.live/static/hamburger/card_games_desktop.png">
+                                    <h4>Card Games</h4>
+
+                                </div><a>
+                                    <h4>Rummy</h4>
+                                </a>
+                                <a>
+                                    <h4>Poker</h4>
+                                </a>
+                                <a>
+                                    <h4>Call Break</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-subdivs">
+                        <div class="submenu" id="div-no-1">
+                            <div class="sub-sub-div">
+                                <div class="sub-menu-heading">
+                                    <img src="https://www.mpl.live/static/hamburger/sports_games_icon.png">
+                                    <h4>Sports Games</h4>
+
+                                </div><a>
+                                    <h4>Wcc2</h4>
+                                </a>
+
+                            </div>
+                            <div class="sub-sub-div">
+                                <div class="sub-menu-heading">
+                                    <img src="https://www.mpl.live/static/hamburger/casual_games_desktop.png">
+                                    <h4>Casual Games</h4>
+
+                                </div><a>
+                                    <h4>Carrom</h4>
+                                </a>
+                                <a>
+                                    <h4>Pool</h4>
+                                </a>
+                                <a>
+                                    <h4>Ludo</h4>
+                                </a><a>
+                                    <h4>Runner No. 1</h4>
+                                </a><a>
+                                    <h4>Monster Truck</h4>
+                                </a><a>
+                                    <h4>Go Ride</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-subdivs">
+                        <div class="submenu" id="div-no-1">
+                            <div class="sub-sub-div">
+                                <div class="sub-menu-heading">
+                                    <img src="https://www.mpl.live/static/hamburger/arcade_games_desktop.png">
+                                    <h4>Arcade Games</h4>
+
+                                </div><a>
+                                    <h4>Fruite Chop</h4>
+                                </a>
+                                <a>
+                                    <h4>Fruit Dart</h4>
+                                </a>
+                                <a>
+                                    <h4>Fruit Slice</h4>
+                                </a>
+                            </div>
+                            <div class="sub-sub-div">
+                                <div class="sub-menu-heading">
+                                    <img src="https://www.mpl.live/static/hamburger/brain_games_desktop.png">
+                                    <h4>Brain Games</h4>
+
+                                </div><a>
+                                    <h4>Quiz</h4>
+                                </a>
+                                <a>
+                                    <h4>Speed Chess</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-subdivs" style="margin-right :117px;">
+                        <div class="submenu" id="div-no-2">
+                            <div class="sub-sub-div">
+                                <div class="sub-menu-heading">
+                                    <img src="https://www.mpl.live/static/hamburger/puzzle_games_desktop.png">
+                                    <h4>Puzzle Games</h4>
+
+                                </div><a>
+                                    <h4>Bubble Shooter</h4>
+                                </a>
+                                <a>
+                                    <h4>Build Up</h4>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="first-box">
+            <div id="inner-box1">
+                <h1 class="grey-header">
+                    <span id="one">PLAY 60+ GAMES</span>
+                </h1>
+                <br>
+                <span class="light-grey-header"> PLAY ON INDIA'S LARGEST GAMING APP</span>
+                <br>
+                <div id="sms-container">
+                    <div>
+                        <input type="number" minlength="10" maxlength="10" placeholder="Enter Mobile Number">
+                    </div>
+                    <div style="align-items: center;width:30%">
+                        <h3
+                            style='font-family: sans-serif;font-weight: 300 !important;font-family: sans-serif;font-size: 16px;'>
+                            Get SMS with
+                            Download Link</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="second-box">
+            <div id="left-box">
+                <p class="p1">40 CRORE</p>
+                <p class="p2">Daily Winnings</p>
+            </div>
+            <div id="right-box">
+                <p class="p1">6 CRORE+</p>
+                <p class="p2">Trusted users</p>
+
+            </div>
+
+        </div>
+        <div id="withdraw-win">
+            <h2>Withdraw Winnings With</h2>
+
+        </div>
+        <div id="four-images">
+            <div>
+                <img src="https://www.mpl.live/static/withdraw/new-icons/paytm.png" alt="">
+                <p class="four-img-p1">Paytm wallet</p>
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/withdraw/new-icons/upi.png" alt="">
+                <p class="four-img-p1">UPI</p>
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/withdraw/new-icons/amazon_pay.png" alt="">
+                <p class="four-img-p1">Amazon Pay</p>
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/withdraw/new-icons/bank_transfer.png" alt="">
+                <p class="four-img-p1">Bank Transfer </p>
+            </div>
+
+        </div>
+        <div id="red-box">
+            <div id="virat-hardik-img">
+                <img src="https://www.mpl.live/static/banners/mpl_esport_logo.png" alt="">
+            </div>
+            <div id="second">
+                <img src="https://www.mpl.live/static/2x/newmpl_logo.png" alt="">
+                <p class="html-content">OFFICIAL</p>
+                <p class="html-content"> TEAM INDIA</p>
+                <p class="html-content"> COLLECTION</p>
+                <p class="html-content"
+                    style='margin-top:30px;text-align:center;font-size: 15px !important;font-weight:300;padding:8px 20px;background:#33FF66;width: 100px;margin-left:190px;color:black'>
+                    SHOP
+                    NOW</p>
+            </div>
+
+        </div>
+        <div class="top-games">
+            <h2>Top Games On MPL</h2>
+            <p>Play over 60+ Games and Win Cash</p>
+        </div>
+        <div class="games">
+            <div>
+                <img src="https://www.mpl.live/static/top-games/fruit_dart.png" alt="">
+                <p>Fruit Dart</p>
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/top-games/wcc.png" alt="">
+                <p>WCC</p>
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/top-games/pool.png" alt="">
+                <p>Pool</p>
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/top-games/speed_chess.png" alt="">
+                <p>Chess</p>
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/top-games/fantasy_cricket.png" alt="">
+                <p>Fantasy Cricket</p>
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/top-games/quiz.png" alt="">
+                <p>Quiz</p>
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/top-games/fruit_chop.png" alt="">
+                <p>Fruit Chop</p>
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/top-games/runner_no1.png" alt="">
+                <p>Runner</p>
+
+            </div>
+
+        </div>
+        <div class="top-games">
+            <h2>Trusted By 6 Crore+ INDIANS </h2>
+
+        </div>
+        <div class="winners">
+            <div style="padding:15px">
+                <div class="img">
+                    <img src=" https://www.mpl.live/static/banners/user_epicenter-satish.png" alt="">
+                </div>
+                <h2>SATISH KUMAR</h2>
+                <p>Ladakh</p>
+                <h1>WON 11$ LAKH!</h1>
+                <P>
+                    is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                    also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                    in
+                    the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                    with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                </P>
+            </div>
+            <div style="padding:15px">
+                <div class="img">
+                    <img src="https://www.mpl.live/static/banners/user_epicenter.png" alt="">
+                </div>
+                <h2>Kuldeep Kumar</h2>
+                <p>Faridabad haryana</p>
+                <h1>WON 9$ LAKH!</h1>
+                <P>
+                    is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                    also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                    in
+                    the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                    with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                </P>
+            </div>
+            <div style="padding:15px">
+                <div class="img">
+                    <img src="https://www.mpl.live/static/banners/user_epicenter-akash.png" alt="">
+                </div>
+                <h2>Aakash Saitab</h2>
+                <p>Muzzafarabad UP</p>
+                <h1>WON 6$ LAKH!</h1>
+                <P>
+                    is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                    also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                    in
+                    the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                    with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                </P>
+            </div>
+
+        </div>
+        <div class="proud-sponser">
+            <div>
+                <h1>Proud Sponser Of</h1>
+            </div>
+            <div class="sponser-img">
+                <img src="https://www.mpl.live/static/sponsors/rcb_logo.png" alt="">
+                <img src="https://www.mpl.live/static/sponsors/kkr_logo.png" alt="">
+            </div>
+        </div>
+        <div class="top-games">
+            <h2>Best In Class Gaming Experience </h2>
+
+        </div>
+        <div id="four-images">
+            <div>
+                <img src="https://www.mpl.live/static/trust-icons/user_icon.png" alt="">
+                <p class="four-img-p1">Paytm wallet</p>
+                <h5>Users</h5>
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/trust-icons/secure_icon.png" alt="">
+                <p class="four-img-p1">UPI</p>
+                <h5>& Legal</h5>
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/trust-icons/support_icon.png" alt="">
+                <p class="four-img-p1">Amazon Pay</p>
+                <h5>Customer support</h5>
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/trust-icons/cashback_icon.png" alt="">
+                <p class="four-img-p1">Bank Transfer </p>
+                <h5>Offers</h5>
+            </div>
+
+        </div>
+        <div class="top-games">
+            <h2>MPL IS A MEMBER OF </h2>
+
+        </div>
+        <div id="four-images">
+            <div>
+                <img src="https://www.mpl.live/static/trust-icons/aigf.png" alt="">
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/trust-icons/ficci.png" alt="">
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/trust-icons/trf.png" alt="">
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/trust-icons/IAMAI.png" alt="">
+
+            </div>
+
+        </div>
+        <div class="top-games">
+            <h2>PLAY AND WIN CASH </h2>
+            <h3>TOP GAMES ON MPL</h3>
+
+        </div>
+        <div class="top-mpl-games">
+            <div class="inner-box">
+                <div>
+                    <img src="https://www.mpl.live/static/top-games/fruit_dart.png" alt="">
+                </div>
+                <div>
+                    <div id="first-box-2">
+                        <h2>Fruit Dart</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart,is'nt it?
+                                fruit dart is the most thrilling
+                            </span>
+                            <span class="more">...More</span>
+                        </p>
+
+                    </div>
+                    <div id="second-box-2">
+                        <h2>Fruit Dart</h2>
+                        <p>
+                            <span class="para1" style='font-size:16px;width: 150px;'>
+                                Everyone loves a quick game of fruit dart, isn’t it?
+                                Fruit Dart is one of the most thrilling arcade games on the MPL app.
+                                Throw the darts like a ninja and slice the fruits popping up on the screen.
+                            </span>
+                            <span>
+
+                        </p>
+                        <a class="link" href="" style="font-size: 15px;">Know More</a>
+                        <p class="less">Less</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="inner-box">
+                <div>
+                    <img src="https://www.mpl.live/static/top-games/ludo.png" alt="">
+                </div>
+                <div>
+                    <div id="first-box-2">
+                        <h2>Ludo</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart,is'nt it?
+                                fruit dart is the most game o
+                            </span>
+                            <span class="more">...More</span>
+                        </p>
+
+                    </div>
+                    <div id="second-box-2">
+                        <h2>Fruit Dart</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart, isn’t it?
+                                Fruit Dart is one of the most thrilling arcade games on the MPL app.
+                                Throw the darts like a ninja and slice the fruits popping up on the screen.
+                            </span>
+                            <span>
+
+                        </p>
+                        <a class="link" href="">Know More</a>
+                        <p class="less">Less</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="inner-box">
+                <div>
+                    <img src="https://www.mpl.live/static/top-games/call_break.png" alt="">
+                </div>
+                <div>
+                    <div id="first-box-2">
+                        <h2>Cards</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick
+                            </span>
+                            <span class="more">...More</span>
+                        </p>
+
+                    </div>
+                    <div id="second-box-2">
+                        <h2>Fruit Dart</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart, isn’t it?
+                                Fruit Dart is one of the most thrilling arcade games on the MPL app.
+                                Throw the darts like a ninja and slice the fruits popping up on the screen.
+                                Just make sure that you don’t hit the bombs, or you will lose the game.
+                                Fruit Dart is available in both 1v1 battle mode and tournaments format on MPL.
+                                You can select any of the formats to play the game and win exciting cash prizes.
+                            </span>
+                            <span>
+
+                        </p>
+                        <a class="link" href="">Know More</a>
+                        <p class="less">Less</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="inner-box">
+                <div>
+                    <img src="https://www.mpl.live/static/top-games/fantasy_cricket.png" alt="">
+                </div>
+                <div>
+                    <div id="first-box-2">
+                        <h2>MPL Cricket</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart,is'nt it?
+                                fruit dart is the arcade game o
+                            </span>
+                            <span class="more">...More</span>
+                        </p>
+
+                    </div>
+                    <div id="second-box-2">
+                        <h2>Fruit Dart</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart, isn’t it?
+                                Fruit Dart is one of the most thrilling arcade games on the MPL app.
+                                Throw the darts like a ninja and slice the fruits popping up on the screen.
+                                Just make sure that you don’t hit the bombs, or you will lose the game.
+                                Fruit Dart is available in both 1v1 battle mode and tournaments format on MPL.
+                                You can select any of the formats to play the game and win exciting cash prizes.
+                            </span>
+                            <span>
+
+                        </p>
+                        <a class="link" href="">Know More</a>
+                        <p class="less">Less</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="inner-box">
+                <div>
+                    <img src="https://www.mpl.live/static/top-games/speed_chess.png" alt="">
+                </div>
+                <div>
+                    <div id="first-box-2">
+                        <h2>Chess</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart,is'nt it?
+                                fruit dart is the arcade game o
+                            </span>
+                            <span class="more">...More</span>
+                        </p>
+
+                    </div>
+                    <div id="second-box-2">
+                        <h2></h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart, isn’t it?
+                                Fruit Dart is one of the most thrilling arcade games on the MPL app.
+                                Throw the darts like a ninja and slice the fruits popping up on the screen.
+                                Just make sure that you don’t hit the bombs, or you will lose the game.
+                                Fruit Dart is available in both 1v1 battle mode and tournaments format on MPL.
+                                You can select any of the formats to play the game and win exciting cash prizes.
+                            </span>
+                            <span>
+
+                        </p>
+                        <a class="link" href="">Know More</a>
+                        <p class="less">Less</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="inner-box">
+                <div>
+                    <img src="https://www.mpl.live/static/top-games/pool.png" alt="">
+                </div>
+                <div>
+                    <div id="first-box-2">
+                        <h2>Pool</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart is the arcade
+                            </span>
+                            <span class="more">...More</span>
+                        </p>
+
+                    </div>
+                    <div id="second-box-2">
+                        <h2>Fruit Dart</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart, isn’t it?
+                                Fruit Dart is one of the most thrilling arcade games on the MPL app.
+                                Throw the darts like a ninja and slice the fruits popping up on the screen.
+                                Just make sure that you don’t hit the bombs, or you will lose the game.
+                                Fruit Dart is available in both 1v1 battle mode and tournaments format on MPL.
+                                You can select any of the formats to play the game and win exciting cash prizes.
+                            </span>
+                            <span>
+
+                        </p>
+                        <a class="link" href="">Know More</a>
+                        <p class="less">Less</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class="top-games">
+            <h2>KNOW US BETTER </h2>
+
+        </div>
+
+        <div id="four-images">
+            <div>
+                <img src="https://www.mpl.live/static/social_icons/fb.png" alt="">
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/social_icons/ig.png" alt="">
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/social_icons/tw.png" alt="">
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/social_icons/yt.png" alt="">
+
+            </div>
+
+        </div>
+        <div class="mpl-img">
+
+
+        </div>
+        <div class="top-games">
+            <h2>ABOUT THE MPL GAMING APP </h2>
+
+        </div>
+
+        <div class="about-mpl-game-app" style='width:80%;margin: auto;'>
+
+            <p id="short-para">Mobile Premier League (MPL) is an online gaming platform that offers a plethora of
+                games
+                - fantasy sports, Rummy, Chess, Quiz, Fruit Chop, 8 ball 3D Pool, Carrom and more! Play and win real
+                cash for playing your favorite mobile games. Sounds fun, right?
+
+            </p>
+
+
+
+            <p id="long-para">Mobile Premier League (MPL) is an online gaming platform that offers a plethora of
+                games -
+                fantasy sports,Rummy, Chess, Quiz, Fruit Chop, 8 ball 3D Pool, Carrom and more! Play and win real
+                cash
+                for playing your favorite mobile games. Sounds fun, right? With MPL, you can play 40+ games
+                including
+                fantasy sports on your mobile to win great prizes. MPL offers the ultimate gaming experience, which
+                makes you want to play more & win more. Take your pick from adventure, action, sports & many other
+                categories.
+
+                With games like Rummy, Chess, Ludo, Carrom, Cricket, and Bubble Shooter, we have them all. Play
+                games on
+                the MPL app and make it to the top of the leaderboards. Connect with your friends and see who the
+                real
+                winner is. You also get a referral bonus for every referral you make.
+
+                You can download the MPL PRO (apk) app from here for Android, while iOS users can get it from the
+                Apple
+                app store.
+
+            </p>
+            <span id="text" onclick="moreText()">&#x21cA More</span>
+
+
+        </div>
+        <div class="footer__top_wrap" style='margin-top:50px'>
+            <div class="container-footer">
+                <div class="row">
+                    <div style='padding:20px'>
+                        <h3 class=""><span class="txt_title">ONLINE SHOPPING</span></h3>
+                        <div>
+                            <a href="/collections/all-collection">All
+                                Collections</a><br>
+                            <a href="/collections/exclusive-ind-vs-sl-offer">Exclusive
+                                Ind vs SL offer</a><br>
+                            <a href="/collections/team-indias-official-jersey">Team India
+                                Jerseys</a><br>
+                            <a href="/collections/activewear">Activewear</a><br>
+                            <a href="/collections/t-shirts">T-shirts</a>
+                        </div>
+                    </div>
+                    <div style='padding:20px'>
+                        <h3><span class="txt_title">COMPANY</span></span>
+                        </h3>
+                        <div>
+                            <a href="/pages/about">About Us</a><br>
+                            <a href="/pages/contact">Contact us</a><br>
+                            <a href="/pages/faq">FAQs</a><br>
+                            <a href="https://mplsports.in/blogs/post">Blog</a><br>
+                        </div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3><span class="txt_title">POLICIES</span>
+                        </h3>
+                        <div>
+                            <a href="/pages/terms-condition">Terms &amp;
+                                Conditions</a><br>
+
+                            <a href="/pages/privacy-policys">Privacy Policy</a><br>
+
+                            <a href="/pages/cancellation-return-and-refund-policy">Cancellation,
+                                Return
+                                and <br>Refund Policy</a><br>
+                            <a href="https://mplsports.shiprocket.co/">Track
+                                Order</a><br>
+                        </div>
+                    </div>
+                    <div style="padding:30px">
+                        <p>Receive our newsletter on the latest deals and happenings.</p><br>
+                        <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8"
+                            class="js_mail_agree mc4wp-form pr z_100"><input type="hidden" name="form_type"><input
+                                type="hidden" name="contact[tags]" value="newsletter">
+                            <div style="display:flex;justify-content:center">
+                                <div style="padding: 5px 20px;color: #B0B5B5;display: inline-block;">
+                                    <div style="display: inline-block;"><input type="email" name="contact[email]"
+                                            placeholder="Your email address" value="" required="required">
+                                    </div>
+                                    <div style="display: inline-block"><button
+                                            style="padding: 5px 10px;color: #B0B5B5;background-color: #000;border:0;display: inline-block;"
+                                            type="submit"><span>Subscribe</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding:20px;"></div>
+                        </form><span class="social-media">
+                            <a href="https://www.facebook.com/mplsports/"><i class="lab la-facebook-f"
+                                    style="font-size:22px"></i></a>
+                            <a href="https://www.instagram.com/mplsports/"><i style="font-size:22px"
+                                    class="lab la-instagram"></i></a>
+                            <a href="https://twitter.com/mpl_sport"><i style="font-size:22px"
+                                    class="lab la-twitter"></i></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div
+                style='text-align: center;display: inline-block;margin-left:180px;margin-top: 20px;padding:10px 60px;background: #FFAB00;font-weight:600;'>
+                <a style='color:#fff !important;' href="">+ CORPORATE ENQUIRY</a>
+            </div>
+            <div style='text-align: center;display: inline-block;margin-left:180px;margin-top: 20px;'>
+                <p style="font-size:8px;">CUSTOMER CARE (MON TO SUN 10:00AM TO 10:00PM)<a
+                        href="mailto:mplsportscs@mplgaming.com">
+                        mplsportscs@mplgaming.com</a></p>
+            </div>
+        </div>
+    </body>
+
+</html>
+<script>
+    var flag = false;
+    function showmenu() {
+        let menu = document.getElementById('menu-onclick');
+        let navdiv = document.getElementById('navigation-div');
+        menu.style.transitionDuration = '2000ms'
+        if (!flag) {
+            menu.style.display = 'flex'; flag = true;
+            navdiv.style.maxHeight = '100%'
+        }
+        else {
+            menu.style.display = 'none'; flag = false
+            navdiv.style.maxHeight = '100px'
+        }
+    }
+
+    let more = document.querySelector(".more")
+    more.addEventListener("click", test)
+
+    function test() {
+        let first_box = document.getElementById("first-box-2")
+        let second_box = document.getElementById("second-box-2")
+        console.log(second_box.innerHTML)
+        console.log("hello")
+        second_box.style.display = "block"
+        first_box.style.display = "none"
+
+    }
+    let less = document.querySelector(".less")
+    less.addEventListener("click", test2)
+    function test2() {
+        let first_box = document.getElementById("first-box-2")
+        let second_box = document.getElementById("second-box-2")
+        second_box.style.display = "none"
+        first_box.style.display = "block"
+
+
+    }
+    function moreText() {
+        let span = document.getElementById("text")
+        let short_para = document.getElementById("short-para")
+        let long_para = document.getElementById("long-para")
+        console.log(long_para)
+
+
+        if (long_para.style.display == "none") {
+            long_para.style.display = "block"
+            short_para.style.display = "none"
+            span.innerHTML = "&#x2193 Less"
+        }
+        else {
+            short_para.style.display = "block"
+            long_para.style.display = "none"
+            span.innerHTML = "&#x2191 More"
+
+        }
+    }
+</script>

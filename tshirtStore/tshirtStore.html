@@ -1,0 +1,523 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@eku15 
+0x7EVEN
+/
+project-presentation-MPL
+0
+00
+Code
+Issues
+Pull requests
+Discussions
+Actions
+Projects
+Wiki
+Security
+Insights
+project-presentation-MPL/tshirtStore.html
+@eku15
+eku15 tshirtstore added
+Latest commit 11d5a96 14 days ago
+ History
+ 1 contributor
+1230 lines (1035 sloc)  31.2 KB
+  
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet"
+			href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>tshirt store</title>
+    <link rel="stylesheet" href="tshirtStore.css">
+	</head>
+
+	<body>
+
+		<div class="whole">
+			<div class="display-container" style="margin: 0mm;">
+				<img class="mySlides"
+					src="https://cdn.shopify.com/s/files/1/0553/4793/7465/collections/Banner3_1512x_42f384bf-f887-40c1-9479-5c868f44a956_1512x.jpg?v=1624336336">
+				<img class="mySlides"
+					src="https://cdn.shopify.com/s/files/1/0553/4793/7465/collections/Untitled-1_1512x.jpg?v=1626784625">
+				<img class="mySlides"
+					src="https://cdn.shopify.com/s/files/1/0553/4793/7465/collections/exclusive-launch_1512x.jpg?v=1624689671">
+				<img class="mySlides"
+					src="https://cdn.shopify.com/s/files/1/0553/4793/7465/collections/cat-banner_1512x_c1169bcf-7a29-4809-b9db-b43186ff80ec_1512x.jpg?v=1624336362">
+				<img class="mySlides"
+					src="https://cdn.shopify.com/s/files/1/0553/4793/7465/collections/all-collection_1512x.jpg?v=1624336389">
+
+
+			</div>
+
+			<div class="btn">
+				<button class="left-btn" onclick="plusDivs(-1)">
+					<font size="20px" ;>&#10094;</font>
+				</button>
+			</div>
+			<div class="btn-2">
+				<button class="right-btn" onclick="plusDivs(1)">
+					<font size="20px" ;>&#10095;</font>
+				</button>
+			</div>
+
+
+
+
+
+			<div id="navigation-div" style="margin-top:-4px">
+				<div id="outer-main">
+					<div id="main-logo">
+						<a href='/'><img style='width: 101px;height: 32px;'
+								src='https://www.mpl.live/static/hamburger/mpl-logo.png'></a>
+					</div>
+					<div id="anchor-divs">
+						<div class="anchor-sub" id="anchor-1">
+							<div class="sub-sub-anchor"> <a>Exclusive offers</a>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-2">
+							<a>All Collections</a>
+						</div>
+						<div class="anchor-sub" id="anchor-3">
+							<div class="sub-sub-anchor"> <a style="text-decoration: none;color:inherit"
+									href='teamIndiafinal.html'>Team India Jersey</a>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-4">
+							<div class="sub-sub-anchor"> <a>ActiveWear</a>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-5">
+							<div class="sub-sub-anchor"> <a>T-shirt</a>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-5">
+							<div class="sub-sub-anchor flexible-div" id='sub-help'>
+
+								<a>
+									<div><i style="font-size:32px" class="las la-search"></i>
+
+									</div>
+								</a>
+								<a>
+									<div> <i style="font-size:32px" class="las la-user"></i></i></div>
+								</a>
+
+
+								<a>
+									<div style='position:relative;font-size:26px;'><i
+											class="fa fa-shopping-cart"
+											style="font-size:32px;z-index: 5;"></i>
+									</div>
+									<div
+										style="opacity:1;position:absolute;top:5px;z-index: 3;right:34px;background-color: #1a1a18; font-size: 15px;color:#ffffff;width:20px;height:20px;border-radius: 15px;align-items: center;">
+										<span id='cart-count'>0</span>
+									</div>
+								</a>
+
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<div class="image_logo" style="display:flex;justify-content:center;align-items: center;padding:25px 0">
+			<div class="img1">
+				<img id="india_logo"
+					src="https://cdn.shopify.com/s/files/1/0553/4793/7465/files/BCCI_0c9ef3e2-34d1-42fe-aa12-999181a3757a_180x.png?v=1622715435">
+			</div>
+			<div class="logo_txt">
+				<p>The collection of Team India jersey kits are Official Licensed Products of MPL Sports</p>
+			</div>
+
+		</div>
+
+
+		<div class="vit">
+
+			<div class="pic_login">
+				<h1><span>Cheer On Hit Man& Chiku</span></h1>
+			</div>
+			<div class="win">
+				<span>Exclusively for fans</span>
+
+			</div>
+			<div class="otp">
+
+				<button id="subnum">SHOP NOW</button>
+			</div>
+
+		</div>
+		<div class="vit" id="no2">
+			<div class="pic_login">
+				<h1><span>Exclusive launch</span></h1>
+			</div>
+			<div class="win">
+				<span>Team India Pride Series</span>
+
+			</div>
+			<div class="otp">
+
+				<button id="subnum">SHOP NOW</button>
+			</div>
+
+		</div>
+		<div class="vit" id="no3">
+
+			<div class="pic_login">
+				<h1><span>Train Like
+						A Champion</span></h1>
+			</div>
+
+			<div class="otp">
+
+				<button id="subnum">SHOP NOW</button>
+			</div>
+
+		</div>
+		<div class="vit" id="no4">
+
+			<div class="pic_login">
+				<h1><span>Evoke Nostalgia,
+						Join the Legacy</span></h1>
+			</div>
+			<div class="win">
+				<p>Gear up in the signature stripes of the 1992 World Cup</p>
+				<p> kit and cheer the Indian Cricket Team on! </p>
+				<p>
+					Get your very own Team India new jersey today.</p>
+
+			</div>
+			<div class="otp">
+				<button id="subnum">SHOP NOW</button>
+			</div>
+
+		</div>
+
+		<div class="pic_login">
+			<h1 style="font-size: 35px;color: black;margin-top: 5%;"><span>Don't stop at just One</span></h1>
+		</div>
+		<div class="win" style="font-size: 18px;color:#999;font-weight: 600;">
+			<span>Explore MPL Sports’ collection of Indian team cricket jerseys to express your love of the game,
+				every day! Shop your favourites now</span>
+
+		</div>
+
+
+		<div id="similar-products" style="margin-bottom: 40px;margin-top: 60px">
+			<div id="similar-products-div"
+				style='width:80%;margin:auto;display:flex;justify-content: space-between;'>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+		<div class="head1">
+			<h2>You are the MVP</h2>
+		</div>
+		<section class="payment">
+			<div>
+				<img src="https://cdn.shopify.com/s/files/1/0553/4793/7465/files/right_100x.png?v=1622718495" />
+				<p>Official & Authentic merchandise</p>
+			</div>
+			<div>
+				<img
+					src="https://cdn.shopify.com/s/files/1/0553/4793/7465/files/vip_100x_2d5bee1a-1736-4048-87fe-814173faeac5_100x.png?v=1623351426" />
+				<p>Exclusive collection and launches</p>
+			</div>
+			<div>
+				<img src="https://cdn.shopify.com/s/files/1/0553/4793/7465/files/free_100x.png?v=1622718495" />
+				<p>Free shipping for all domestic orders</p>
+			</div>
+			<div>
+				<img src="https://cdn.shopify.com/s/files/1/0553/4793/7465/files/return_100x.png?v=1622718495" />
+				<p>7 days easy return and exchange policy</p>
+			</div>
+		</section>
+
+
+
+		<div class="pic_login">
+			<h3 style="color:black;margin-top:5%;margin-left:5%;"><span>MPL Sports - Your One-stop Shop for Sports
+					Merchandise</span></h3>
+		</div>
+		<div class="pic_login">
+			<p style="color:black;margin-top:5%;margin-left:5%;font-weight: bold;margin-top: -0.3%;">About MPL Sports
+			</p>
+		</div>
+		<div style="margin: 5%;font-size: 14px;">
+			<p>
+				Looking for high-quality sports apparel, which is comfortable and sweat-free yet trendy and
+				sophisticated
+				at the most affordable rates? You have arrived at the right place. MPL sports comes from the home of
+				Mobile
+				Premier League (MPL),India's largest esports and gaming platform.
+			</p>
+			<p>
+				MPL sports has truly redefined athleisure by offering a wide array of affordable sports apparel
+				across categories and professional-level sporting equipment.
+			</p>
+			<p>
+				MPL Sports is the official kit sponsor of the Indian cricket team.
+				Be it the glorious whites which the Indian team adorns in Test matches,
+				the retro jersey that they so proudly wear in limited-overs cricket,
+				or the training kits - you can find them all under one roof.
+			</p>
+			<p>
+				Additionally, fan edition jerseys, activewear, and t-shirts are all made of high-quality fabric and
+				design,
+				keeping your comfort and style in mind.
+			</p>
+			<p>
+				What are you waiting for? Head over to MPL Sports and get your hands on the best sports merchandise
+				in India.
+			</p>
+		</div>
+		<div class="pic_login">
+			<p style="color:black;margin-top:5%;margin-left:5%;font-weight: bold;margin-top: -0.05%;">Why Shop at MPL
+				Sports?</p>
+		</div>
+		<div style="margin: 5%;font-size: 14px;">
+			<p>
+				MPL Sports is truly your one-stop destination for all sportswear. Every product listed on
+				the website is made keeping in mind the users' comfort, style, and convenience. Who says sportswear
+				is only meant to be worn when you are out on the field or in training? Athleisure has changed the
+				clothes that
+				we buy and model, and MPL Sports is at the forefront of it.
+			</p>
+			<p>
+				If you are wondering why you should buy your sports merchandise from MPL Sports, let's list down a
+				few reasons:
+			</p>
+			<ul>
+				<li style="padding-bottom: 15px;">
+					Trusted by Team India, accessible to all: How many times has it happened that you have wanted
+					to get your hands on the Team India jersey but don't know an avenue to buy it? Here's the
+					solution to the problem. MPL Sports is the principal kit sponsor of the Indian cricket team,
+					and you will
+					find all jerseys that team India wears right here on the MPL Sports website.
+				</li>
+				<li style="padding-bottom: 15px;">
+					High-quality sports apparel without compromising on style: Gone are the days when sports
+					jerseys were meant
+					to be worn only in training. Without compromising on the quality,
+					MPL Sports has manufactured products in keeping with what's trending in the fashion world.
+				</li>
+				<li style="padding-bottom: 15px;">
+					Affordable prices compared to competitors: All products on the MPL Sports website are priced,
+					keeping users from all walks of life in mind. The products, irrespective of the price point,
+					are professional-level sporting equipment,
+					which will keep you sweat-free and comfortable at all times.
+				</li>
+				<li style="padding-bottom: 15px;">
+					Homegrown: MPL Sports is 100% homegrown, and all the products are processed and made in India.
+				</li>
+				<li style="padding-bottom: 15px;">
+					Hassle-free navigation and secure transactions: The MPL Sports website has a top-notch user
+					interface with no lag time, making navigation through the products a breeze. You select a
+					product,
+					decide on the sizes and reach the payment page in no time. All transactions on the MPL Sports
+					platform are 100% secure and safe.There is also an active customer support team to help with
+					all your queries and grievances.
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="pic_login">
+			<p style="color:black;margin-top:5%;margin-left:5%;font-weight: bold;margin-top: -0.05%;">Why Buy the
+				Indian cricket team jerseys on MPL Sports?</p>
+		</div>
+		<div style="margin: 5%;font-size: 14px;">
+			<p>
+				MPL Sports is the official kit sponsor of the Indian cricket team, by way of which you will
+				find all authentic Team India products right here. All jerseys on MPL Sports are made of 100%
+				Polyester
+				and moisture-absorbing fabric to keep you dry at all times.
+			</p>
+			<p>
+				There are different varieties of India cricket team jerseys on MPL sports with different price
+				points
+				for you to choose from. The official team India Retro jersey evokes nostalgia as it takes you back
+				to the 1992 World Cup
+				The Test whites are a thing of beauty, while the training jerseys are built for absolute comfort.
+			</p>
+			<p>
+				So, get hold of the official Indian jerseys and cheer for your favorite cricketers as they sweat it
+				out on the field for the nation. Train like champions in the official training jersey and stand
+				apart from the crowd.
+				Scream your lungs out for the Men in Blue wearing the exclusive Team India Pride Series t-shirts.
+			</p>
+			<p>
+				Here is your chance to be involved in Team India's journey as they go about conquering one nation
+				after another.
+				Visit the MPL Sports website and express your love of the game every day!
+			</p>
+
+		</div>
+
+		<div class="pic_login">
+			<p style="color:black;margin-top:5%;margin-left:5%;font-weight: bold;margin-top: -0.05%;">MPL Sports
+				Product Range</p>
+		</div>
+		<div style="margin: 5%;font-size: 14px;">
+			<p>
+				From Team India official kits to training jerseys and t-shirts, you will find every sports
+				merchandise on mplsports.in.
+				Here are some of the products on MPL Sports listing currently:
+			</p>
+			<ol>
+				<li>
+					Team India jerseys: MPL Sports has a variety of Team India jerseys on its website, both Player
+					and Fan edition.
+					<ul>
+						<li style="padding-bottom: 15px;padding-top: 10px;">
+							The Official Player Edition Team India Test and Limited-overs jerseys are the exact
+							ones that your
+							favorite Indian cricketers wear on the field in international cricket.
+						</li>
+						<li style="padding-bottom: 15px;">
+							The fan edition jerseys are a stitch-by-stitch match of the official Team India
+							jerseys and come at a lesser price.
+						</li>
+						<li style="padding-bottom: 15px;">
+							MPL Sports has also come up with a special Stadium edition jersey with the same
+							elements as the original limited-overs jersey but at a lower price.
+						</li>
+					</ul>
+				</li>
+				<li style="padding-bottom: 15px;">
+					Training jerseys: There are different training jerseys and vests that you can find on the MPL
+					Sports website. These are the very same jerseys that the Indian
+					team wears while practicing and training
+				</li>
+				<li style="padding-bottom: 15px;">
+					Team India Pride Series: These are casual everyday wear t-shirts that you can pair up with
+					jeans or track pants and cheer your favorite players.
+				</li style="padding-bottom: 15px;">
+			</ol>
+
+		</div>
+
+
+
+
+
+
+
+
+		<div class="footer__top_wrap">
+			<div class="container-footer">
+				<div class="row">
+					<div style='padding:20px'>
+						<h3 class=""><span class="txt_title">ONLINE SHOPPING</span></h3>
+						<div>
+							<a href="/collections/all-collection">All
+								Collections</a><br>
+							<a href="/collections/exclusive-ind-vs-sl-offer">Exclusive
+								Ind vs SL offer</a><br>
+							<a href="/collections/team-indias-official-jersey">Team India
+								Jerseys</a><br>
+							<a href="/collections/activewear">Activewear</a><br>
+							<a href="/collections/t-shirts">T-shirts</a>
+						</div>
+					</div>
+					<div style='padding:20px'>
+						<h3><span class="txt_title">COMPANY</span></span>
+						</h3>
+						<div>
+							<a href="/pages/about">About Us</a><br>
+							<a href="/pages/contact">Contact us</a><br>
+							<a href="/pages/faq">FAQs</a><br>
+							<a href="https://mplsports.in/blogs/post">Blog</a><br>
+						</div>
+					</div>
+					<div style="padding: 20px;">
+						<h3><span class="txt_title">POLICIES</span>
+						</h3>
+						<div>
+							<a href="/pages/terms-condition">Terms &amp;
+								Conditions</a><br>
+
+							<a href="/pages/privacy-policys">Privacy Policy</a><br>
+
+							<a href="/pages/cancellation-return-and-refund-policy">Cancellation,
+								Return
+								and <br>Refund Policy</a><br>
+							<a href="https://mplsports.shiprocket.co/">Track
+								Order</a><br>
+						</div>
+					</div>
+					<div style="padding:30px">
+						<p>Receive our newsletter on the latest deals and happenings.</p><br>
+						<form method="post" action="/contact#contact_form" id="contact_form"
+							accept-charset="UTF-8" class="js_mail_agree mc4wp-form pr z_100"><input type="hidden"
+								name="form_type"><input type="hidden" name="contact[tags]" value="newsletter">
+							<div style="display:flex;justify-content:center">
+								<div style="padding: 5px 20px;color: #B0B5B5;display: inline-block;">
+									<div style="display: inline-block;"><input type="email"
+											name="contact[email]" placeholder="Your email address" value=""
+											required="required">
+									</div>
+									<div style="display: inline-block"><button
+											style="padding: 5px 10px;color: #B0B5B5;background-color: #000;border:0;display: inline-block;"
+											type="submit"><span>Subscribe</span></button>
+									</div>
+								</div>
+							</div>
+							<div style="padding:20px;"></div>
+						</form><span class="social-media">
+							<a href="https://www.facebook.com/mplsports/"><i class="lab la-facebook-f"
+									style="font-size:22px"></i></a>
+							<a href="https://www.instagram.com/mplsports/"><i style="font-size:22px"
+									class="lab la-instagram"></i></a>
+							<a href="https://twitter.com/mpl_sport"><i style="font-size:22px"
+									class="lab la-twitter"></i></a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div
+				style='text-align: center;display: inline-block;margin-left:180px;margin-top: 20px;padding:10px 60px;background: #FFAB00;font-weight:600;'>
+				<a style='color:#fff !important;' href="">+ CORPORATE ENQUIRY</a>
+			</div>
+			<div style='text-align: center;display: inline-block;margin-left:180px;margin-top: 20px;'>
+				<p style="font-size:8px;">CUSTOMER CARE (MON TO SUN 10:00AM TO 10:00PM)<a
+						href="mailto:mplsportscs@mplgaming.com">
+						mplsportscs@mplgaming.com</a></p>
+			</div>
+		</div>
+
+
+
+
+
+<script src="tshirtStore.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet"
+			href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+		<link rel="stylesheet" href="esports.css">
+	</head>
+
+	<body style="background:#230046">
+		<div class="main" style="margin:0">
+			<div id="navigation-div" style="margin-top:-4px">
+				<div id="outer-main">
+					<div id="main-logo">
+						<a href='/'><img style='width: 101px;height: 32px;'
+								src='https://www.mpl.live/static/hamburger/mpl-logo.png'></a>
+					</div>
+					<div id="anchor-divs">
+						<div class="anchor-sub" id="anchor-1">
+							<div class="sub-sub-anchor"> <a>MPL Games</a>
+								<div onclick="showmenu()" class='menu-tab' style='margin-top:-4px;'>
+								</div>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-2">
+							<div class="sub-sub-anchor" id='div-esports'> <a>MPL Esports</a>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-3">
+							<div class="sub-sub-anchor"> <a style="text-decoration: none;color:inherit"
+									href="tshirtStore.html">Buy product</a>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-4">
+							<div class="sub-sub-anchor"> <a>Blog</a>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-5">
+							<div class="sub-sub-anchor"> <a>FAQs</a>
+							</div>
+						</div>
+						<div class="anchor-sub" id="anchor-5">
+							<div class="sub-sub-anchor" id='sub-help'><img style="margin-top: 4px;"
+									src='https://www.mpl.live/static/hamburger/help_icon.png'> <a>Help</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="menu-onclick">
+
+					<div class="menu-subdivs" style="margin-left :117px;">
+						<div class="submenu" id="div-no-1">
+							<div class="sub-sub-div">
+								<div class="sub-menu-heading">
+									<img src="https://www.mpl.live/static/hamburger/fantasy_games_icon.png">
+									<h4>Fantasy Games</h4>
+
+								</div><a>
+									<h4>Fantasy cricket</h4>
+								</a>
+								<a>
+									<h4>Fantasy football</h4>
+								</a>
+								<a>
+									<h4>Fantasy basketball</h4>
+								</a>
+							</div>
+							<!-- CARD GAMES -->
+							<div class="sub-sub-div">
+								<div class="sub-menu-heading">
+									<img src="https://www.mpl.live/static/hamburger/card_games_desktop.png">
+									<h4>Card Games</h4>
+
+								</div><a>
+									<h4>Rummy</h4>
+								</a>
+								<a>
+									<h4>Poker</h4>
+								</a>
+								<a>
+									<h4>Call Break</h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="menu-subdivs">
+						<div class="submenu" id="div-no-1">
+							<div class="sub-sub-div">
+								<div class="sub-menu-heading">
+									<img src="https://www.mpl.live/static/hamburger/sports_games_icon.png">
+									<h4>Sports Games</h4>
+
+								</div><a>
+									<h4>Wcc2</h4>
+								</a>
+
+							</div>
+							<div class="sub-sub-div">
+								<div class="sub-menu-heading">
+									<img src="https://www.mpl.live/static/hamburger/casual_games_desktop.png">
+									<h4>Casual Games</h4>
+
+								</div><a>
+									<h4>Carrom</h4>
+								</a>
+								<a>
+									<h4>Pool</h4>
+								</a>
+								<a>
+									<h4>Ludo</h4>
+								</a><a>
+									<h4>Runner No. 1</h4>
+								</a><a>
+									<h4>Monster Truck</h4>
+								</a><a>
+									<h4>Go Ride</h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="menu-subdivs">
+						<div class="submenu" id="div-no-1">
+							<div class="sub-sub-div">
+								<div class="sub-menu-heading">
+									<img src="https://www.mpl.live/static/hamburger/arcade_games_desktop.png">
+									<h4>Arcade Games</h4>
+
+								</div><a>
+									<h4>Fruite Chop</h4>
+								</a>
+								<a>
+									<h4>Fruit Dart</h4>
+								</a>
+								<a>
+									<h4>Fruit Slice</h4>
+								</a>
+							</div>
+							<div class="sub-sub-div">
+								<div class="sub-menu-heading">
+									<img src="https://www.mpl.live/static/hamburger/brain_games_desktop.png">
+									<h4>Brain Games</h4>
+
+								</div><a>
+									<h4>Quiz</h4>
+								</a>
+								<a>
+									<h4>Speed Chess</h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="menu-subdivs" style="margin-right :117px;">
+						<div class="submenu" id="div-no-2">
+							<div class="sub-sub-div">
+								<div class="sub-menu-heading">
+									<img src="https://www.mpl.live/static/hamburger/puzzle_games_desktop.png">
+									<h4>Puzzle Games</h4>
+
+								</div><a>
+									<h4>Bubble Shooter</h4>
+								</a>
+								<a>
+									<h4>Build Up</h4>
+								</a>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		</div>
+		<div id="nextdiv">
+			<div id="after-header">
+				<img id="chiku-bhai" style="width:100%;position:relative;"
+					src="https://www.mpl.live/cledge.mpl.live/pb/website/static/104fb3ce68384045b02cc365ee9827bd.webp"
+					alt="">
+				<div id="form-2-outer" style="display:flex">
+					<div id="form-1-outer">
+						Play Esports Tournaments On MPL App & Win <br>Huge Cash Prizes!<br>
+
+						<div style="display:inline-block;margin-top:24px"><label for="mobile"
+								style="display:inline-block">+91</label><input type="text" id="mobile"
+								name="mobile" minlength="10" maxlength="20" placeholder="Enter mobile number"
+								value="">
+						</div>
+						<div style="display: inline-block"><input type="submit" id="submit-but"
+								value="Get SMS with Download link">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="outer-second">
+			<div class="heading-div-new">
+				<h3 style="font-size:50px;font-weight:550">News Feed</h3>
+
+			</div>
+			<p style="color:rgba(25,10,40,0.6);font-size: 17px;line-height: 24px;">
+				Latest updates about all the MPL Esports events!</p>
+			<div class="news-main-div">
+
+				<div class="inner-news-image-div">
+					<img
+						src='https://www.mpl.live/cledge.mpl.live/pb/website/static/7bcce2e7be9d45f0a8efb962c8f7a22a.png'>
+				</div>
+				<div class="outer-of-news-and-description">
+					<div class="div-after-img-name" style='text-align: left'>Weekly Esports Tournaments are
+						LIVE! Stay Tuned</div>
+					<div class="div-after-img-description" style='text-align:left'>
+						<date>MAY 11, 2021</date>
+						<div class="dot-separetor"></div>
+						2 MONTHS AGO
+					</div>
+				</div>
+			</div>
+			<div class="news-main-div">
+				<div class="inner-news-image-div">
+					<img
+						src='https://www.mpl.live/cledge.mpl.live/pb/website/static/ec58708363a143e1852fb788f47a9e5f.png'>
+				</div>
+				<div class="outer-of-news-and-description">
+					<div class="div-after-img-name" style='text-align:left'>Gamers For India stream will be
+						live on 15th May 7<br> PM onwards</div>
+					<div class="div-after-img-description" style='text-align:left'>
+						<date>MAY 11, 2021</date>
+						<div class="dot-separetor"></div>
+						2 MONTHS AGO
+					</div>
+				</div>
+
+			</div>
+			<div class="div-calengdar-heading">
+				<h3 style="font-size:50px;font-weight:550">Event Calendar</h3>
+			</div>
+			<div class="next-to-calender-div">
+				<h3>Live Events</h3>
+				<div class="event-image"><a herf='https://bit.ly/3tDMcgy' style='z-index:10'>
+						<img
+							src='https://www.mpl.live/cledge.mpl.live/pb/website/static/d7b66ede172c493e89d9332e28968897.png'>
+
+						<div class="event-heading-8-bit">Gamers For India</div>
+						<div class="event-sub-heading">15TH MAY | 7 PM ONWARDS
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="div-calengdar-heading">
+				<h3 style="font-size:50px;font-weight:550">Live Stream</h3>
+			</div>
+			<p
+				style="font-size:16px;color: rgba(25,10,40,0.6);line-height: 20px;margin-bottom: 16px;font-weight: 300 !important;">
+				Semi-Finals & Finals Of Tournaments In Each Game Will Be Live-Streamed On Youtube & Facebook.
+			</p>
+			<div class="live-stream-outer"><img
+					src='https://www.mpl.live/cledge.mpl.live/pb/website/static/a018592f7f5a45c3b702451f9f752239.png'>
+			</div>
+			<div class="upcoming-events">
+				<div class="upcoming-event-img">
+					<img
+						src="https://www.mpl.live/cledge.mpl.live/pb/website/static/b9fc2abe1b044ed7b7ca834450158b69.png">
+				</div>
+				<div class="description-of-event">Gamers For India Livestream</div>
+				<div class="event-upcoming">Upcoming</div>
+			</div>
+			<div class="social-media-handles">
+				<div class="log-facebook">
+					<img src="https://www.mpl.live/static/esports/yt_icon.png" alt="yt stream"
+						class="log-facebook">
+					<div class="logo-name">YouTube</div>
+				</div>
+				<div class="log-facebook">
+					<img src="https://www.mpl.live/static/esports/fb_icon.png" alt="yt stream"
+						class="log-facebook">
+					<div class="logo-name-second">Facebook</div>
+				</div>
+			</div>
+			<div class="div-calengdar-heading">
+				<h3 style="font-size:50px;font-weight:550">Recent Winners</h3>
+			</div>
+
+			<!-- HERE IS LIST OF RECENT WINNERS IN X-SCROLLABLE FORM-->
+
+
+			<div class="winner-celebration-outer">
+				<div class=" uniq-winner-card" style="margin-left: 0px;">
+					<div class="category-of-winner-game">
+						<div class="left-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/esport_arena_winner.png'>
+						</div>
+						<div class="right-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/game_chess_winner.png'>
+						</div>
+					</div><img src="https://www.mpl.live/static/esports/rishi_winner.png">
+					<h3 class="rank-position"
+						style="margin:10px 0;font-size: 12px;text-decoration: none;font-weight: 500;">
+						WINNER</h3>
+					<h3 class="winner-name"
+						style="margin:10px 0;font-size: 10px;text-decoration: none;font-weight: 100;line-height: 20px;">
+						RISHI</h3>
+					<h3 class="Winning-price"
+						style="margin:10px 0	;font-size: 28px;text-decoration: none;font-weight: 600;line-height:24px;color:#FF164D">
+						Won ₹1.5 Lakhs</h3>
+				</div>
+				<div class=" uniq-winner-card" style="margin-left: 0px;">
+					<div class="category-of-winner-game">
+						<div class="left-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/esport_arena_winner.png'>
+						</div>
+						<div class="right-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/game_chess_winner.png'>
+						</div>
+					</div><img src="https://www.mpl.live/static/esports/navneet_winner.png">
+					<h3 class="rank-position"
+						style="margin:8px 0; font-size: 12px;text-decoration: none;font-weight: 500;">
+						RUNNER-UP</h3>
+					<h3 class="winner-name"
+						style="margin:10px 0;font-size: 10px;text-decoration: none;font-weight: 100;line-height: 20px;">
+						NEVNEET</h3>
+					<h3 class="Winning-price"
+						style="margin:8px 0	;font-size: 28px;text-decoration: none;font-weight: 600;line-height:24px;color:#FF164D">
+						Won ₹90,000</h3>
+				</div>
+				<div class=" uniq-winner-card" style="margin-left: 0px;">
+					<div class="category-of-winner-game">
+						<div class="left-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/esport_arena_winner.png'>
+						</div>
+						<div class="right-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/game_chess_winner.png'>
+						</div>
+					</div><img src="https://www.mpl.live/static/esports/vijaya_winner.png">
+					<h3 class="rank-position"
+						style="margin:8px 0;font-size: 12px;text-decoration: none;font-weight: 500;">
+						SEMI-FINALIST</h3>
+					<h3 class="winner-name"
+						style="margin:10px 0;font-size: 10px;text-decoration: none;font-weight: 100;line-height: 20px;">
+						VIJAYA</h3>
+					<h3 class="Winning-price"
+						style="margin:8px 0	;font-size: 28px;text-decoration: none;font-weight: 600;line-height:24px;color:#FF164D">
+						Won ₹50,000</h3>
+				</div>
+				<div class=" uniq-winner-card" style="margin-left: 0px;">
+					<div class="category-of-winner-game">
+						<div class="left-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/esport_arena_winner.png'>
+						</div>
+						<div class="right-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/game_chess_winner.png'>
+						</div>
+					</div><img src="https://www.mpl.live/static/esports/rahul_winner.png">
+					<h3 class="rank-position"
+						style="margin:8px 0;font-size: 12px;text-decoration: none;font-weight: 500;">
+						SEMI-FINALIST</h3>
+					<h3 class="winner-name"
+						style="margin:10px 0;font-size: 10px;text-decoration: none;font-weight: 100;line-height: 20px;">
+						RAHUL</h3>
+					<h3 class="Winning-price"
+						style="margin:8px 0	;font-size: 28px;text-decoration: none;font-weight: 600;line-height:24px;color:#FF164D">
+						Won ₹50,000 </h3>
+				</div>
+				<div class=" uniq-winner-card" style="margin-left: 0px;">
+					<div class="category-of-winner-game">
+						<div class="left-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/esport_arena_winner.png'>
+						</div>
+						<div class="right-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/game_pool_winner.png'>
+						</div>
+					</div><img src="https://www.mpl.live/static/esports/winner_pool_aman.png">
+					<h3 class="rank-position"
+						style="margin:8px 0;font-size: 12px;text-decoration: none;font-weight: 500;">
+						WINNER</h3>
+					<h3 class="winner-name"
+						style="margin:10px 0;font-size: 10px;text-decoration: none;font-weight: 100;line-height: 20px;">
+						AMAN</h3>
+					<h3 class="Winning-price"
+						style="margin:8px 0	;font-size: 28px;text-decoration: none;font-weight: 600;line-height:24px;color:#FF164D">
+						Won ₹5 Lakhs </h3>
+				</div>
+				<div class=" uniq-winner-card" style="margin-left: 0px;">
+					<div class="category-of-winner-game">
+						<div class="left-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/esport_arena_winner.png'>
+						</div>
+						<div class="right-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/game_pool_winner.png'>
+						</div>
+					</div><img src="https://www.mpl.live/static/esports/winner_pool_aadarsh.png">
+					<h3 class="rank-position"
+						style="margin:8px 0;font-size: 12px;text-decoration: none;font-weight: 500;">
+						SEMI-FINALIST</h3>
+					<h3 class="winner-name"
+						style="margin:10px 0;font-size: 10px;text-decoration: none;font-weight: 100;line-height: 20px;">
+						AADARSH</h3>
+					<h3 class="Winning-price"
+						style="margin:8px 0	;font-size: 28px;text-decoration: none;font-weight: 600;line-height:24px;color:#FF164D">
+						Won ₹50,000 </h3>
+				</div>
+				<div class=" uniq-winner-card" style="margin-left: 0px;">
+					<div class="category-of-winner-game">
+						<div class="left-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/esport_arena_winner.png'>
+						</div>
+						<div class="right-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/game_pool_winner.png'>
+						</div>
+					</div><img src="https://www.mpl.live/static/esports/winner_pool_rahul.png">
+					<h3 class="rank-position"
+						style="margin:8px 0;font-size: 12px;text-decoration: none;font-weight: 500;">
+						SEMI-FINALIST</h3>
+					<h3 class="winner-name"
+						style="margin:10px 0;font-size: 10px;text-decoration: none;font-weight: 100;line-height: 20px;">
+						RAHUL</h3>
+					<h3 class="Winning-price"
+						style="margin:8px 0	;font-size: 28px;text-decoration: none;font-weight: 600;line-height:24px;color:#FF164D">
+						Won ₹50,000 </h3>
+				</div>
+				<div class=" uniq-winner-card" style="margin-left: 0px;">
+					<div class="category-of-winner-game">
+						<div class="left-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/esport_arena_winner.png'>
+						</div>
+						<div class="right-img-rank-top">
+							<img src='https://www.mpl.live/static/esports/game_pool_winner.png'>
+						</div>
+					</div><img src="https://www.mpl.live/static/esports/winner_pool_amit.png">
+					<h3 class="rank-position"
+						style="margin:8px 0; font-size: 12px;text-decoration: none;font-weight: 500;">
+						RUNNER-UP</h3>
+					<h3 class="winner-name"
+						style="margin:10px 0;font-size: 10px;text-decoration: none;font-weight: 100;line-height: 20px;">
+						AMIT</h3>
+					<h3 class="Winning-price"
+						style="margin:8px 0	;font-size: 28px;text-decoration: none;font-weight: 600;line-height:24px;color:#FF164D">
+						Won ₹90,000 </h3>
+				</div>
+			</div>
+			<div class="div-calengdar-heading">
+				<h3 style="font-size:50px;font-weight:550">Match Videos</h3>
+			</div>
+			<div class="winner-celebration-outer" id='youtube-iframe'>
+				<a style='margin-left: 0px !important;'>
+					<div class='inner-youtube-frame' style='margin-left: 0px !important;'>
+						<iframe
+							src="https://www.youtube.com/embed/jj3EiZRD2Jk?enablejsapi=1&origin=https%3A%2F%2Fwww.mpl.live"
+							frameborder=" 0"></iframe>
+						<div class="youtube-iframe-subheading"><img
+								src='https://www.mpl.live/static/esports/wcc_stream.png'>
+							<div>
+								<h3>WCC Masters™ Grand Finale</h3>
+								<h4>WCC MASTERS</h4>
+							</div>
+						</div>
+					</div>
+				</a><a>
+					<div class='inner-youtube-frame'>
+						<iframe
+							src="https://www.youtube.com/embed/FIj935OjBQQ?enablejsapi=1&origin=https%3A%2F%2Fwww.mpl.live"
+							frameborder=" 0"></iframe>
+						<div class="youtube-iframe-subheading"><img
+								src='https://www.mpl.live/static/esports/wcc_stream.png'>
+							<div>
+								<h3>WCC Masters™ Grand Finale</h3>
+								<h4>WCC MASTERS</h4>
+							</div>
+						</div>
+					</div>
+				</a><a>
+					<div class='inner-youtube-frame'>
+						<iframe
+							src="https://www.youtube.com/embed/jj3EiZRD2Jk?enablejsapi=1&origin=https%3A%2F%2Fwww.mpl.live"
+							frameborder=" 0"></iframe>
+						<div class="youtube-iframe-subheading"><img
+								src='https://www.mpl.live/static/esports/wcc_stream.png'>
+							<div>
+								<h3>WCC Masters™ Grand Finale</h3>
+								<h4>WCC MASTERS</h4>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="div-calengdar-heading">
+				<h3 style="font-size:50px;font-weight:550">Testimonials</h3>
+			</div>
+			<div class="testimonals-outer">
+				<div style="margin-left: 0px;">
+					<div style="margin:6px;width:388;height:466px;">
+						<div class="box-svg-icon" style="margin-top: 64px;margin-left:70px;"><svg fill="none"
+								height="21" viewBox="0 0 38 21" width="38" xmlns="http://www.w3.org/2000/svg">
+								<path clip-rule="evenodd"
+									d="m1.45482 18.8027 34.35018-18.677896c.7929-.431134 1.7061.32576 1.4296 1.184886l-6.0113 18.67791c-.133.4134-.5177.6936-.9519.6936h-28.33888c-1.036711 0-1.388476-1.3833-.4777-1.8785z"
+									fill="#680485" fill-rule="evenodd" opacity=".2" class="jsx-220105925">
+								</path>
+							</svg>
+						</div>
+						<div class='testimonal-image'>
+							<img src='https://www.mpl.live/static/esports/testimonial_alen.png'>
+						</div>
+						<div class="testimonal-text-content">
+							<h4>ALEN</h4>
+							<h5>NIT, Calicut</h5>
+							"I came to know about MPL from my college friends. I play Rogue Heist, WCC,
+							Speed Chess and Pool. I have earned about
+							5.63L so far. The application is friendly to use, the customer support system is
+							also quick to respond and is very
+							helpful.”
+						</div>
+					</div>
+				</div>
+				<div>
+					<div style="margin:6px;width:388;height:466px;">
+						<div class="box-svg-icon" style="margin-top: 64px;margin-left:70px;overflow: hidden;"><svg
+								fill="none" height="21" viewBox="0 0 38 21" width="38"
+								xmlns="http://www.w3.org/2000/svg">
+								<path clip-rule="evenodd"
+									d="m1.45482 18.8027 34.35018-18.677896c.7929-.431134 1.7061.32576 1.4296 1.184886l-6.0113 18.67791c-.133.4134-.5177.6936-.9519.6936h-28.33888c-1.036711 0-1.388476-1.3833-.4777-1.8785z"
+									fill="#680485" fill-rule="evenodd" opacity=".2">
+								</path>
+							</svg>
+						</div>
+						<div class='testimonal-image'>
+							<img src='https://www.mpl.live/static/esports/testimonials_anushk.png'>
+						</div>
+						<div class="testimonal-text-content">
+							<h4>Anshuk</h4>
+							<h5>IIT, Indore</h5>
+							"I was introduced to the MPL app by my friend. I play Rogue Heist and Chess
+							mostly on MPL and I have earned 70,000/-.
+							The app is amazing, we can compete against each other and show who is better.”
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="div-calengdar-heading">
+				<h3 style="font-size:50px;font-weight:550">FAQs</h3>
+			</div>
+			<div class="faq-uniq-div" style="margin-top: 40px;">
+				<div class="container">
+					<button type="button" class="collapsible">What Is MPL - Weekly Esports Arena? <i
+							class="las la-caret-down"></i></button>
+
+					<div class="content">
+						<p>Weekly sports Arena is a platform for the players to make a name for themselves in the
+							Esports Community. The idea of
+							hosting a weekly tournament is to cultivate an esports culture and build the existing
+							gaming community for all our MPL
+							games</i></p>
+					</div>
+					<button type="button" class="collapsible">What are the benefits of Esports?<i
+							class="las la-caret-down"></i></button>
+					<div class="content">
+						<p>MPL Esports gives the players a platform to make a name for themselves in the
+							gaming
+							community. Players can participate
+							in the Esports tournaments and can earn money by winning games.</p>
+					</div>
+					<button type="button" class="collapsible">What is the league age range?<i
+							class="las la-caret-down"></i></button>
+					<div class="content">
+						<p>All Esports tournaments are open for participation to individuals
+							above the age of 18
+							years.</p>
+					</div>
+					<button type="button" class="collapsible">Are there additional fees?<i
+							class="las la-caret-down"></i></button>
+					<div class="content">
+						<p>All Esports tournaments are free as of now. Participants
+							do not have to pay any amount
+							for the registrations. Also there
+							are no hidden/additional fees.</p>
+					</div><button type="button" class="collapsible">Do I have to
+						attend every game?<i class="las la-caret-down"></i></button>
+					<div class="content">
+						<p>In an Esports tournament, you will have to play
+							a game as per the schedule. The
+							schedule of your game will be
+							communicated to you by SMSs or notifications.
+						</p>
+					</div><button type="button" class="collapsible">Where
+						can I watch the Esports game
+						live?<i class="las la-caret-down"></i></button>
+					<div class="content">
+						<p>Yes, major rounds of all Esports
+							tournaments are live-streamed on
+							Youtube & Facebook.
+							You can check the live stream
+							schedule of an Esports tournament
+							in the 'Live Streams' section of
+							the website.</p>
+					</div>
+				</div>
+				</section>
+			</div>
+		</div>
+		<div class="payment-div" style="text-align:center">
+			<div class="div-calengdar-heading">
+				<h3 style="font-size:50px;font-weight:900;margin-top: -40px;color:#222222">Get a Great Experience on
+					MPL</h3>
+			</div>
+			<section class="payment">
+				<div>
+					<img class='trust-image' src="https://www.mpl.live/static/trust-icons/trust-1.png" />
+					<h4>6 Coror+ </h4>
+					<p>Users</p>
+
+				</div>
+				<div>
+					<img class='trust-image' src="https://www.mpl.live/static/trust-icons/trust-2.png" />
+					<h4>100% Secure</h4>
+					<p>& Legal</p>
+				</div>
+				<div>
+					<img class='trust-image' src="https://www.mpl.live/static/trust-icons/trust-3.png" />
+					<h4>24x7</h4>
+					<p>Customer Support</p>
+				</div>
+				<div>
+					<img class='trust-image' src="https://www.mpl.live/static/trust-icons/trust-4.png" />
+					<h4>Cashback</h4>
+					<p>Offers</p>
+				</div>
+			</section>
+		</div>
+		<section class="sponsor">
+			<div class="sp1">
+				<h2>Proud Sponsor Of</h2>
+			</div>
+			<div class="sp2">
+				<div class="kkr">
+					<img src="https://www.mpl.live/static/sponsors/rcb_logo.png" />
+				</div>
+				<div class="kkr">
+					<img src="https://www.mpl.live/static/sponsors/kkr_logo.png" />
+				</div>
+				<div class="kkr">
+					<img src="https://www.mpl.live/static/2x/bboss.png" />
+				</div>
+
+			</div>
+		</section>
+		</section>
+
+		<div class="head1">
+			<h2 style="font-size: 45px;padding:70px;color:#222222">MPL Is A Member Of</h2>
+			<section class="payment">
+				<div>
+					<img class='member-of' src="https://www.mpl.live/static/trust-icons/aigf.png" />
+				</div>
+				<div>
+					<img class='member-of' src="https://www.mpl.live/static/trust-icons/ficci.png" />
+				</div>
+				<div>
+					<img class='member-of' src="https://www.mpl.live/static/trust-icons/trf.png" />
+				</div>
+				<div>
+					<img class='member-of' src="https://www.mpl.live/static/trust-icons/IAMAI.png" />
+				</div>
+			</section>
+		</div>
+
+		<div class="footer__top_wrap">
+			<div class="container-footer">
+				<div class="row">
+					<div style='padding:20px'>
+						<h3 class=""><span class="txt_title">ONLINE SHOPPING</span></h3>
+						<div>
+							<a href="/collections/all-collection">All
+								Collections</a><br>
+							<a href="/collections/exclusive-ind-vs-sl-offer">Exclusive
+								Ind vs SL offer</a><br>
+							<a href="/collections/team-indias-official-jersey">Team India
+								Jerseys</a><br>
+							<a href="/collections/activewear">Activewear</a><br>
+							<a href="/collections/t-shirts">T-shirts</a>
+						</div>
+					</div>
+					<div style='padding:20px'>
+						<h3><span class="txt_title">COMPANY</span></span>
+						</h3>
+						<div>
+							<a href="/pages/about">About Us</a><br>
+							<a href="/pages/contact">Contact us</a><br>
+							<a href="/pages/faq">FAQs</a><br>
+							<a href="https://mplsports.in/blogs/post">Blog</a><br>
+						</div>
+					</div>
+					<div style="padding: 20px;">
+						<h3><span class="txt_title">POLICIES</span>
+						</h3>
+						<div>
+							<a href="/pages/terms-condition">Terms &amp;
+								Conditions</a><br>
+
+							<a href="/pages/privacy-policys">Privacy Policy</a><br>
+
+							<a href="/pages/cancellation-return-and-refund-policy">Cancellation,
+								Return
+								and <br>Refund Policy</a><br>
+							<a href="https://mplsports.shiprocket.co/">Track
+								Order</a><br>
+						</div>
+					</div>
+					<div style="padding:30px">
+						<p>Receive our newsletter on the latest deals and happenings.</p><br>
+						<form method="post" action="/contact#contact_form" id="contact_form"
+							accept-charset="UTF-8" class="js_mail_agree mc4wp-form pr z_100"><input type="hidden"
+								name="form_type"><input type="hidden" name="contact[tags]" value="newsletter">
+							<div style="display:flex;justify-content:center">
+								<div style="padding: 5px 20px;color: #B0B5B5;display: inline-block;">
+									<div style="display: inline-block;"><input type="email"
+											name="contact[email]" placeholder="Your email address" value=""
+											required="required">
+									</div>
+									<div style="display: inline-block"><button
+											style="padding: 5px 10px;color: #B0B5B5;background-color: #000;border:0;display: inline-block;"
+											type="submit"><span>Subscribe</span></button>
+									</div>
+								</div>
+							</div>
+							<div style="padding:20px;"></div>
+						</form><span class="social-media">
+							<a href="https://www.facebook.com/mplsports/"><i class="lab la-facebook-f"
+									style="font-size:22px"></i></a>
+							<a href="https://www.instagram.com/mplsports/"><i style="font-size:22px"
+									class="lab la-instagram"></i></a>
+							<a href="https://twitter.com/mpl_sport"><i style="font-size:22px"
+									class="lab la-twitter"></i></a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div
+				style='text-align: center;display: inline-block;margin-left:180px;margin-top: 20px;padding:10px 60px;background: #FFAB00;font-weight:600;'>
+				<a style='color:#fff !important;' href="">+ CORPORATE ENQUIRY</a>
+			</div>
+			<div style='text-align: center;display: inline-block;margin-left:180px;margin-top: 20px;'>
+				<p style="font-size:8px;">CUSTOMER CARE (MON TO SUN 10:00AM TO 10:00PM)<a
+						href="mailto:mplsportscs@mplgaming.com">
+						mplsportscs@mplgaming.com</a></p>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+<script src="esports.js"></script>

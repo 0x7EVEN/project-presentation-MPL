@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="mainScreen.css"> 
+        
+           
+    </head>
+
+    <body>
+
+
+        <div class="main" style="margin:0">
+            <div id="navigation-div" style="margin-top:-4px">
+                <div id="outer-main">
+                    <div id="main-logo">
+                        <a href='/'><img style='width: 101px;height: 32px;'
+                                src='https://www.mpl.live/static/hamburger/mpl-logo.png'></a>
+                    </div>
+                    <div id="anchor-divs">
+                        <div class="anchor-sub" id="anchor-1">
+                            <div class="sub-sub-anchor"> <a>MPL Games</a>
+                                <div onclick="showmenu()" class='menu-tab' style='margin-top:-4px;'>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="anchor-sub" id="anchor-2">
+                            <a href='mpl.html' style='text-decoration:none;color:#230046'>
+                                <div class="sub-sub-anchor" id='div-esports'> MPL Esports
+                                </div>
+                            </a>
+                        </div>
+                        <div class="anchor-sub" id="anchor-3">
+                            <div class="sub-sub-anchor"> <a style='text-decoration:none;color:#230046;' href='#'>Buy
+                                    Products</a>
+                            </div>
+                        </div>
+                        <div class="anchor-sub" id="anchor-4">
+                            <div class="sub-sub-anchor"> <a>Blog</a>
+                            </div>
+                        </div>
+                        <div class="anchor-sub" id="anchor-5">
+                            <div class="sub-sub-anchor"> <a>FAQs</a>
+                            </div>
+                        </div>
+                        <div class="anchor-sub" id="anchor-5">
+                            <div class="sub-sub-anchor" id='sub-help'><img style="margin-top: 4px;"
+                                    src='https://www.mpl.live/static/hamburger/help_icon.png'> <a>Help</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu-onclick" style='height:700px'>
+
+                    <div class="menu-subdivs" style="display:flex;margin-left :117px;">
+                        <div class="submenu" id="div-no-1">
+                            <div class="sub-sub-div">
+                                <div class="sub-menu-heading">
+                                    <img src="https://www.mpl.live/static/hamburger/fantasy_games_icon.png">
+                                    <h4>Fantasy Games</h4>
+
+                                </div><a style="text-decoration: none;color:inherit"
+                                    href='C:\new user\PROJECT\Programming\Javascript\FTWEB10\HTML\UNIT-2\project-presentation-MPL\fantasyCric.html'>
+                                    <h4>Fantasy cricket</h4>
+                                </a>
+                                <a>
+                                    <h4>Fantasy football</h4>
+                                </a>
+                                <a>
+                                    <h4>Fantasy basketball</h4>
+                                </a>
+                            </div>
+                            <!-- CARD GAMES -->
+                            <div class="sub-sub-div">
+                                <div class="sub-menu-heading">
+                                    <img src="https://www.mpl.live/static/hamburger/card_games_desktop.png">
+                                    <h4>Card Games</h4>
+
+                                </div><a>
+                                    <h4>Rummy</h4>
+                                </a>
+                                <a>
+                                    <h4>Poker</h4>
+                                </a>
+                                <a>
+                                    <h4>Call Break</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-subdivs">
+                        <div class="submenu" id="div-no-1">
+                            <div class="sub-sub-div">
+                                <div class="sub-menu-heading">
+                                    <img src="https://www.mpl.live/static/hamburger/sports_games_icon.png">
+                                    <h4>Sports Games</h4>
+
+                                </div><a>
+                                    <h4>Wcc2</h4>
+                                </a>
+
+                            </div>
+                            <div class="sub-sub-div">
+                                <div class="sub-menu-heading">
+                                    <img src="https://www.mpl.live/static/hamburger/casual_games_desktop.png">
+                                    <h4>Casual Games</h4>
+
+                                </div><a>
+                                    <h4>Carrom</h4>
+                                </a>
+                                <a>
+                                    <h4>Pool</h4>
+                                </a>
+                                <a>
+                                    <h4>Ludo</h4>
+                                </a><a>
+                                    <h4>Runner No. 1</h4>
+                                </a><a>
+                                    <h4>Monster Truck</h4>
+                                </a><a>
+                                    <h4>Go Ride</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-subdivs">
+                        <div class="submenu" id="div-no-1">
+                            <div class="sub-sub-div">
+                                <div class="sub-menu-heading">
+                                    <img src="https://www.mpl.live/static/hamburger/arcade_games_desktop.png">
+                                    <h4>Arcade Games</h4>
+
+                                </div><a>
+                                    <h4>Fruite Chop</h4>
+                                </a>
+                                <a>
+                                    <h4>Fruit Dart</h4>
+                                </a>
+                                <a>
+                                    <h4>Fruit Slice</h4>
+                                </a>
+                            </div>
+                            <div class="sub-sub-div">
+                                <div class="sub-menu-heading">
+                                    <img src="https://www.mpl.live/static/hamburger/brain_games_desktop.png">
+                                    <h4>Brain Games</h4>
+
+                                </div><a>
+                                    <h4>Quiz</h4>
+                                </a>
+                                <a>
+                                    <h4>Speed Chess</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-subdivs" style="margin-right :117px;">
+                        <div class="submenu" id="div-no-2">
+                            <div class="sub-sub-div">
+                                <div class="sub-menu-heading">
+                                    <img src="https://www.mpl.live/static/hamburger/puzzle_games_desktop.png">
+                                    <h4>Puzzle Games</h4>
+
+                                </div><a>
+                                    <h4>Bubble Shooter</h4>
+                                </a>
+                                <a>
+                                    <h4>Build Up</h4>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="first-box">
+            <div id="inner-box1">
+                <h1 class="grey-header">
+                    <span id="one">PLAY 60+ GAMES</span>
+                </h1>
+                <br>
+                <span class="light-grey-header"> PLAY ON INDIA'S LARGEST GAMING APP</span>
+                <br>
+                <div id="sms-container">
+                    <div>
+                        <input type="number" minlength="10" maxlength="10" placeholder="Enter Mobile Number">
+                    </div>
+                    <div style="align-items: center;width:30%">
+                        <h3
+                            style='font-family: sans-serif;font-weight: 300 !important;font-family: sans-serif;font-size: 16px;'>
+                            Get SMS with
+                            Download Link</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="second-box">
+            <div id="left-box">
+                <p class="p1">40 CRORE</p>
+                <p class="p2">Daily Winnings</p>
+            </div>
+            <div id="right-box">
+                <p class="p1">6 CRORE+</p>
+                <p class="p2">Trusted users</p>
+
+            </div>
+
+        </div>
+        <div id="withdraw-win">
+            <h2>Withdraw Winnings With</h2>
+
+        </div>
+        <div id="four-images">
+            <div>
+                <img src="https://www.mpl.live/static/withdraw/new-icons/paytm.png" alt="">
+                <p class="four-img-p1">Paytm wallet</p>
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/withdraw/new-icons/upi.png" alt="">
+                <p class="four-img-p1">UPI</p>
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/withdraw/new-icons/amazon_pay.png" alt="">
+                <p class="four-img-p1">Amazon Pay</p>
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/withdraw/new-icons/bank_transfer.png" alt="">
+                <p class="four-img-p1">Bank Transfer </p>
+            </div>
+
+        </div>
+        <div id="red-box">
+            <div id="virat-hardik-img">
+                <img src="https://www.mpl.live/static/banners/mpl_esport_logo.png" alt="">
+            </div>
+            <div id="second">
+                <img src="https://www.mpl.live/static/2x/newmpl_logo.png" alt="">
+                <p class="html-content">OFFICIAL</p>
+                <p class="html-content"> TEAM INDIA</p>
+                <p class="html-content"> COLLECTION</p>
+                <p class="html-content"
+                    style='margin-top:30px;text-align:center;font-size: 15px !important;font-weight:300;padding:8px 20px;background:#33FF66;width: 100px;margin-left:190px;color:black'>
+                    SHOP
+                    NOW</p>
+            </div>
+
+        </div>
+        <div class="top-games">
+            <h2>Top Games On MPL</h2>
+            <p>Play over 60+ Games and Win Cash</p>
+        </div>
+        <div class="games">
+            <div>
+                <img src="https://www.mpl.live/static/top-games/fruit_dart.png" alt="">
+                <p>Fruit Dart</p>
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/top-games/wcc.png" alt="">
+                <p>WCC</p>
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/top-games/pool.png" alt="">
+                <p>Pool</p>
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/top-games/speed_chess.png" alt="">
+                <p>Chess</p>
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/top-games/fantasy_cricket.png" alt="">
+                <p>Fantasy Cricket</p>
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/top-games/quiz.png" alt="">
+                <p>Quiz</p>
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/top-games/fruit_chop.png" alt="">
+                <p>Fruit Chop</p>
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/top-games/runner_no1.png" alt="">
+                <p>Runner</p>
+
+            </div>
+
+        </div>
+        <div class="top-games">
+            <h2>Trusted By 6 Crore+ INDIANS </h2>
+
+        </div>
+        <div class="winners">
+            <div style="padding:15px">
+                <div class="img">
+                    <img src=" https://www.mpl.live/static/banners/user_epicenter-satish.png" alt="">
+                </div>
+                <h2>SATISH KUMAR</h2>
+                <p>Ladakh</p>
+                <h1>WON 11$ LAKH!</h1>
+                <P>
+                    is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                    also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                    in
+                    the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                    with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                </P>
+            </div>
+            <div style="padding:15px">
+                <div class="img">
+                    <img src="https://www.mpl.live/static/banners/user_epicenter.png" alt="">
+                </div>
+                <h2>Kuldeep Kumar</h2>
+                <p>Faridabad haryana</p>
+                <h1>WON 9$ LAKH!</h1>
+                <P>
+                    is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                    also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                    in
+                    the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                    with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                </P>
+            </div>
+            <div style="padding:15px">
+                <div class="img">
+                    <img src="https://www.mpl.live/static/banners/user_epicenter-akash.png" alt="">
+                </div>
+                <h2>Aakash Saitab</h2>
+                <p>Muzzafarabad UP</p>
+                <h1>WON 6$ LAKH!</h1>
+                <P>
+                    is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                    also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                    in
+                    the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                    with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                </P>
+            </div>
+
+        </div>
+        <div class="proud-sponser">
+            <div>
+                <h1>Proud Sponser Of</h1>
+            </div>
+            <div class="sponser-img">
+                <img src="https://www.mpl.live/static/sponsors/rcb_logo.png" alt="">
+                <img src="https://www.mpl.live/static/sponsors/kkr_logo.png" alt="">
+            </div>
+        </div>
+        <div class="top-games">
+            <h2>Best In Class Gaming Experience </h2>
+
+        </div>
+        <div id="four-images">
+            <div>
+                <img src="https://www.mpl.live/static/trust-icons/user_icon.png" alt="">
+                <p class="four-img-p1">Paytm wallet</p>
+                <h5>Users</h5>
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/trust-icons/secure_icon.png" alt="">
+                <p class="four-img-p1">UPI</p>
+                <h5>& Legal</h5>
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/trust-icons/support_icon.png" alt="">
+                <p class="four-img-p1">Amazon Pay</p>
+                <h5>Customer support</h5>
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/trust-icons/cashback_icon.png" alt="">
+                <p class="four-img-p1">Bank Transfer </p>
+                <h5>Offers</h5>
+            </div>
+
+        </div>
+        <div class="top-games">
+            <h2>MPL IS A MEMBER OF </h2>
+
+        </div>
+        <div id="four-images">
+            <div>
+                <img src="https://www.mpl.live/static/trust-icons/aigf.png" alt="">
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/trust-icons/ficci.png" alt="">
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/trust-icons/trf.png" alt="">
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/trust-icons/IAMAI.png" alt="">
+
+            </div>
+
+        </div>
+        <div class="top-games">
+            <h2>PLAY AND WIN CASH </h2>
+            <h3>TOP GAMES ON MPL</h3>
+
+        </div>
+        <div class="top-mpl-games">
+            <div class="inner-box">
+                <div>
+                    <img src="https://www.mpl.live/static/top-games/fruit_dart.png" alt="">
+                </div>
+                <div>
+                    <div id="first-box-2">
+                        <h2>Fruit Dart</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart,is'nt it?
+                                fruit dart is the most thrilling
+                            </span>
+                            <span class="more">...More</span>
+                        </p>
+
+                    </div>
+                    <div id="second-box-2">
+                        <h2>Fruit Dart</h2>
+                        <p>
+                            <span class="para1" style='font-size:16px;width: 150px;'>
+                                Everyone loves a quick game of fruit dart, isn’t it?
+                                Fruit Dart is one of the most thrilling arcade games on the MPL app.
+                                Throw the darts like a ninja and slice the fruits popping up on the screen.
+                            </span>
+                            <span>
+
+                        </p>
+                        <a class="link" href="" style="font-size: 15px;">Know More</a>
+                        <p class="less">Less</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="inner-box">
+                <div>
+                    <img src="https://www.mpl.live/static/top-games/ludo.png" alt="">
+                </div>
+                <div>
+                    <div id="first-box-2">
+                        <h2>Ludo</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart,is'nt it?
+                                fruit dart is the most game o
+                            </span>
+                            <span class="more">...More</span>
+                        </p>
+
+                    </div>
+                    <div id="second-box-2">
+                        <h2>Fruit Dart</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart, isn’t it?
+                                Fruit Dart is one of the most thrilling arcade games on the MPL app.
+                                Throw the darts like a ninja and slice the fruits popping up on the screen.
+                            </span>
+                            <span>
+
+                        </p>
+                        <a class="link" href="">Know More</a>
+                        <p class="less">Less</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="inner-box">
+                <div>
+                    <img src="https://www.mpl.live/static/top-games/call_break.png" alt="">
+                </div>
+                <div>
+                    <div id="first-box-2">
+                        <h2>Cards</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick
+                            </span>
+                            <span class="more">...More</span>
+                        </p>
+
+                    </div>
+                    <div id="second-box-2">
+                        <h2>Fruit Dart</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart, isn’t it?
+                                Fruit Dart is one of the most thrilling arcade games on the MPL app.
+                                Throw the darts like a ninja and slice the fruits popping up on the screen.
+                                Just make sure that you don’t hit the bombs, or you will lose the game.
+                                Fruit Dart is available in both 1v1 battle mode and tournaments format on MPL.
+                                You can select any of the formats to play the game and win exciting cash prizes.
+                            </span>
+                            <span>
+
+                        </p>
+                        <a class="link" href="">Know More</a>
+                        <p class="less">Less</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="inner-box">
+                <div>
+                    <img src="https://www.mpl.live/static/top-games/fantasy_cricket.png" alt="">
+                </div>
+                <div>
+                    <div id="first-box-2">
+                        <h2>MPL Cricket</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart,is'nt it?
+                                fruit dart is the arcade game o
+                            </span>
+                            <span class="more">...More</span>
+                        </p>
+
+                    </div>
+                    <div id="second-box-2">
+                        <h2>Fruit Dart</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart, isn’t it?
+                                Fruit Dart is one of the most thrilling arcade games on the MPL app.
+                                Throw the darts like a ninja and slice the fruits popping up on the screen.
+                                Just make sure that you don’t hit the bombs, or you will lose the game.
+                                Fruit Dart is available in both 1v1 battle mode and tournaments format on MPL.
+                                You can select any of the formats to play the game and win exciting cash prizes.
+                            </span>
+                            <span>
+
+                        </p>
+                        <a class="link" href="">Know More</a>
+                        <p class="less">Less</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="inner-box">
+                <div>
+                    <img src="https://www.mpl.live/static/top-games/speed_chess.png" alt="">
+                </div>
+                <div>
+                    <div id="first-box-2">
+                        <h2>Chess</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart,is'nt it?
+                                fruit dart is the arcade game o
+                            </span>
+                            <span class="more">...More</span>
+                        </p>
+
+                    </div>
+                    <div id="second-box-2">
+                        <h2></h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart, isn’t it?
+                                Fruit Dart is one of the most thrilling arcade games on the MPL app.
+                                Throw the darts like a ninja and slice the fruits popping up on the screen.
+                                Just make sure that you don’t hit the bombs, or you will lose the game.
+                                Fruit Dart is available in both 1v1 battle mode and tournaments format on MPL.
+                                You can select any of the formats to play the game and win exciting cash prizes.
+                            </span>
+                            <span>
+
+                        </p>
+                        <a class="link" href="">Know More</a>
+                        <p class="less">Less</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="inner-box">
+                <div>
+                    <img src="https://www.mpl.live/static/top-games/pool.png" alt="">
+                </div>
+                <div>
+                    <div id="first-box-2">
+                        <h2>Pool</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart is the arcade
+                            </span>
+                            <span class="more">...More</span>
+                        </p>
+
+                    </div>
+                    <div id="second-box-2">
+                        <h2>Fruit Dart</h2>
+                        <p>
+                            <span class="para1">
+                                Everyone loves a quick game of fruit dart, isn’t it?
+                                Fruit Dart is one of the most thrilling arcade games on the MPL app.
+                                Throw the darts like a ninja and slice the fruits popping up on the screen.
+                                Just make sure that you don’t hit the bombs, or you will lose the game.
+                                Fruit Dart is available in both 1v1 battle mode and tournaments format on MPL.
+                                You can select any of the formats to play the game and win exciting cash prizes.
+                            </span>
+                            <span>
+
+                        </p>
+                        <a class="link" href="">Know More</a>
+                        <p class="less">Less</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class="top-games">
+            <h2>KNOW US BETTER </h2>
+
+        </div>
+
+        <div id="four-images">
+            <div>
+                <img src="https://www.mpl.live/static/social_icons/fb.png" alt="">
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/social_icons/ig.png" alt="">
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/social_icons/tw.png" alt="">
+
+            </div>
+            <div>
+                <img src="https://www.mpl.live/static/social_icons/yt.png" alt="">
+
+            </div>
+
+        </div>
+        <div class="mpl-img">
+
+
+        </div>
+        <div class="top-games">
+            <h2>ABOUT THE MPL GAMING APP </h2>
+
+        </div>
+
+        <div class="about-mpl-game-app" style='width:80%;margin: auto;'>
+
+            <p id="short-para">Mobile Premier League (MPL) is an online gaming platform that offers a plethora of
+                games
+                - fantasy sports, Rummy, Chess, Quiz, Fruit Chop, 8 ball 3D Pool, Carrom and more! Play and win real
+                cash for playing your favorite mobile games. Sounds fun, right?
+
+            </p>
+
+
+
+            <p id="long-para">Mobile Premier League (MPL) is an online gaming platform that offers a plethora of
+                games -
+                fantasy sports,Rummy, Chess, Quiz, Fruit Chop, 8 ball 3D Pool, Carrom and more! Play and win real
+                cash
+                for playing your favorite mobile games. Sounds fun, right? With MPL, you can play 40+ games
+                including
+                fantasy sports on your mobile to win great prizes. MPL offers the ultimate gaming experience, which
+                makes you want to play more & win more. Take your pick from adventure, action, sports & many other
+                categories.
+
+                With games like Rummy, Chess, Ludo, Carrom, Cricket, and Bubble Shooter, we have them all. Play
+                games on
+                the MPL app and make it to the top of the leaderboards. Connect with your friends and see who the
+                real
+                winner is. You also get a referral bonus for every referral you make.
+
+                You can download the MPL PRO (apk) app from here for Android, while iOS users can get it from the
+                Apple
+                app store.
+
+            </p>
+            <span id="text" onclick="moreText()">&#x21cA More</span>
+
+
+        </div>
+        <div class="footer__top_wrap" style='margin-top:50px'>
+            <div class="container-footer">
+                <div class="row">
+                    <div style='padding:20px'>
+                        <h3 class=""><span class="txt_title">ONLINE SHOPPING</span></h3>
+                        <div>
+                            <a href="/collections/all-collection">All
+                                Collections</a><br>
+                            <a href="/collections/exclusive-ind-vs-sl-offer">Exclusive
+                                Ind vs SL offer</a><br>
+                            <a href="/collections/team-indias-official-jersey">Team India
+                                Jerseys</a><br>
+                            <a href="/collections/activewear">Activewear</a><br>
+                            <a href="/collections/t-shirts">T-shirts</a>
+                        </div>
+                    </div>
+                    <div style='padding:20px'>
+                        <h3><span class="txt_title">COMPANY</span></span>
+                        </h3>
+                        <div>
+                            <a href="/pages/about">About Us</a><br>
+                            <a href="/pages/contact">Contact us</a><br>
+                            <a href="/pages/faq">FAQs</a><br>
+                            <a href="https://mplsports.in/blogs/post">Blog</a><br>
+                        </div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3><span class="txt_title">POLICIES</span>
+                        </h3>
+                        <div>
+                            <a href="/pages/terms-condition">Terms &amp;
+                                Conditions</a><br>
+
+                            <a href="/pages/privacy-policys">Privacy Policy</a><br>
+
+                            <a href="/pages/cancellation-return-and-refund-policy">Cancellation,
+                                Return
+                                and <br>Refund Policy</a><br>
+                            <a href="https://mplsports.shiprocket.co/">Track
+                                Order</a><br>
+                        </div>
+                    </div>
+                    <div style="padding:30px">
+                        <p>Receive our newsletter on the latest deals and happenings.</p><br>
+                        <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8"
+                            class="js_mail_agree mc4wp-form pr z_100"><input type="hidden" name="form_type"><input
+                                type="hidden" name="contact[tags]" value="newsletter">
+                            <div style="display:flex;justify-content:center">
+                                <div style="padding: 5px 20px;color: #B0B5B5;display: inline-block;">
+                                    <div style="display: inline-block;"><input type="email" name="contact[email]"
+                                            placeholder="Your email address" value="" required="required">
+                                    </div>
+                                    <div style="display: inline-block"><button
+                                            style="padding: 5px 10px;color: #B0B5B5;background-color: #000;border:0;display: inline-block;"
+                                            type="submit"><span>Subscribe</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding:20px;"></div>
+                        </form><span class="social-media">
+                            <a href="https://www.facebook.com/mplsports/"><i class="lab la-facebook-f"
+                                    style="font-size:22px"></i></a>
+                            <a href="https://www.instagram.com/mplsports/"><i style="font-size:22px"
+                                    class="lab la-instagram"></i></a>
+                            <a href="https://twitter.com/mpl_sport"><i style="font-size:22px"
+                                    class="lab la-twitter"></i></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div
+                style='text-align: center;display: inline-block;margin-left:180px;margin-top: 20px;padding:10px 60px;background: #FFAB00;font-weight:600;'>
+                <a style='color:#fff !important;' href="">+ CORPORATE ENQUIRY</a>
+            </div>
+            <div style='text-align: center;display: inline-block;margin-left:180px;margin-top: 20px;'>
+                <p style="font-size:8px;">CUSTOMER CARE (MON TO SUN 10:00AM TO 10:00PM)<a
+                        href="mailto:mplsportscs@mplgaming.com">
+                        mplsportscs@mplgaming.com</a></p>
+            </div>
+        </div>
+    </body>
+
+</html>
+<script src="mainscreen.js">
+   
+</script>
